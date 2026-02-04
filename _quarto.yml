@@ -3,233 +3,234 @@ project:
 
 book:
   title: "Music Selections for the Liturgical Year"
-  subtitle: "Parish-agnostic music schedules"
+  subtitle: "Music schedules for St. Egbert's, Morehead City, NC"
   author: "Matthew D. Grossi"
-  date: "June 2025"
+  date: "June 2026"
   cover-image: "images/st-cecilia-round.jpg"
   chapters:
     - text: Home
       href: index.qmd
-    - content/copyright.qmd
-    - content/intro.qmd
-    - content/about-author.qmd
-    - content/about-book.qmd
-    - content/versions.qmd
-    - part: content/advent/advent.qmd
-      chapters:
-        - text: "First Sunday"
-          href: content/advent/advent01.qmd
-        - text: "Second Sunday"
-          href: content/advent/advent02.qmd
-        - text: "Third Sunday"
-          href: content/advent/advent03.qmd
-        - text: "Fourth Sunday"
-          href: content/advent/advent04.qmd
-    - part: content/christmas/christmas.qmd
-      chapters:
-        - text: "Christmas Vigil"
-          href: content/christmas/christmas-vigil.qmd
-        - text: "Christmas Midnight"
-          href: content/christmas/christmas-midnight.qmd
-        - text: "Christmas Dawn"
-          href: content/christmas/christmas-dawn.qmd
-        - text: "Christmas Day"
-          href: content/christmas/christmas-day.qmd
-        - text: "Holy Family"
-          href: content/christmas/holy-family.qmd
-        - text: "Mary, Mother of God"
-          href: content/christmas/mary-mother-of-god.qmd
-        - text: Epiphany
-          href: content/christmas/epiphany.qmd
-        - text: Baptism of the Lord
-          href: content/christmas/baptism.qmd
-    - part: content/ordinary-time/ot-winter.qmd
-      chapters:
-        - text: "Second Sunday"
-          href: content/ordinary-time/ot02.qmd
-        - text: "Third Sunday"
-          href: content/ordinary-time/ot03.qmd
-        - text: "Fourth Sunday"
-          href: content/ordinary-time/ot04.qmd
-        - text: "Fifth Sunday"
-          href: content/ordinary-time/ot05.qmd
-        - text: "Sixth Sunday"
-          href: content/ordinary-time/ot06.qmd
-        - text: "Seventh Sunday"
-          href: content/ordinary-time/ot07.qmd
-        - text: "Eighth Sunday"
-          href: content/ordinary-time/ot08.qmd
-        - text: "Ninth Sunday"
-          href: content/ordinary-time/ot09.qmd
+    # - content/copyright.qmd
+    # - content/intro.qmd
+    # - content/about-author.qmd
+    # - content/about-book.qmd
+    # - content/versions.qmd
+    # - part: content/advent/advent.qmd
+    #   chapters:
+    #     - text: "First Sunday"
+    #       href: content/advent/advent01.qmd
+    #     - text: "Second Sunday"
+    #       href: content/advent/advent02.qmd
+    #     - text: "Third Sunday"
+    #       href: content/advent/advent03.qmd
+    #     - text: "Fourth Sunday"
+    #       href: content/advent/advent04.qmd
+    # - part: content/christmas/christmas.qmd
+    #   chapters:
+    #     - text: "Christmas Vigil"
+    #       href: content/christmas/christmas-vigil.qmd
+    #     - text: "Christmas Midnight"
+    #       href: content/christmas/christmas-midnight.qmd
+    #     - text: "Christmas Dawn"
+    #       href: content/christmas/christmas-dawn.qmd
+    #     - text: "Christmas Day"
+    #       href: content/christmas/christmas-day.qmd
+    #     - text: "Holy Family"
+    #       href: content/christmas/holy-family.qmd
+    #     - text: "Mary, Mother of God"
+    #       href: content/christmas/mary-mother-of-god.qmd
+    #     - text: Epiphany
+    #       href: content/christmas/epiphany.qmd
+    #     - text: Baptism of the Lord
+    #       href: content/christmas/baptism.qmd
+    # - part: content/ordinary-time/ot-winter.qmd
+    #   chapters:
+    #     - text: "Second Sunday"
+    #       href: content/ordinary-time/ot02.qmd
+    #     - text: "Third Sunday"
+    #       href: content/ordinary-time/ot03.qmd
+    #     - text: "Fourth Sunday"
+    #       href: content/ordinary-time/ot04.qmd
+    #     - text: "Fifth Sunday"
+    #       href: content/ordinary-time/ot05.qmd
+    #     - text: "Sixth Sunday"
+    #       href: content/ordinary-time/ot06.qmd
+    #     - text: "Seventh Sunday"
+    #       href: content/ordinary-time/ot07.qmd
+    #     - text: "Eighth Sunday"
+    #       href: content/ordinary-time/ot08.qmd
+    #     - text: "Ninth Sunday"
+    #       href: content/ordinary-time/ot09.qmd
     - part: content/lent/lent.qmd
       chapters:
-        - content/lent/ash-wednesday.qmd
+        - text: "Ash Wednesday"
+          href: content/lent/ash-wednesday.qmd
         - text: "First Sunday"
           href: content/lent/lent01.qmd
-        - text: "Second Sunday"
-          href: content/lent/lent02.qmd
-        - text: "Third Sunday"
-          href: content/lent/lent03.qmd
-        - text: "Fourth Sunday"
-          href: content/lent/lent04.qmd
-        - text: "Fifth Sunday"
-          href: content/lent/lent05.qmd
-    - part: content/holy-week/holy-week.qmd
-      chapters:
-        - text: "Palm Sunday"
-          href: content/holy-week/palm-sunday.qmd
-        - text: "Holy Thursday"
-          href: content/holy-week/holy-thursday.qmd
-        - text: "Good Friday"
-          href: content/holy-week/good-friday.qmd
-        - text: "Easter Vigil"
-          href: content/holy-week/easter-vigil.qmd
-    - part: content/easter/easter.qmd
-      chapters:
-        - text: "Easter Sunday"
-          href: content/easter/easter01.qmd
-        - text: "Second Sunday"
-          href: content/easter/easter02.qmd
-        - text: "Third Sunday"
-          href: content/easter/easter03.qmd
-        - text: "Fourth Sunday"
-          href: content/easter/easter04.qmd
-        - text: "Fifth Sunday"
-          href: content/easter/easter05.qmd
-        - text: "Sixth Sunday"
-          href: content/easter/easter06.qmd
-        - text: "Ascension"
-          href: content/easter/ascension.qmd
-        - text: "Seventh Sunday"
-          href: content/easter/easter07.qmd
-        - text: "Pentecost Vigil"
-          href: content/easter/pentecost-vigil.qmd
-        - text: "Pentecost Extended Vigil"
-          href: content/easter/pentecost-vigil-extended.qmd
-        - text: "Pentecost Sunday"
-          href: content/easter/pentecost.qmd
-    - part: content/ordinary-time/ot-summer.qmd
-      chapters:
-        - text: "Tenth Sunday"
-          href: content/ordinary-time/ot10.qmd
-        - text: "Eleventh Sunday"
-          href: content/ordinary-time/ot11.qmd
-        - text: "Twelfth Sunday"
-          href: content/ordinary-time/ot12.qmd
-        - text: "Thirteenth Sunday"
-          href: content/ordinary-time/ot13.qmd
-        - text: "Fourteenth Sunday"
-          href: content/ordinary-time/ot14.qmd
-        - text: "Fifteenth Sunday"
-          href: content/ordinary-time/ot15.qmd
-        - text: "Sixteenth Sunday"
-          href: content/ordinary-time/ot16.qmd
-        - text: "Seventeenth Sunday"
-          href: content/ordinary-time/ot17.qmd
-        - text: "Eighteenth Sunday"
-          href: content/ordinary-time/ot18.qmd
-        - text: "Nineteenth Sunday"
-          href: content/ordinary-time/ot19.qmd
-        - text: "Twentieth Sunday"
-          href: content/ordinary-time/ot20.qmd
-        - text: "Twenty-First Sunday"
-          href: content/ordinary-time/ot21.qmd
-        - text: "Twenty-Second Sunday"
-          href: content/ordinary-time/ot22.qmd
-        - text: "Twenty-Third Sunday"
-          href: content/ordinary-time/ot23.qmd
-        - text: "Twenty-Fourth Sunday"
-          href: content/ordinary-time/ot24.qmd
-        - text: "Twenty-Fifth Sunday"
-          href: content/ordinary-time/ot25.qmd
-        - text: "Twenty-Sixth Sunday"
-          href: content/ordinary-time/ot26.qmd
-        - text: "Twenty-Seventh Sunday"
-          href: content/ordinary-time/ot27.qmd
-        - text: "Twenty-Eighth Sunday"
-          href: content/ordinary-time/ot28.qmd
-        - text: "Twenty-Ninth Sunday"
-          href: content/ordinary-time/ot29.qmd
-        - text: "Thirtieth Sunday"
-          href: content/ordinary-time/ot30.qmd
-        - text: "Thirty-First Sunday"
-          href: content/ordinary-time/ot31.qmd
-        - text: "Thirty-Second Sunday"
-          href: content/ordinary-time/ot32.qmd
-        - text: "Thirty-Third Sunday"
-          href: content/ordinary-time/ot33.qmd
-        - text: "Christ the King: Prior to Thanksgiving"
-          href: content/ordinary-time/christ-the-king-before-thanksgiving.qmd
-        - text: "Christ the King: After Thanksgiving"
-          href: content/ordinary-time/christ-the-king-after-thanksgiving.qmd
-        - text: "Thanksgiving"
-          href: content/ordinary-time/thanksgiving.qmd
-    - part: content/feasts/feasts.qmd
-      chapters:
-        - text: "December 8: Immaculate Conception"
-          href: content/feasts/dec08-immaculate-conception.qmd
-        - text: "February 2: Presentation of the Lord"
-          href: content/feasts/feb02-presentation.qmd
-        - text: "March 19: St. Joseph"
-          href: content/feasts/mar19-stjoseph.qmd
-        - text: "March 25: Annunciation"
-          href: content/feasts/mar25-annunciation.qmd
-        - text: "June 23: Nativity John Baptist (Vigil)"
-          href: content/feasts/jun23-nativity-john-baptist-vigil.qmd
-        - text: "June 24: Nativity John Baptist"
-          href: content/feasts/jun24-nativity-john-baptist.qmd
-        - text: "June 28: Ss. Peter and Paul (Vigil)"
-          href: content/feasts/jun28-peter-paul-vigil.qmd
-        - text: "June 29: Ss. Peter and Paul"
-          href: content/feasts/jun29-peter-paul.qmd
-        - text: "Holy Trinity"
-          href: content/feasts/holy-trinity.qmd
-        - text: "Corpus Christi"
-          href: content/feasts/corpus-christi.qmd
-        - text: "Sacred Heart"
-          href: content/feasts/sacred-heart.qmd
-        - text: "August 6: Transfiguration"
-          href: content/feasts/aug06-transfiguration.qmd
-        - text: "August 14: Assumption of Mary (Vigil)"
-          href: content/feasts/aug14-assumption-vigil.qmd
-        - text: "August 15: Assumption of Mary"
-          href: content/feasts/aug15-assumption.qmd
-        - text: "September 14: Holy Cross"
-          href: content/feasts/sep14-holy-cross.qmd
-        - text: "November 1: All Saints"
-          href: content/feasts/nov01-all-saints.qmd
-        - text: "November 2: All Souls"
-          href: content/feasts/nov02-all-souls.qmd
-        - text: "November 9: John Lateran Basilica"
-          href: content/feasts/nov09-john-lateran.qmd
-    - content/references.qmd
-  appendices:
-    - text: "A: O Holy Night"
-      href: content/appendices/A-o-holy-night.qmd
-    - text: "A: O Holy Night (organ)"
-      href: content/appendices/A-o-holy-night-organ.qmd
-    - text: "B: Festival Alleluia"
-      href: content/appendices/B-festival-alleluia.qmd
-    - text: "C: St. Joseph Psalm & Gospel Acclamation"
-      href: content/appendices/C-mar19-psalm.qmd
-    - text: "D: Annunciation Lenten Gospel Acclamation"
-      href: content/appendices/D-mar25-accl.qmd
-    - text: "E: Easter Proclamation"
-      href: content/appendices/E-easter-proclamation.qmd
-    - text: "F: Easter Dismissal"
-      href: content/appendices/F-easter-dismissal.qmd
-    - text: "G: Pentecost Sequence"
-      href: content/appendices/G-pentecost-sequence.qmd
-    - text: "H: Corpus Christi Sequence"
-      href: content/appendices/H-corpus-christi-sequence.qmd
-    - text: "I: Lauda, Jerusalem"
-      href: content/appendices/I-lauda-jerusalem.qmd
-    - text: "J: Adoration"
-      href: content/appendices/J-adoration.qmd
+    #     - text: "Second Sunday"
+    #       href: content/lent/lent02.qmd
+    #     - text: "Third Sunday"
+    #       href: content/lent/lent03.qmd
+    #     - text: "Fourth Sunday"
+    #       href: content/lent/lent04.qmd
+    #     - text: "Fifth Sunday"
+    #       href: content/lent/lent05.qmd
+    # - part: content/holy-week/holy-week.qmd
+    #   chapters:
+    #     - text: "Palm Sunday"
+    #       href: content/holy-week/palm-sunday.qmd
+    #     - text: "Holy Thursday"
+    #       href: content/holy-week/holy-thursday.qmd
+    #     - text: "Good Friday"
+    #       href: content/holy-week/good-friday.qmd
+    #     - text: "Easter Vigil"
+    #       href: content/holy-week/easter-vigil.qmd
+  #   - part: content/easter/easter.qmd
+  #     chapters:
+  #       - text: "Easter Sunday"
+  #         href: content/easter/easter01.qmd
+  #       - text: "Second Sunday"
+  #         href: content/easter/easter02.qmd
+  #       - text: "Third Sunday"
+  #         href: content/easter/easter03.qmd
+  #       - text: "Fourth Sunday"
+  #         href: content/easter/easter04.qmd
+  #       - text: "Fifth Sunday"
+  #         href: content/easter/easter05.qmd
+  #       - text: "Sixth Sunday"
+  #         href: content/easter/easter06.qmd
+  #       - text: "Ascension"
+  #         href: content/easter/ascension.qmd
+  #       - text: "Seventh Sunday"
+  #         href: content/easter/easter07.qmd
+  #       - text: "Pentecost Vigil"
+  #         href: content/easter/pentecost-vigil.qmd
+  #       - text: "Pentecost Extended Vigil"
+  #         href: content/easter/pentecost-vigil-extended.qmd
+  #       - text: "Pentecost Sunday"
+  #         href: content/easter/pentecost.qmd
+  #   - part: content/ordinary-time/ot-summer.qmd
+  #     chapters:
+  #       - text: "Tenth Sunday"
+  #         href: content/ordinary-time/ot10.qmd
+  #       - text: "Eleventh Sunday"
+  #         href: content/ordinary-time/ot11.qmd
+  #       - text: "Twelfth Sunday"
+  #         href: content/ordinary-time/ot12.qmd
+  #       - text: "Thirteenth Sunday"
+  #         href: content/ordinary-time/ot13.qmd
+  #       - text: "Fourteenth Sunday"
+  #         href: content/ordinary-time/ot14.qmd
+  #       - text: "Fifteenth Sunday"
+  #         href: content/ordinary-time/ot15.qmd
+  #       - text: "Sixteenth Sunday"
+  #         href: content/ordinary-time/ot16.qmd
+  #       - text: "Seventeenth Sunday"
+  #         href: content/ordinary-time/ot17.qmd
+  #       - text: "Eighteenth Sunday"
+  #         href: content/ordinary-time/ot18.qmd
+  #       - text: "Nineteenth Sunday"
+  #         href: content/ordinary-time/ot19.qmd
+  #       - text: "Twentieth Sunday"
+  #         href: content/ordinary-time/ot20.qmd
+  #       - text: "Twenty-First Sunday"
+  #         href: content/ordinary-time/ot21.qmd
+  #       - text: "Twenty-Second Sunday"
+  #         href: content/ordinary-time/ot22.qmd
+  #       - text: "Twenty-Third Sunday"
+  #         href: content/ordinary-time/ot23.qmd
+  #       - text: "Twenty-Fourth Sunday"
+  #         href: content/ordinary-time/ot24.qmd
+  #       - text: "Twenty-Fifth Sunday"
+  #         href: content/ordinary-time/ot25.qmd
+  #       - text: "Twenty-Sixth Sunday"
+  #         href: content/ordinary-time/ot26.qmd
+  #       - text: "Twenty-Seventh Sunday"
+  #         href: content/ordinary-time/ot27.qmd
+  #       - text: "Twenty-Eighth Sunday"
+  #         href: content/ordinary-time/ot28.qmd
+  #       - text: "Twenty-Ninth Sunday"
+  #         href: content/ordinary-time/ot29.qmd
+  #       - text: "Thirtieth Sunday"
+  #         href: content/ordinary-time/ot30.qmd
+  #       - text: "Thirty-First Sunday"
+  #         href: content/ordinary-time/ot31.qmd
+  #       - text: "Thirty-Second Sunday"
+  #         href: content/ordinary-time/ot32.qmd
+  #       - text: "Thirty-Third Sunday"
+  #         href: content/ordinary-time/ot33.qmd
+  #       - text: "Christ the King: Prior to Thanksgiving"
+  #         href: content/ordinary-time/christ-the-king-before-thanksgiving.qmd
+  #       - text: "Christ the King: After Thanksgiving"
+  #         href: content/ordinary-time/christ-the-king-after-thanksgiving.qmd
+  #       - text: "Thanksgiving"
+  #         href: content/ordinary-time/thanksgiving.qmd
+  #   - part: content/feasts/feasts.qmd
+  #     chapters:
+  #       - text: "December 8: Immaculate Conception"
+  #         href: content/feasts/dec08-immaculate-conception.qmd
+  #       - text: "February 2: Presentation of the Lord"
+  #         href: content/feasts/feb02-presentation.qmd
+  #       - text: "March 19: St. Joseph"
+  #         href: content/feasts/mar19-stjoseph.qmd
+  #       - text: "March 25: Annunciation"
+  #         href: content/feasts/mar25-annunciation.qmd
+  #       - text: "June 23: Nativity John Baptist (Vigil)"
+  #         href: content/feasts/jun23-nativity-john-baptist-vigil.qmd
+  #       - text: "June 24: Nativity John Baptist"
+  #         href: content/feasts/jun24-nativity-john-baptist.qmd
+  #       - text: "June 28: Ss. Peter and Paul (Vigil)"
+  #         href: content/feasts/jun28-peter-paul-vigil.qmd
+  #       - text: "June 29: Ss. Peter and Paul"
+  #         href: content/feasts/jun29-peter-paul.qmd
+  #       - text: "Holy Trinity"
+  #         href: content/feasts/holy-trinity.qmd
+  #       - text: "Corpus Christi"
+  #         href: content/feasts/corpus-christi.qmd
+  #       - text: "Sacred Heart"
+  #         href: content/feasts/sacred-heart.qmd
+  #       - text: "August 6: Transfiguration"
+  #         href: content/feasts/aug06-transfiguration.qmd
+  #       - text: "August 14: Assumption of Mary (Vigil)"
+  #         href: content/feasts/aug14-assumption-vigil.qmd
+  #       - text: "August 15: Assumption of Mary"
+  #         href: content/feasts/aug15-assumption.qmd
+  #       - text: "September 14: Holy Cross"
+  #         href: content/feasts/sep14-holy-cross.qmd
+  #       - text: "November 1: All Saints"
+  #         href: content/feasts/nov01-all-saints.qmd
+  #       - text: "November 2: All Souls"
+  #         href: content/feasts/nov02-all-souls.qmd
+  #       - text: "November 9: John Lateran Basilica"
+  #         href: content/feasts/nov09-john-lateran.qmd
+  #   - content/references.qmd
+  # appendices:
+  #   - text: "A: O Holy Night"
+  #     href: content/appendices/A-o-holy-night.qmd
+  #   - text: "A: O Holy Night (organ)"
+  #     href: content/appendices/A-o-holy-night-organ.qmd
+  #   - text: "B: Festival Alleluia"
+  #     href: content/appendices/B-festival-alleluia.qmd
+  #   - text: "C: St. Joseph Psalm & Gospel Acclamation"
+  #     href: content/appendices/C-mar19-psalm.qmd
+  #   - text: "D: Annunciation Lenten Gospel Acclamation"
+  #     href: content/appendices/D-mar25-accl.qmd
+  #   - text: "E: Easter Proclamation"
+  #     href: content/appendices/E-easter-proclamation.qmd
+  #   - text: "F: Easter Dismissal"
+  #     href: content/appendices/F-easter-dismissal.qmd
+  #   - text: "G: Pentecost Sequence"
+  #     href: content/appendices/G-pentecost-sequence.qmd
+  #   - text: "H: Corpus Christi Sequence"
+  #     href: content/appendices/H-corpus-christi-sequence.qmd
+  #   - text: "I: Lauda, Jerusalem"
+  #     href: content/appendices/I-lauda-jerusalem.qmd
+  #   - text: "J: Adoration"
+  #     href: content/appendices/J-adoration.qmd
   page-navigation: true
   page-footer: 
     background: light
-    left: "Copyright 2025, Matthew D. Grossi"
+    left: "Copyright 2026, Matthew D. Grossi"
     right:
       - icon: github
         href: https://github.com/
