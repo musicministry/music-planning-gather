@@ -13,7 +13,7 @@ hymns:
       list:
         - name: "Lord, Who Throughout These Forty Days"
           verses: "1-3, at least"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -23,23 +23,23 @@ hymns:
     offertory:
       list:
         - name: "Forty Days and Forty Nights"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Shepherd of Souls"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Psalm 91: Be With Me, Lord"
-          book: BB
+          book: G
           composer: Haugen
           priority: required
     recessional:
       list:
         - name: "Led By the Spirit"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -49,32 +49,32 @@ hymns:
       list:
         - name: "Lord, Who Throughout These Forty Days"
           verses: "1-3, at least"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
         - name: "Your ways, O Lord, are love and truth to those who keep your covenant."
-          book: BB
+          book: G
           priority: required
     offertory:
       list:
         - name: "Led By the Spirit"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "On Eagle's Wings"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Gracious God"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Beyond the Days"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -83,7 +83,7 @@ hymns:
     processional:
       list:
         - name: "Forty Days and Forty Nights"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -92,28 +92,28 @@ hymns:
           priority: preferred
         - name: "Psalm 91: Be With Me, Lord"
           composer: Haugen
-          book: BB
+          book: G
           priority: optional
     offertory:
       list:
         - name: "You Are Near"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "On Eagle's Wings"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Psalm 91: Be With Me, Lord"
           composer: Haugen
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Blest Be the Lord"
-          book: BB
+          book: G
           priority: required
 """
 ```
@@ -122,17 +122,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -307,7 +302,7 @@ the many will be made righteous.
 :::
 
 **[℟.]{.red}** **Praise to you, Lord Jesus Christ, king of endless glory.**  
-One does not live on bread alone,
+One does not live on bread alone,  
 but on every word that comes forth from the mouth of God. **[℟.]{.red}**
 
 ***
@@ -624,7 +619,7 @@ he departed from him for a time.
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -636,7 +631,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -648,7 +643,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -656,7 +651,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

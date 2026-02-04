@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "Again We Keep This Solemn Fast"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -21,41 +21,38 @@ hymns:
           priority: required
     distribution-of-ashes:
       list:
-        - name: "Attende Domine / Have Mercy on Us, Lord"
-          book: BB
+        - name: "Ashes"
+          book: G
           priority: required
+          year: A
+        - name: "Merciful God (As Wednesday)"
+          book: G
+          priority: required
+          year: B
+        - name: "Remember You Are Dust"
+          book: G
+          priority: required
+          year: C
     offertory:
       list:
-        - name: "Save Your People"
-          book: BB
+        - name: "Hosea"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Hosea"
-          book: BB
-          priority: optional
-        - name: "With Ashes and Sorrow"
-          book: BB
-          note: "Ash Wednesday refrain"
-          priority: optional
+        - name: "Return to God"
+          book: G
+          priority: required
     meditation:
       list:
-        - name: "Ashes"
-          book: BB
-          year: A
+        - name: "God Is Forgiveness"
+          book: G
           priority: required
-        - name: "Ashes to Ashes"
-          book: BB
-          year: B
-          priority: required
-        - name: "With These Ashes"
-          book: BB
-          year: C
-          priority: required
+          note: "if/as needed"
     recessional:
       list:
         - name: "Change Our Hearts"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -67,17 +64,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -276,7 +268,7 @@ And your Father who sees what is hidden will repay you."
 #| label: Year ABC
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['abc'], urls=videos)
+utils.hymnlist(params['hymns']['abc'])
 ```
 
 
@@ -284,7 +276,7 @@ utils.hymnlist(params['hymns']['abc'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}
