@@ -41,7 +41,7 @@ hymns:
           priority: required
     anthems:
       list:
-        - name: "On the Wings of Change"
+        - name: "On the Wings of Change (instruments/choir)"
   b:
     processional:
       list:
