@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "Lord, Who Throughout These Forty Days"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -22,30 +22,28 @@ hymns:
     offertory:
       list:
         - name: "I Am the Bread of Life"
-          composer: Toolan
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Keep In Mind"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "I Know That My Redeemer Lives"
-          composer: Soper
-          book: BB
-          priority: required
+        - name: "Tree of Life"
+          book: G
+          priority: preferred
     recessional:
       list:
         - name: "We Shall Rise Again"
-          book: BB
+          book: G
           priority: required
   b:
     processional:
       list:
         - name: "Lord, Who Throughout These Forty Days"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -54,29 +52,30 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Unless A Grain of Wheat"
-          book: BB
+        - name: "The Cross of Jesus"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Bread of Life"
-          composer: Fisher
-          book: BB
+        - name: "Unless A Grain of Wheat"
+          book: G
           priority: preferred
     meditation:
       list:
-        - name: ""
-          priority: none
+        - name: "Lord Jesus Christ"
+          book: G
+          composer: Browning
+          priority: preferred
     recessional:
       list:
         - name: "Change Our Hearts"
-          book: BB
+          book: G
           priority: required
   c:
     processional:
       list:
-        - name: "Lord, Who Throughout These Forty Days"
-          book: BB
+        - name: "Merciful God (Lent Gathering)"
+          book: G
           priority: preferred
     psalm:
       list:
@@ -86,22 +85,24 @@ hymns:
     offertory:
       list:
         - name: "Only This I Want"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "What Wondrous Love"
-          book: BB
+        - name: "What Wondrous Love is This"
+          book: G
           priority: preferred
     meditation:
       list:
-        - name: "You Alone"
-          book: BB
+        - name: "All Who Hunger"
+          composer: Moore
+          book: G
           priority: preferred
     recessional:
       list:
-        - name: "Beyond the Days"
-          book: BB
+        - name: "From Ashes to the Living Font"
+          book: G
+          note: "*verse 3: Year C Sunday V*"
           priority: preferred
 """
 ```
@@ -110,17 +111,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -257,7 +253,7 @@ he remained for two days in the place where he was.
 Then after this he said to his disciples,  
 “Let us go back to Judea.”  
 The disciples said to him,  
-“Rabbi, the Jews were just trying to stone you,  
+“RaGi, the Jews were just trying to stone you,  
 and you want to go back there?”  
 Jesus answered,  
 “Are there not twelve hours in a day?  
@@ -624,7 +620,7 @@ Brothers and sisters:
 I consider everything as a loss  
 because of the supreme good of knowing Christ Jesus my Lord.  
 For his sake I have accepted the loss of all things  
-and I consider them so much rubbish,  
+and I consider them so much ruGish,  
 that I may gain Christ and be found in him,  
 not having any righteousness of my own based on the law  
 but that which comes through faith in Christ,  
@@ -711,7 +707,7 @@ Go, and from now on do not sin any more.”
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -725,7 +721,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -739,7 +735,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -747,7 +743,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

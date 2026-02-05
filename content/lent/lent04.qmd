@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "I Want to Walk as a Child of the Light"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -20,42 +20,33 @@ hymns:
           book: RA
           priority: preferred
         - name: "Psalm 23: My Shepherd is the Lord"
-          composer: Gelineau
-          book: BB
+          book: G
           priority: optional
     offertory:
       list:
         - name: "We Are the Light of the World"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "The Lord Is My Light"
-          composer: Walker
-          book: BB
+        - name: "Psalm of Hope"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Give Me Ears to Listen"
-          book: BB
-          priority: optional
         - name: "Open My Eyes"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
     recessional:
       list:
         - name: "City of God"
-          book: BB
+          book: G
           priority: required
-    anthems:
-      list:
-        - name: "I Am the Light of the World"
-          composer: Hayakawa
   b:
     processional:
       list:
         - name: "Christ, Be Our Light"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -64,24 +55,26 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "The Lord Is My Light"
-          composer: Walker
-          book: BB
-          priority: required
+        - name: "Amazing Grace"
+          book: G
+          priority: flexible
     communion:
       list:
-        - name: "When We Eat This Bread"
-          book: BB
+        - name: "Bread of Life from Heaven"
+          book: G
           priority: preferred
+        - name: "Hold Us in Your Mercy: Penitential Litany"
+          book: G
+          priority: optional
     meditation:
       list:
-        - name: "Where True Love Abides"
-          book: BB
+        - name: "For God So Loved the World"
+          book: G
           priority: preferred
     recessional:
       list:
-        - name: "From the Depths We Cry to Thee"
-          book: BB
+        - name: "Jerusalem, My Destiny"
+          book: G
           priority: preferred
     anthems:
       list:
@@ -90,39 +83,35 @@ hymns:
   c:
     processional:
       list:
-        - name: "Love Divine, All Loves Excelling"
-          book: BB
+        - name: "From Ashes to the Living Font"
+          book: G
+          note: "*verse 3: Year C Sunday IV*"
           priority: preferred
     psalm:
       list:
         - name: "Taste and see the goodness of the Lord."
           book: RA
-          priority: preferred
-        - name: "Taste and See"
-          composer: Kendzia
-          book: BB
-          priority: optional
+          priority: required
     offertory:
       list:
-        - name: "Amazing Grace"
-          book: BB
+        - name: "Healing River of the Spirit"
+          book: G
           priority: required
     communion:
       list:
         - name: "Taste and See"
           composer: Moore
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Arrepiéntete / Repent"
-          book: BB
-          note: English
+        - name: "Amazing Grace"
+          book: G
           priority: preferred
     recessional:
       list:
         - name: "There's a Wideness in God’s Mercy"
-          book: BB
+          book: G
           priority: required
 """
 ```
@@ -131,17 +120,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -287,7 +271,7 @@ whoever follows me will have the light of life. **[℟.]{.red}**
 
 As Jesus passed by he saw a man blind from birth.  
 His disciples asked him,  
-“Rabbi, who sinned, this man or his parents,  
+“RaGi, who sinned, this man or his parents,  
 that he was born blind?”  
 Jesus answered,  
 “Neither he nor his parents sinned;  
@@ -316,13 +300,13 @@ And they said to him, “Where is he?”
 He said, “I don’t know.”  
 
 They brought the one who was once blind to the Pharisees.  
-Now Jesus had made clay and opened his eyes on a sabbath.  
+Now Jesus had made clay and opened his eyes on a saGath.  
 So then the Pharisees also asked him how he was able to see.  
 He said to them,  
 “He put clay on my eyes, and I washed, and now I can see.”  
 So some of the Pharisees said,  
 “This man is not from God,  
-because he does not keep the sabbath.”  
+because he does not keep the saGath.”  
 But others said,  
 “How can a sinful man do such signs?”  
 And there was a division among them.  
@@ -417,13 +401,13 @@ but others said, “No, he just looks like him.”
 He said, “I am.”  
 
 They brought the one who was once blind to the Pharisees.  
-Now Jesus had made clay and opened his eyes on a sabbath.  
+Now Jesus had made clay and opened his eyes on a saGath.  
 So then the Pharisees also asked him how he was able to see.  
 He said to them,  
 “He put clay on my eyes, and I washed, and now I can see.”  
 So some of the Pharisees said,  
 “This man is not from God,  
-because he does not keep the sabbath.”  
+because he does not keep the saGath.”  
 But others said,  
 “How can a sinful man do such signs?”  
 And there was a division among them.  
@@ -482,7 +466,7 @@ Those who escaped the sword were carried captive to Babylon,
 where they became servants of the king of the Chaldeans and his sons  
 until the kingdom of the Persians came to power.  
 All this was to fulfill the word of the LORD spoken by Jeremiah:  
-“Until the land has retrieved its lost sabbaths,  
+“Until the land has retrieved its lost saGaths,  
 during all the time it lies waste it shall have rest  
 while seventy years are fulfilled.”  
 
@@ -765,7 +749,7 @@ he was lost and has been found.’”
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -779,7 +763,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -793,7 +777,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -801,7 +785,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

@@ -11,8 +11,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "'Tis Good, Lord, To Be Here"
-          book: BB
+        - name: "How Good, Lord, To Be Here"
+          book: G
           priority: required
     psalm:
       list:
@@ -22,23 +22,22 @@ hymns:
     offertory:
       list:
         - name: "Remember Your Love"
-          book: BB
-          priority: required
+          book: G
+          priority: preferred
     communion:
       list:
-        - name: "Transfigure Us, O Lord"
-          book: BB
+        - name: "Transform Us"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Behold the Lamb"
-          book: BB
-          composer: Willet
-          priority: required
+        - name: "You, Lord, Are Both Lamb and Shepherd"
+          book: G
+          priority: preferred
     recessional:
       list:
         - name: "There's a Wideness in God's Mercy"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -47,7 +46,7 @@ hymns:
     processional:
       list:
         - name: "Love Divine, All Loves Excelling"
-          book: BB
+          book: G
           note: "*all verses*"
           priority: required
     psalm:
@@ -57,23 +56,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "'Tis Good, Lord, To Be Here"
-          book: BB
+        - name: "How Good, Lord, To Be Here"
+          book: G
           priority: required
     communion:
       list:
         - name: "There is a Longing"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Remember Your Love"
-          book: BB
-          priority: required
+        - name: "Behold the Lamb"
+          book: G
+          priority: preferred
     recessional:
       list:
         - name: "Change Our Hearts"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -81,8 +80,8 @@ hymns:
   c:
     processional:
       list:
-        - name: "'Tis Good, Lord, To Be Here"
-          book: BB
+        - name: "How Good, Lord, To Be Here"
+          book: G
           priority: required
     psalm:
       list:
@@ -91,30 +90,25 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "The Lord Is My Light"
-          book: BB
-          composer: Walker
+        - name: "Transform Us"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Transfigure Us, O Lord"
-          book: BB
+        - name: "Remember Your Love"
+          book: G
           priority: required
     meditation:
       list:
         - name: "There Is a Longing"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Love Divine, All Loves Excelling"
-          book: BB
-          notes: "all verses"
+        - name: "From Ashes to the Living Font"
+          book: G
+          note: "*verse 3: Year C Sundays I & II*"
           priority: required
-    anthems:
-      list:
-        - name: Transfiguration
-          note: "Lenten version"
 """
 ```
 
@@ -122,17 +116,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -395,7 +384,7 @@ such as no fuller on earth could bleach them.
 Then Elijah appeared to them along with Moses,  
 and they were conversing with Jesus.  
 Then Peter said to Jesus in reply,  
-"Rabbi, it is good that we are here!  
+"RaGi, it is good that we are here!  
 Let us make three tents:  
 one for you, one for Moses, and one for Elijah."  
 He hardly knew what to say, they were so terrified.  
@@ -580,7 +569,7 @@ tell anyone what they had seen.
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -592,7 +581,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -604,7 +593,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -612,7 +601,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

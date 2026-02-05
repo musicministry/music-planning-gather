@@ -25,7 +25,7 @@ hymns:
           book: G
           priority: required
           year: A
-        - name: "Merciful God (As Wednesday)"
+        - name: "Merciful God (*Ash Wednesday*)"
           book: G
           priority: required
           year: B
@@ -48,7 +48,7 @@ hymns:
         - name: "God Is Forgiveness"
           book: G
           priority: required
-          note: "if/as needed"
+          note: "*if/as needed*"
     recessional:
       list:
         - name: "Change Our Hearts"
