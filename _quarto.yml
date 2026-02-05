@@ -67,14 +67,14 @@ book:
           href: content/lent/ash-wednesday.qmd
         - text: "First Sunday"
           href: content/lent/lent01.qmd
-    #     - text: "Second Sunday"
-    #       href: content/lent/lent02.qmd
-    #     - text: "Third Sunday"
-    #       href: content/lent/lent03.qmd
-    #     - text: "Fourth Sunday"
-    #       href: content/lent/lent04.qmd
-    #     - text: "Fifth Sunday"
-    #       href: content/lent/lent05.qmd
+        - text: "Second Sunday"
+          href: content/lent/lent02.qmd
+        - text: "Third Sunday"
+          href: content/lent/lent03.qmd
+        - text: "Fourth Sunday"
+          href: content/lent/lent04.qmd
+        - text: "Fifth Sunday"
+          href: content/lent/lent05.qmd
     # - part: content/holy-week/holy-week.qmd
     #   chapters:
     #     - text: "Palm Sunday"
@@ -203,6 +203,7 @@ book:
   #         href: content/feasts/nov02-all-souls.qmd
   #       - text: "November 9: John Lateran Basilica"
   #         href: content/feasts/nov09-john-lateran.qmd
+    - hymn-index.qmd
   #   - content/references.qmd
   # appendices:
   #   - text: "A: O Holy Night"
