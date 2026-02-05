@@ -85,7 +85,7 @@ def make_name(hymn, index=None):
     hymn_url = get_hymn_url(hymn=hymn)
     if hymn_url is not None:
         if index is not None:
-            new_text = f'[{new_text}]({hymn_url})\index[{index}]{{new_text}}'
+            new_text = f'[{new_text}]({hymn_url})\\index[{index}]{{new_text}}'
         else:
             new_text = f'[{new_text}]({hymn_url})'
     # Add year, if available
@@ -105,7 +105,7 @@ def make_psalm(psalm, index=None):
     psalm_url = get_hymn_url(hymn=psalm)
     if psalm_url is not None:
         if index is not None:
-            new_text = f'[{new_text}]({psalm_url})\index[{index}]{{new_text}}'
+            new_text = f'[{new_text}]({psalm_url})\\index[{index}]{{new_text}}'
         else:
             new_text = f'[{new_text}]({psalm_url})'
     # Add composer name, if available
@@ -192,7 +192,7 @@ def masssetting(mass, urls, index=None):
         hymn_url = get_url(hymn=hymn, urls=urls)
         if hymn_url is not None:
             if index is not None:
-                new_text = f'[{new_text}]({hymn_url})\index[{index}]{{new_text}}'
+                new_text = f'[{new_text}]({hymn_url})\\index[{index}]{{new_text}}'
             else:
                 new_text = f'[{new_text}]({hymn_url})'
         # Add year, if available
