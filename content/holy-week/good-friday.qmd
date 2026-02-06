@@ -14,26 +14,21 @@ hymns:
       list:
         - name: "Father, into your hands I commend my spirit."
           book: RA
-          priority: preferred
-        - name: "Psalm 31: Father, I Put My Life In Your Hands"
-          composer: Talbot
-          book: BB
-          priority: optional
+          priority: required
     veneration-of-the-cross:
       list:
-        - name: "When I Survey the Wondrous Cross"
-          book: BB
+        - name: "Behold the Wood"
+          book: G
           priority: required
     communion:
       list:
         - name: "O Sacred Head, Surrounded"
-          tune: "PASSION CHORALE"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Jesus, Remember Me"
-          book: BB
+          book: G
           note: "*a capella*"
           priority: required
     anthems:
@@ -45,62 +40,47 @@ hymns:
       list:
         - name: "Father, into your hands I commend my spirit."
           book: RA
-          priority: preferred
-        - name: "Psalm 31: Father, I Put My Life In Your Hands"
-          composer: Talbot
-          book: BB
-          priority: optional
+          priority: required
     veneration-of-the-cross:
       list:
-        - name: "Sing, My Tongue, the Savior’s Glory"
-          tune: "PANGE LINGUA GLORIOSI"
-          book: BB
-          priority: optional
-        - name: "Were You There"
-          book: BB
-          priority: optional
+        - name: "Hail our Savior's Glorious Body"
+          book: G
+          priority: required
     communion:
       list:
-        - name: "What Wondrous Love"
-          book: BB
+        - name: "Were You There"
+          book: G
           priority: required
     meditation:
       list:
         - name: "Jesus, Remember Me"
-          book: BB
+          book: G
           note: "*a capella*"
           priority: required
     anthems:
       list:
         - name: "Near the Cross"
-          composer: "William H. Doane"
         - name: "When Jesus Wept"
-          composer: "William Billings"
   c:
     psalm:
       list:
         - name: "Father, into your hands I commend my spirit."
           book: RA
-          priority: preferred
-        - name: "Psalm 31: Father, I Put My Life In Your Hands"
-          composer: Talbot
-          book: BB
-          priority: optional
+          priority: required
     offertory:
       list:
         - name: "At the Cross Her Station Keeping"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Who Is the Crucified?"
-          book: BB
+        - name: "What Wondrous Love is This"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Jesus, Remember Me"
-          book: BB
-          note: "*a capella*"
+        - name: "In Manus Tuas, Pater"
+          book: G
           priority: required
     anthems:
       list:
@@ -112,17 +92,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -583,7 +558,7 @@ for the tomb was close by.
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -595,7 +570,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -607,7 +582,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -615,7 +590,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

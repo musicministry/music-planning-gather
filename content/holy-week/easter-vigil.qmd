@@ -58,57 +58,43 @@ hymns:
     litany-of-the-saints:
       list:
         - name: "Litany of the Saints"
-          book: BB
+          book: Handout
           composer: Becker
           note: "[preview lyrics](https://dh8zy5a1i9xe5.cloudfront.net/shared/pdf/preview/30117884.pdf); omitted if no Baptisms"
           priority: required
     after-each-baptism:
       list:
-        - name: "Water of Life"
-          book: BB
-          note: "refrain only; omitted if no Baptisms"
+        - name: "Handout"
+          book: Handout
           priority: required
     sprinkling:
       list:
         - name: "Baptized in Water"
-          book: BB
-          priority: preferred
-        - name: "River of Glory"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
     offertory:
       list:
-        - name: "Come, Ye Faithful, Raise the Strain"
-          book: BB
+        - name: "Come, You Faithful, Raise the Strain"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Christ, Be Our Light"
-          book: BB
-          note: "Easter Vigil text"
+        - name: "Joyous Cup"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Out of the Darkness"
-          book: BB
-          priority: optional
-        - name: "Thine Be the Glory"
-          priority: optional
-    marian-antiphon:
-      list:
-        - name: "Regina Cæli"
-          book: BB
-          note: "if requested; not part of liturgy"
-          priority: optional
+        - name: "Be Joyful Mary"
+          book: G
+          priority: preferred
     recessional:
       list:
         - name: "Jesus Christ is Risen Today"
-          book: BB
-          priority: optional
-        - name: "Hail Thee, Festival Day"
-          book: BB
-          verses: "1-2"
-          priority: optional
+          book: G
+          priority: required
+    anthems:
+      list:
+        - name: "Thine Be the Glory"
 """
 ```
 
@@ -116,17 +102,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -1089,7 +1070,7 @@ then he went home amazed at what had happened.
 #| label: Year ABC
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['abc'], urls=videos)
+utils.hymnlist(params['hymns']['abc'])
 ```
 
 
@@ -1097,7 +1078,7 @@ utils.hymnlist(params['hymns']['abc'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}
@@ -1125,11 +1106,7 @@ ministers should be sure to consult with the presider well before the Mass
 to know how this will be done.
 * The Celebrant intones the **Gloria** with “*Glory to God in the highest*” or “*Gloria in excelsis Deo.*” The introduction can be started immediately after this and the **Gloria** is sung as usual while bells are rung. The organist is encouraged to use the Zimbelstern throughout the entire piece. Cantors and singers should be prepared to sing strongly and joyously.
 * If Baptism is not celebrated, the **Litany of the Saints** and the
-**“Water of Life”** acclamations are omitted.
-* The **Regina Cæli** *may* be chanted (with light accompaniment) after
-Communion during the Easter Season if requested by the presider or if
-custom to the parish. It is not prescribed in the Liturgy.
+Baptism acclamations are omitted.
 * If the **dismissal of the people** is chanted by the presider, the cantor
 and/or choir must promptly – without pause or hesitation – lead the
 chanted response, as found in [Appendix F](../holy-week/easter-vigil.qmd).
-* The hymn, “[Hail Thee, Festival Day](https://www.youtube.com/watch?v=cQvb8SN6RlU)”, could be considered as a **Recessional hymn** if (1) it is available in the hymnal, (2) a strong choir and skilled musicians are performing at the **Easter Vigil**, AND (3) the congregation is not likely to sing at this Liturgy. It is usually unfamiliar to Catholic congregations and is diﬃcult to sing; thus, it needs to be well rehearsed by choir, cantor, and musicians alike in order to be performed accurately and well. Nevertheless, it is a particularly festive hymn that is highly appropriate for this occasion. If used, only the Easter verses (1-2) should be sung this night.
