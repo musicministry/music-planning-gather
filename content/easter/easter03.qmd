@@ -11,9 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: "Alleluia No. 1"
-          book: BB
-          priority: preferred
+        - name: "Christ, the Lord, is Risen Today"
+          book: G
+          priority: required
     psalm:
       list:
         - name: "Lord, you will show us the path of life."
@@ -21,34 +21,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Two Were Bound for Emmaus"
-          book: BB
+        - name: "On the Journey to Emmaus"
+          book: G
           priority: required
     communion:
       list:
         - name: "In the Breaking of the Bread"
-          composer:  Hurd
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "I Know that My Redeemer Lives"
-          composer: Soper
-          book: BB
+        - name: "Emmaus"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Alleluia! Alleluia! Let the Holy Anthem Rise"
-          book: BB
-          priority: required
-    anthems:
-      list:
-        - name: "Thine Be the Glory"
+        - name: "Alleluia No. 1"
+          book: G
+          priority: preferred
   b:
     processional:
       list:
         - name: "All Creatures of Our God and King"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -58,32 +53,29 @@ hymns:
     offertory:
       list:
         - name: "Now the Green Blade Rises"
-          book: BB
+          book: G
           priority: preferred
     communion:
       list:
         - name: "In the Breaking of the Bread"
-          composer:  Hurd
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Peace"
-          book: BB
+        - name: "Peace, Be Not Anxious"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Three Days"
-          tune: THAXTED
-          note: "all verses"
-          book: BB
-          priority: required
+        - name: "Alleluia No. 1"
+          book: G
+          priority: preferred
   c:
     processional:
       list:
-        - name: "At the Lamb's High Feast"
-          book: BB
-          priority: required
+        - name: "Christ, the Lord, Is Risen Today"
+          book: G
+          priority: preferred
     psalm:
       list:
         - name: "I will praise you, Lord, for you have rescued me."
@@ -91,28 +83,32 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Festival Canticle (This is the Feast)"
-          book: BB
-          priority: required
+        - name: "Now the Green Blade Rises"
+          book: G
+          priority: preferred
     communion:
       list:
-        - name: "Worthy Is the Lamb"
-          book: BB
+        - name: "Heart of a Shepherd"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Christ is Arisen"
-          composer: DeBruyn
-          book: BB
-          priority: preferred
+        - name: "God Will Wipe the Tears"
+          book: G
+          priority: optional
+        - name: "Worthy is the Lamb"
+          composer: Manalo
+          book: Handout
+          priority: optional
     recessional:
       list:
-        - name: "Join in the Dance"
-          book: BB
+        - name: "Alleluia No. 1"
+          book: G
           priority: preferred
+  abc:
     anthems:
       list:
-        - name: "Simon, Son of God"
+        - name: "Thine be the Glory"
 """
 ```
 
@@ -120,17 +116,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -689,7 +680,7 @@ after being raised from the dead.
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -701,7 +692,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -713,7 +704,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -721,11 +712,5 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
-
-::: {.red}
-### Notes
-:::
-
-* If Mothers' Day falls on this week, “[On This Day, O Beautiful Mother](https://www.youtube.com/watch?v=Sn5sz5D67BY)” (BB) may be sung as a Meditation hymn.

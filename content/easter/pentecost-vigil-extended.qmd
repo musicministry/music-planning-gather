@@ -13,7 +13,7 @@ hymns:
     psalm-after-first-reading:
       list:
         - name: "Blessed the people the Lord has chosen, chosen to be his own."
-          book: BB
+          book: G
           priority: required
     psalm-after-second-reading:
       list:
@@ -44,30 +44,33 @@ hymns:
           priority: preferred
     offertory:
       list:
-        - name: "River of Glory"
-          book: BB
+        - name: "Rain Down"
+          book: G
           priority: optional
         - name: "O Breathe on Me, O Breath of God"
-          book: BB
+          book: G
           priority: optional
     communion:
       list:
-        - name: "Send Us Your Spirit, O Lord"
-          book: BB
-          priority: required
+        - name: "Come to the Water"
+          composer: Foley
+          book: G
+          priority: optional
+        - name: "Peace Is Flowing Like a River"
+          book: G
+          priority: optional
     meditation:
       list:
-        - name: "Living Streams"
-          book: BB
-          note: "3x"
+        - name: "Jesus, Your Spirit in Us"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "One Spirit, One Church"
-          book: BB
+        - name: "Sing a New Church"
+          book: G
           priority: optional
-        - name: "Hail Thee, Festival Day"
-          verses: "5-6"
+        - name: "O Spirit All-Embracing"
+          book: G
           priority: optional
     anthems:
       list:
@@ -79,17 +82,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -478,7 +476,7 @@ because Jesus had not yet been glorified.
 #| label: Year ABC
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['abc'], urls=videos)
+utils.hymnlist(params['hymns']['abc'])
 ```
 
 
@@ -486,7 +484,7 @@ utils.hymnlist(params['hymns']['abc'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}
@@ -501,4 +499,3 @@ In this case, the music selections are taken from [Pentecost Sunday](pentecost.q
 * After the prayer following the last reading and responsorial psalm, the Celebrant intones the **Gloria** with “**Glory to God in the highest**” or “*Gloria in excelsis Deo*.” The introduction can be started immediately after this and the **Gloria** is sung as usual while the altar candles are lit.
 * If available, the Festival Alleluia (GIA), with the **Pentecost** verse found in [Appendix B](../appendices/B-festival-alleluia.qmd), is sung for the **Gospel Acclamation**.
 * If the **dismissal of the people** is chanted by the presider, the cantor must promptly – without pause or hesitation – lead the chanted response found in [Appendix F](../easter/pentecost-vigil.qmd).
-* The hymn, “[Hail Thee, Festival Day](https://www.youtube.com/watch?v=cQvb8SN6RlU)”, could be considered as a **Recessional hymn** if (1) it is available in the hymnal, (2) a strong choir and skilled musicians are performing at the **Vigil of Pentecost**, AND (3) the congregation is not likely to sing at this Liturgy. It is usually unfamiliar to Catholic congregations and is diﬃcult to sing; thus, it needs to be well rehearsed by choir, cantor, and musicians alike in order to be performed accurately and well. Nevertheless, it is a particularly festive hymn that is highly appropriate for this occasion. If used, the Pentecost verses (5-6) should be sung this night.

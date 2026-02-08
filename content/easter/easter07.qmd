@@ -11,8 +11,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "The Strife is O'er"
-          book: BB
+        - name: "Alleluia! Sing to Jesus"
+          book: G
           priority: preferred
     psalm:
       list:
@@ -21,29 +21,36 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Alleluia! Sing to Jesus"
-          book: BB
-          priority: required
+        - name: "O Holy Spirit, by Whose Breath"
+          book: G
+          priority: optional
+        - name: "Ubi Caritas"
+          composer: Hurd
+          book: G
+          priority: optional
     communion:
       list:
         - name: "We Remember"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Be Joyful, Mary"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Come, O Holy Spirit"
-          book: BB
-          priority: required
+        - name: "O Spirit All-Embracing"
+          book: G
+          priority: optional
+        - name: "Resucito"
+          book: G
+          priority: optional
   b:
     processional:
       list:
-        - name: "The Strife is O'er"
-          book: BB
+        - name: "Alleluia! Sing to Jesus"
+          book: G
           priority: preferred
     psalm:
       list:
@@ -52,29 +59,33 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "O Bless the Lord, My Soul"
-          book: BB
+        - name: "Ubi Caritas"
+          tune: chant
+          book: G
           priority: required
     communion:
       list:
         - name: "We Remember"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Where True Love Abides"
-          book: BB
+        - name: "Be Joyful, Mary"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Come, O Holy Spirit"
-          book: BB
-          priority: preferred
+        - name: "O Spirit All-Embracing"
+          book: G
+          priority: optional
+        - name: "Resucito"
+          book: G
+          priority: optional
   c:
     processional:
       list:
-        - name: "The Strife is O'er"
-          book: BB
+        - name: "Alleluia! Sing to Jesus"
+          book: G
           priority: preferred
     psalm:
       list:
@@ -83,24 +94,30 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Alleluia! Sing to Jesus"
-          book: BB
+        - name: "Lord, Who At Your First Eucharist"
+          book: G
           priority: required
     communion:
       list:
         - name: "We Remember"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Abba! Father"
-          book: BB
-          priority: required
+        - name: "O God of Every Nation"
+          book: G
+          priority: optional
+        - name: "For the Healing of the Nations"
+          book: G
+          priority: optional
     recessional:
       list:
-        - name: "Come, O Holy Spirit"
-          book: BB
-          priority: preferred
+        - name: "O Spirit All-Embracing"
+          book: G
+          priority: optional
+        - name: "Resucito"
+          book: G
+          priority: optional
 """
 ```
 
@@ -108,17 +125,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -528,7 +540,7 @@ may be in them and I in them.”
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -540,7 +552,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -552,7 +564,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -560,7 +572,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

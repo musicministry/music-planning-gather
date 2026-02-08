@@ -44,7 +44,7 @@ mass:
   b:
     kyrie:
       list:
-        - name: "Chant Mode III"
+        - name: "Cantus Missae"
           book: GIA
           priority: required
     gloria:
@@ -113,17 +113,11 @@ mass:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
-sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 ::: {.red}
@@ -140,7 +134,7 @@ appropriate Liturgical Cycle unless otherwise noted:
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.masssetting(params['mass']['a'], urls=videos)
+utils.masssetting(params['mass']['a'])
 ```
 
 ::: {.titlered}
@@ -152,7 +146,7 @@ utils.masssetting(params['mass']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.masssetting(params['mass']['b'], urls=videos)
+utils.masssetting(params['mass']['b'])
 ```
 
 ::: {.red}
@@ -169,7 +163,7 @@ B♭, should be played in the key of F.
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.masssetting(params['mass']['c'], urls=videos)
+utils.masssetting(params['mass']['c'])
 ```
 
 ::: {.centered}

@@ -12,12 +12,11 @@ hymns:
   abc:
     processional:
       list:
-        - name: "The Day of Resurrection"
-          book: BB
+        - name: "The Strife is O'er"
+          book: G
           priority: optional
-        - name: "Christ, the Lord, Is Risen Today"
-          tune: LLANFAIR
-          book: BB
+        - name: "There's a Wideness in God's Mercy"
+          book: G
           priority: optional
     psalm:
       list:
@@ -27,27 +26,26 @@ hymns:
     offertory:
       list:
         - name: "We Remember"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Ye Sons and Daughters"
-          book: BB
+        - name: "O Sons and Daughters"
+          book: G
           priority: required
     meditation:
       list:
         - name: "We Walk By Faith"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "There's a Wideness in God's Mercy"
-          book: BB
+        - name: "Sing to the Mountains"
+          book: G
           priority: required
     anthems:
       list:
-        - name: "Peace I Leave You"
-          note: "Communaute de Taizé"
+        - name: "Peace, Be Not Anxious"
 """
 ```
 
@@ -55,17 +53,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -528,7 +521,7 @@ and that through this belief you may have life in his name.
 #| label: Year ABC
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['abc'], urls=videos)
+utils.hymnlist(params['hymns']['abc'])
 ```
 
 
@@ -536,7 +529,7 @@ utils.hymnlist(params['hymns']['abc'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}
@@ -544,7 +537,6 @@ utils.anthemlist(hymns=params['hymns'], urls=videos)
 :::
 
 * The Second Sunday of Easter is also **Divine Mercy Sunday**.
-* If Mothers' Day falls on this week, “[On This Day, O Beautiful Mother](https://www.youtube.com/watch?v=Sn5sz5D67BY)” (BB) may be sung as a Meditation hymn.
 * If the **dismissal of the people** is chanted by the presider, the cantor
 must promptly-–-without pause or hesitation-–-lead the chanted response
 found in [Appendix F](../appendices/F-easter-dismissal.qmd).

@@ -8,47 +8,99 @@ title: "SOLEMNITY OF THE ASCENSION OF THE LORD"
 
 frontmatter = """
 hymns:
-  abc:
+  a:
     processional:
       list:
         - name: "Hail the Day That Sees Him Rise"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
         - name: "God mounts his throne to shouts of joy: a blare of trumpets for the Lord."
           book: RA
-          priority: preferred
-        - name: "Psalm 47: God Mounts His Throne"
-          composer: Inwood
-          book: BB
-          priority: optional
+          priority: required
     offertory:
       list:
-        - name: "Jesus Is Risen"
-          book: BB
+        - name: "A Hymn of Glory Let Us Sing!"
+          book: G
           priority: required
     communion:
       list:
-        - name: "One Love Released"
-          book: BB
-          priority: optional
         - name: "We Remember"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
     meditation:
       list:
         - name: "Be Joyful, Mary"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Go Make of All Disciples"
-          book: BB
-          priority: optional
-        - name: "Tell the Good News"
-          book: BB
-          priority: optional
+        - name: "Lord, You Give the Great Commission"
+          book: G
+          priority: required
+  b:
+    processional:
+      list:
+        - name: "Hail the Day That Sees Him Rise"
+          book: G
+          priority: required
+    psalm:
+      list:
+        - name: "God mounts his throne to shouts of joy: a blare of trumpets for the Lord."
+          book: RA
+          priority: required
+    offertory:
+      list:
+        - name: "A Hymn of Glory Let Us Sing!"
+          book: G
+          priority: required
+    communion:
+      list:
+        - name: "The Church of Christ"
+          book: G
+          priority: required
+    meditation:
+      list:
+        - name: "Be Joyful, Mary"
+          book: G
+          priority: required
+    recessional:
+      list:
+        - name: "Go to the World!"
+          book: G
+          priority: required
+  c:
+    processional:
+      list:
+        - name: "Hail the Day That Sees Him Rise"
+          book: G
+          priority: required
+    psalm:
+      list:
+        - name: "God mounts his throne to shouts of joy: a blare of trumpets for the Lord."
+          book: RA
+          priority: required
+    offertory:
+      list:
+        - name: "A Hymn of Glory Let Us Sing!"
+          book: G
+          priority: required
+    communion:
+      list:
+        - name: "Let Us Be Bread"
+          book: G
+          priority: required
+    meditation:
+      list:
+        - name: "Be Joyful, Mary"
+          book: G
+          priority: required
+    recessional:
+      list:
+        - name: "Sing a New Church"
+          book: G
+          priority: required
 """
 ```
 
@@ -56,17 +108,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -300,22 +347,46 @@ and confirmed the word through accompanying signs.
 :::
 
 ::: {.titlered}
-### &nbsp; Years A, B, C
+### &nbsp; Year A
 :::
-{{< var text.yearabc >}}
+{{< var text.yeara >}}
 
 ```{python}
-#| label: Year ABC
+#| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['abc'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
+```
+
+::: {.titlered}
+### &nbsp; Year B
+:::
+{{< var text.yearb >}}
+
+```{python}
+#| label: Year B
+#| echo: false
+#| output: asis
+utils.hymnlist(params['hymns']['b'])
+```
+
+::: {.titlered}
+### &nbsp; Year C
+:::
+{{< var text.yearc >}}
+
+```{python}
+#| label: Year C
+#| echo: false
+#| output: asis
+utils.hymnlist(params['hymns']['c'])
 ```
 
 ```{python}
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

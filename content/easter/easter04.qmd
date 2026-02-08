@@ -12,8 +12,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "Alleluia! Alleluia!"
-          book: BB
+        - name: "Sing With All the Saints in Glory"
+          book: G
           priority: preferred
     psalm:
       list:
@@ -21,33 +21,33 @@ hymns:
           book: RA
           priority: preferred
         - name: "Psalm 23: My Shepherd is the Lord"
-          book: BB
+          book: G
           priority: optional
     offertory:
       list:
         - name: "The King of Love My Shepherd Is"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Keep In Mind"
-          book: BB
+        - name: "Easter Alleluia"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Shepherd Me, O God"
-          book: BB
-          priority: required
+        - name: "Jubiláte, Sérvite"
+          book: G
+          priority: preferred
     recessional:
       list:
         - name: "The Strife is O'er"
-          book: BB
+          book: G
           priority: preferred
   b:
     processional:
       list:
         - name: "Sing with All the Saints in Glory"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -56,29 +56,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "The King of Love My Shepherd Is"
-          book: BB
+        - name: "You, Lord, Are Both Lamb and Shepherd"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Shepherd of Souls"
-          book: BB
+        - name: "Easter Alleluia"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Because the Lord is My Shepherd"
-          book: BB
+        - name: "Heart of a Shepherd"
+          book: G
           priority: required
     recessional:
       list:
         - name: "The Church's One Foundation"
-          book: BB
+          book: G
           priority: required
   c:
     processional:
       list:
-        - name: "At the Lamb's High Feast"
-          book: BB
+        - name: "At the Lamb's High Feast We Sing"
+          book: G
           priority: preferred
     psalm:
       list:
@@ -87,25 +87,24 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "The King of Love My Shepherd Is"
-          book: BB
+        - name: "Psalm 23: Shepherd Me, O God"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Christ, the Lord, Is Risen Today"
-          tune: "VICTIMAE PASCHALI"
-          book: BB
+        - name: "Easter Alleluia"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Christ the Good Shepherd"
-          book: BB
+        - name: "Shepherd of My Heart"
+          book: G
           priority: preferred
     recessional:
       list:
-        - name: "Let Heaven Rejoice"
-          book: BB
-          priority: required
+        - name: "Sing With All the Saints in Glory"
+          book: G
+          priority: preferred
   abc:
     anthems:
       list:
@@ -118,17 +117,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -538,7 +532,7 @@ The Father and I are one.”
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -550,7 +544,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -562,7 +556,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -570,7 +564,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}
@@ -578,4 +572,3 @@ utils.anthemlist(hymns=params['hymns'], urls=videos)
 :::
 
 * The Fourth Sunday of Easter is also **Good Shepherd Sunday**.
-* If Mothers' Day falls on this week, “[On This Day, O Beautiful Mother](https://www.youtube.com/watch?v=Sn5sz5D67BY)” (BB) may be sung as a Meditation hymn.

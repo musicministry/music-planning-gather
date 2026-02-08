@@ -13,50 +13,49 @@ hymns:
     processional:
       list:
         - name: "Jesus Christ is Risen Today"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
-        - name: "This Day Was Made by the Lord"
-          composer: Walker
-          book: BB
-          verses: "1-3 only"
+        - name: "This is the day the Lord has made. Let us rejoice and be glad."
+          book: RA
           priority: optional
         - name: "Psalm 118: This is the Day"
-          composer: "Joncas"
-          book: BB
+          book: G
           priority: optional
     sequence:
       list:
         - name: "Christ, the Lord, Is Risen Today"
           tune: "VICTIMAE PASCHALI"
-          book: BB
-          priority: required
+          book: Handout
+          priority: optional
+        - name: Handout
+          book: Handout
+          priority: optional
     offertory:
       list:
-        - name: "Festival Canticle (This is the Feast)"
-          book: BB
+        - name: "This is the Feast of Victory"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Worthy Is the Lamb"
-          book: BB
+        - name: "Worthy Is the Lamb (Manalo)"
+          book: Handout
           priority: required
     meditation:
       list:
         - name: "Be Joyful, Mary"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "The Strife is O'er"
-          book: BB
+          book: G
           priority: required
   a:
     anthems:
       list:
         - name: "Proclaim the Message"
-          composer: "Ricky Manalo"
   b:
     anthems:
       list:
@@ -72,17 +71,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -433,7 +427,7 @@ and how he was made known to them in the breaking of bread.
 #| label: Year ABC
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['abc'], urls=videos)
+utils.hymnlist(params['hymns']['abc'])
 ```
 
 
@@ -441,7 +435,7 @@ utils.hymnlist(params['hymns']['abc'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}
@@ -449,6 +443,5 @@ utils.anthemlist(hymns=params['hymns'], urls=videos)
 :::
 
 * If available, the Festival Alleluia (GIA) is used for the **Gospel Acclamation** with the **Easter** verse found in [Appendix B](../appendices/B-festival-alleluia.qmd).
-* The **Sequence** is sung by the cantor only (*i.e.*, no choir) immediately after the Second Reading. The entire hymn is to be sung. Note that it is the version set to the tune <span style="font-variant:small-caps">victimae paschali</span>. Accompaniment should be soft and reverent, like Meditation hymns.
-* The **Regina Cæli** may be chanted (with light accompaniment) after Communion during the Easter Season if requested by the presider or if custom to the parish. It is not prescribed in the Liturgy.
+* The **Sequence** is sung by the cantor only (*i.e.*, no choir) immediately after the Second Reading. If the hymn "Christ, the Lord, is Risen Today" is used, the entire hymn is to be sung. Note that it is the version set to the tune <span style="font-variant:small-caps">victimae paschali</span>. Accompaniment should be soft and reverent, like Meditation hymns.
 * If the **dismissal of the people** is chanted by the presider, the cantor must promptly – without pause or hesitation – lead the chanted response found in [Appendix F](../appendices/F-easter-dismissal.qmd).

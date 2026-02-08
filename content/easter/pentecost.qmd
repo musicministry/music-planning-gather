@@ -13,7 +13,7 @@ hymns:
     processional:
       list:
         - name: "Come, Holy Ghost"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -25,41 +25,32 @@ hymns:
         - name: "Sequence for Pentecost Sunday"
           note: "psalmody version"
           book: "[Appx G](../appendices/G-pentecost-sequence.qmd)"
-          priority: optional
-        - name: "Come, O Holy Spirit"
-          note: "hymn alternative"
-          tune: "Ode to Joy"
-          book: BB
-          priority: optional
+          priority: required
     offertory:
       list:
-        - name: "Creator Spirit, By Whose Aid"
-          book: BB
+        - name: "O Breathe On Me, O Breath of God"
+          book: G
           priority: required
     communion:
       list:
         - name: "We Are Many Parts"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Peace"
-          book: BB
-          priority: optional
-        - name: "One Bread, One Body"
-          book: BB
-          priority: optional
+        - name: "Diverse in Culture, Nation, Race"
+          book: G
+          priority: required
     recessional:
       list:
-        - name: "The Spirit Sends Us Forth"
-          note: "all verses"
-          book: BB
+        - name: "Go to the World!"
+          book: G
           priority: required
   b:
     processional:
       list:
         - name: "Come, Holy Ghost"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -71,37 +62,32 @@ hymns:
         - name: "Sequence for Pentecost Sunday"
           note: "psalmody version"
           book: "[Appx G](../appendices/G-pentecost-sequence.qmd)"
-          priority: optional
-        - name: "Come, O Holy Spirit"
-          note: "hymn alternative"
-          tune: "Ode to Joy"
-          book: BB
-          priority: optional
+          priority: required
     offertory:
       list:
-        - name: "Creator Spirit, By Whose Aid"
-          book: BB
+        - name: "O Spirit All-Embracing"
+          book: G
           priority: required
     communion:
       list:
-        - name: "God’s Holy Gifts"
-          book: BB
+        - name: "Come Down, O Love Divine"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "On This Day, the First of Days"
-          book: BB
+        - name: "Dona Nobis Pacem"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Lord, You Give the Great Commission"
-          book: BB
-          priority: preferred
+          book: G
+          priority: required
   c:
     processional:
       list:
         - name: "Come, Holy Ghost"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -113,32 +99,26 @@ hymns:
         - name: "Sequence for Pentecost Sunday"
           note: "psalmody version"
           book: "[Appx G](../appendices/G-pentecost-sequence.qmd)"
-          priority: optional
-        - name: "Come, O Holy Spirit"
-          note: "hymn alternative"
-          tune: "Ode to Joy"
-          book: BB
-          priority: optional
+          priority: required
     offertory:
       list:
-        - name: "Creator Spirit, By Whose Aid"
-          book: BB
+        - name: "God, Whose Purpose is to Kindle"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Spirit and Grace"
-          book: BB
+        - name: "One Bread, One Body"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Abba! Father"
-          book: BB
+        - name: "Peace, Be Not Anxious"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Tell the Good News"
-          note: "all verses"
-          book: BB
+        - name: "O Spirit All-Embracing"
+          book: G
           priority: required
 """
 ```
@@ -147,17 +127,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -433,7 +408,7 @@ and whose sins you retain are retained."
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -445,7 +420,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -457,7 +432,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -465,14 +440,14 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}
 ### Notes
 :::
 
-* The **Sequence** is sung by the cantor only (*i.e.*, no choir) immediately after the Second Reading on Sunday morning only, *not* at the Saturday Vigil Mass. Either the hymn “[Come, O Holy Spirit](https://www.youtube.com/watch?v=n210fEwUM48)” (BB) or the chant version ([Appendix G](../appendices/G-pentecost-sequence.qmd)) may be used. If the hymn used, the entire hymn is to be sung. Accompaniment should be soft and reverent, like Meditation hymns.
+* The **Sequence** is sung by the cantor only (*i.e.*, no choir) immediately after the Second Reading on Sunday morning only, *not* at the Saturday Vigil Mass. Accompaniment should be soft and reverent, like Meditation hymns.
 * If available, the Festival Alleluia (GIA), with the **Pentecost**
 verse found in [Appendix B](../appendices/B-festival-alleluia.qmd), is sung for the **Gospel Acclamation** immediately after the Sequence.
 * If the **dismissal of the people** is chanted by the presider, the cantor must promptly-–without pause or hesitation--lead the chanted response found in [Appendix F](../easter/pentecost.qmd).
