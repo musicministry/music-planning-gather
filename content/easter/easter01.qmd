@@ -52,18 +52,14 @@ hymns:
         - name: "The Strife is O'er"
           book: G
           priority: required
-  a:
     anthems:
       list:
         - name: "Proclaim the Message"
-  b:
-    anthems:
-      list:
+          year: A
         - name: "Thine Be the Glory"
-  c:
-    anthems:
-      list:
+          year: B
         - name: "Hallelujah Chorus"
+          year: C
 """
 ```
 
