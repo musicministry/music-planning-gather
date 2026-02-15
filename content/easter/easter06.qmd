@@ -23,7 +23,7 @@ hymns:
       list:
         - name: "Now the Green Blade Rises"
           book: G
-          priority: optional
+          priority: preferred
     communion:
       list:
         - name: "Come Down, O Love Divine"
