@@ -57,9 +57,8 @@ hymns:
           priority: required
     litany-of-the-saints:
       list:
-        - name: "Litany of the Saints"
+        - name: "Litany of the Saints (Becker)"
           book: Handout
-          composer: Becker
           note: "[preview lyrics](https://dh8zy5a1i9xe5.cloudfront.net/shared/pdf/preview/30117884.pdf); omitted if no Baptisms"
           priority: required
     after-each-baptism:
