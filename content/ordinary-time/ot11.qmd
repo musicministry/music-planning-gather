@@ -11,9 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: "All the Earth"
-          book: BB
-          priority: required
+        - name: "O God, Our Help in Ages Past"
+          book: G
+          priority: preferred
     psalm:
       list:
         - name: "We are his people: the sheep of his flock."
@@ -21,27 +21,26 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: ""
-          book: BB
+        - name: "All People That on Earth Do Dwell"
+          book: G
           priority: required
     communion:
       list:
-        - name: "The Lord Is My Light"
-          composer: Walker
-          book: BB
-          priority: required
+        - name: "Lord, Who at Your First Eucharist"
+          book: G
+          priority: preferred
+        - name: "You Satisfy the Hungry Heart"
+          book: G
+          priority: optional
     meditation:
       list:
         - name: "On Eagle’s Wings"
-          book: BB
-          priority: optional
-        - name: "Age to Age"
-          book: BB
-          priority: optional
+          book: G
+          priority: flexible
     recessional:
       list:
         - name: "Lord, You Give the Great Commission"
-          book: BB
+          book: G
           priority: required
   b:
     processional:
@@ -61,25 +60,27 @@ hymns:
           priority: required
     communion:
       list:
-        - name: "Seed, Scattered and Sown"
-          book: BB
-          priority: required
+        - name: "Take and Eat"
+          book: G
+          priority: optional
+        - name: "Many and Great"
+          book: G
+          priority: optional
     meditation:
       list:
-        - name: "The Lord Is My Light"
-          composer: Walker
-          book: BB
-          priority: required
+        - name: "The Reign of God"
+          book: G
+          priority: preferred
     recessional:
       list:
         - name: "Let All Things Now Living"
-          book: BB
+          book: G
           priority: preferred
   c:
     processional:
       list:
         - name: "O God, Our Help in Ages Past"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -89,24 +90,23 @@ hymns:
     offertory:
       list:
         - name: "Remember Your Love"
-          book: BB
-          priority: preferred
+          book: G
+          priority: flexible
     communion:
       list:
-        - name: "The Lord Is My Light"
-          composer: Walker
-          book: BB
+        - name: "Pan de Vida"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Loving and Forgiving"
-          book: BB
+        - name: "Dwelling Place"
+          book: G
           priority: preferred
     recessional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "O God Beyond All Praising"
+          book: G
+          priority: flexible
 """
 ```
 
