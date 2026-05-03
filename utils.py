@@ -186,9 +186,9 @@ def masssetting(mass, index=None):
         # Get URL
         if part.lower() == 'holy-holy-holy':
             part = 'holy'
-        hymn_key = titlecase(f'{hymn['name']}: {part}')
+        hymn_key = titlecase(f'{hymn["name"]}: {part}')
         if 'option' in hymn.keys():
-            hymn_key = f'{hymn_key} {hymn['option'][0]}'
+            hymn_key = f'{hymn_key} {hymn["option"][0]}'
         hymn_url = get_url(name=hymn_key)
 
         # Add URL
