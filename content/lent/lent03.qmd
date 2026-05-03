@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "The Glory of These Forty Days"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -22,28 +22,28 @@ hymns:
     offertory:
       list:
         - name: "I Heard the Voice of Jesus Say"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Eat This Bread"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Parce Domine"
-          book: BB
+        - name: "O God of Exodus"
+          book: G
           priority: preferred
     recessional:
       list:
-        - name: "Guide Me, O Thou Great Redeemer"
-          book: BB
+        - name: "Change Our Hearts"
+          book: G
           priority: preferred
   b:
     processional:
       list:
         - name: "Praise to You, O Christ, Our Savior"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -53,24 +53,22 @@ hymns:
     offertory:
       list:
         - name: "I Am the Bread of Life"
-          book: BB
-          composer: Toolan
+          book: G
           priority: required
     communion:
       list:
         - name: "Parce Domine"
-          book: BB
+          book: G
           priority: preferred
     meditation:
       list:
-        - name: "Your Words Are Spirit and Life"
-          book: BB
-          composer: Farrell
+        - name: "Draw Near"
+          book: G
           priority: preferred
     recessional:
       list:
         - name: "Lift High the Cross"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -79,8 +77,8 @@ hymns:
   c:
     processional:
       list:
-        - name: "From the Depths We Cry to Thee"
-          book: BB
+        - name: "The Glory of These Forty Days"
+          book: G
           priority: preferred
     psalm:
       list:
@@ -89,23 +87,24 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Save Your People"
-          book: BB
-          priority: preferred
+        - name: "Our Father, We Have Wandered"
+          book: G
+          priority: flexible
     communion:
       list:
-        - name: "When We Eat This Bread"
-          book: BB
+        - name: "Merciful God (Lent Communion)"
+          book: G
           priority: preferred
     meditation:
       list:
-        - name: "Parce Domine"
-          book: BB
+        - name: "Turn to the Living God"
+          book: G
           priority: preferred
     recessional:
       list:
-        - name: "The Glory of These Forty Days"
-          book: BB
+        - name: "From Ashes to the Living Font"
+          book: G
+          note: "*verse 3: Year C Sunday III*"
           priority: preferred
 """
 ```
@@ -114,24 +113,19 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
 #### **Themes**
 :::
 
-[Year A:]{.red} water, faith, forgiveness, good works. 
+[Year A:]{.red} water, faith, forgiveness, good works.  
 [Year B:]{.red} the law of God, reverence, zeal, forgiveness  
 [Year C:]{.red} deliverance, justice, repentance, awe
 
@@ -784,7 +778,7 @@ If not you can cut it down.’”
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -798,7 +792,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -812,7 +806,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -820,7 +814,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

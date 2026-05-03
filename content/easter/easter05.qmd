@@ -12,7 +12,8 @@ hymns:
     processional:
       list:
         - name: "Sing a New Song"
-          book: BB
+          composer: Schutte
+          book: G
           priority: required
     psalm:
       list:
@@ -21,34 +22,38 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Song of Mary"
-          book: BB
+        - name: "I Sing a Maid"
+          book: G
           note: "all verses"
-          priority: preferred
+          priority: optional
+        - name: "I Know That My Redeemer Lives"
+          tune: DUKE STREET
+          book: G
+          priority: optional
     communion:
       list:
-        - name: "I Received the Living God"
-          book: BB
-          priority: required
+        - name: "Take and Eat"
+          book: G
+          priority: optional
+        - name: "I Receive the Living God"
+          book: G
+          priority: optional
     meditation:
       list:
-        - name: "O How Lovely Is Your Dwelling Place"
-          book: BB
-          composer: DeBruyn
+        - name: "Dwelling Place"
+          book: G
           priority: required
     recessional:
       list:
         - name: "The Church's One Foundation"
-          book: BB
+          book: G
           priority: required
-    anthems:
-      list:
-        - name: "Where True Love Abides"
   b:
     processional:
       list:
         - name: "Sing a New Song"
-          book: BB
+          composer: Schutte
+          book: G
           priority: required
     psalm:
       list:
@@ -57,33 +62,32 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Festival Canticle (This is the Feast)"
-          book: BB
+        - name: "I Know That My Redeemer Lives"
+          tune: DUKE STREET
+          book: G
           priority: preferred
     communion:
       list:
-        - name: "Abide With Me"
-          book: BB
-          priority: required
+        - name: "Unless a Grain of Wheat"
+          book: G
+          priority: preferred
     meditation:
       list:
-        - name: "Song of Mary"
-          book: BB
-          verses: "4-5"
+        - name: "I Sing a Maid"
+          book: G
+          note: "all verses"
           priority: required
     recessional:
       list:
-        - name: "Join in the Dance"
-          book: BB
+        - name: "Joyful, Joyful, We Adore You"
+          book: G
           priority: preferred
-    anthems:
-      list:
-        - name: "Good Christians All Rejoice and Sing"
   c:
     processional:
       list:
         - name: "Sing a New Song"
-          book: BB
+          composer: Schutte
+          book: G
           priority: required
     psalm:
       list:
@@ -94,22 +98,22 @@ hymns:
       list:
         - name: "I Know That My Redeemer Lives"
           tune: "DUKE STREET"
-          book: BB
+          book: G
           priority: preferred
     communion:
       list:
-        - name: "When We Eat This Bread"
-          book: BB
-          priority: required
+        - name: "Bread of Life from Heaven"
+          book: G
+          priority: preferred
     meditation:
       list:
-        - name: "Christians, Let Us Love One Another"
-          book: BB
+        - name: "Jerusalem, My Happy Home"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "The Day of Resurrection"
-          book: BB
+        - name: "Joyful, Joyful, We Adore You"
+          book: G
           priority: preferred
 """
 ```
@@ -118,17 +122,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -545,7 +544,7 @@ if you have love for one another.”
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -557,7 +556,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -569,7 +568,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -577,11 +576,5 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
-
-::: {.red}
-### Notes
-:::
-
-* If Mothers' Day falls on this week, “[On This Day, O Beautiful Mother](https://www.youtube.com/watch?v=Sn5sz5D67BY)” (BB) may be sung as a Meditation hymn.

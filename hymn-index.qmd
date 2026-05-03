@@ -1,0 +1,229 @@
+---
+title: "Hymn Index"
+---
+
+```{python}
+#| echo: false
+#| output: asis
+
+import os
+import re
+import yaml
+from pathlib import Path
+from collections import Counter, defaultdict
+
+
+def extract_frontmatter_yaml(content):
+    """Extract the YAML frontmatter string from a Python code block."""
+    pattern = r'frontmatter\s*=\s*"""(.*?)"""'
+    match = re.search(pattern, content, re.DOTALL)
+    
+    if match:
+        return match.group(1)
+    return None
+
+
+def extract_hymn_names_with_metadata(yaml_content):
+    """Extract hymn names with metadata (category, year, priority, etc.)."""
+    hymn_entries = []
+    
+    try:
+        data = yaml.safe_load(yaml_content)
+        
+        if not data or 'hymns' not in data:
+            return hymn_entries
+        
+        hymns = data['hymns']
+        
+        for year in ['a', 'b', 'c', 'abc']:
+            if year not in hymns:
+                continue
+            
+            year_data = hymns[year]
+            
+            for category, category_data in year_data.items():
+                # Skip psalm and gospel-acclamation categories
+                if 'psalm' in category.lower() or 'gospel-acclamation' in category.lower():
+                    continue
+                
+                if not isinstance(category_data, dict) or 'list' not in category_data:
+                    continue
+                
+                hymn_list = category_data['list']
+                
+                if not isinstance(hymn_list, list):
+                    continue
+                
+                for hymn in hymn_list:
+                    if isinstance(hymn, dict) and 'name' in hymn:
+                        name = hymn['name']
+                        if name and name.strip():
+                            # If year is 'abc', create entries for A, B, and C
+                            if year == 'abc':
+                                for expanded_year in ['A', 'B', 'C']:
+                                    hymn_entries.append({
+                                        'name': name.strip(),
+                                        'year': expanded_year,
+                                        'category': category,
+                                        'book': hymn.get('book', ''),
+                                        'priority': hymn.get('priority', ''),
+                                        'composer': hymn.get('composer', ''),
+                                        'tune': hymn.get('tune', ''),
+                                        'source_year': 'ABC'  # Track that this came from 'abc'
+                                    })
+                            else:
+                                hymn_entries.append({
+                                    'name': name.strip(),
+                                    'year': year.upper(),
+                                    'category': category,
+                                    'book': hymn.get('book', ''),
+                                    'priority': hymn.get('priority', ''),
+                                    'composer': hymn.get('composer', ''),
+                                    'tune': hymn.get('tune', ''),
+                                    'source_year': year.upper()
+                                })
+    
+    except yaml.YAMLError as e:
+        print(f"YAML parsing error: {e}")
+    
+    return hymn_entries
+
+
+def process_qmd_file(filepath):
+    """Process a single .qmd file and return list of hymn entries with metadata."""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Extract title from frontmatter if present
+        # Match the entire frontmatter block first
+        frontmatter_match = re.search(r'^---\s*\n(.*?)\n---', content, re.MULTILINE | re.DOTALL)
+        
+        if frontmatter_match:
+            frontmatter_block = frontmatter_match.group(1)
+            # Now extract just the title line from within the frontmatter
+            title_match = re.search(r'^title:\s*["\']?(.+?)["\']?\s*$', frontmatter_block, re.MULTILINE)
+            page_title = title_match.group(1) if title_match else filepath.stem
+        else:
+            page_title = filepath.stem
+        
+        yaml_content = extract_frontmatter_yaml(content)
+        
+        if yaml_content:
+            entries = extract_hymn_names_with_metadata(yaml_content)
+            # Add page reference to each entry
+            for entry in entries:
+                entry['page'] = page_title
+                entry['filepath'] = str(filepath)
+            return entries
+        
+    except Exception as e:
+        # Silently skip files with errors during preview
+        pass
+    
+    return []
+
+
+def generate_hymn_index_markdown(base_dir='content'):
+    """Generate hymn index as markdown string."""
+    
+    # Find all .qmd files
+    try:
+        qmd_files = sorted(Path(base_dir).rglob('*.qmd'))
+    except:
+        # If base_dir doesn't exist, try alternative paths
+        for alt_dir in ['./content', '../content', '../../content']:
+            if Path(alt_dir).exists():
+                qmd_files = sorted(Path(alt_dir).rglob('*.qmd'))
+                break
+        else:
+            return "**Error:** Could not find content directory"
+    
+    all_entries = []
+    for qmd_file in qmd_files:
+        all_entries.extend(process_qmd_file(qmd_file))
+    
+    if not all_entries:
+        return "**No hymn data found.** Make sure your .qmd files contain the frontmatter pattern."
+    
+    # Count occurrences
+    hymn_counts = Counter(entry['name'] for entry in all_entries)
+    
+    # Count by year
+    hymn_year_counts = defaultdict(lambda: {'A': 0, 'B': 0, 'C': 0})
+    for entry in all_entries:
+        hymn_year_counts[entry['name']][entry['year']] += 1
+    
+    # Group by hymn name
+    hymn_details = defaultdict(list)
+    for entry in all_entries:
+        hymn_details[entry['name']].append(entry)
+    
+    # Generate markdown
+    output = []
+    
+    output.append(f"**Total unique hymns:** {len(hymn_counts)}  ")
+    output.append(f"**Total occurrences:** {sum(hymn_counts.values())}  ")
+    output.append("")
+    
+    # Add count table - alphabetized
+    output.append("## Summary Table")
+    output.append("")
+    output.append("| Hymn Name | Year A | Year B | Year C | Total |")
+    output.append("|-----------|--------|--------|--------|-------|")
+    
+    # Sort alphabetically by hymn name
+    for hymn_name in sorted(hymn_counts.keys(), key=lambda x: x.lower()):
+        year_counts = hymn_year_counts[hymn_name]
+        total = hymn_counts[hymn_name]
+        output.append(f"| {hymn_name} | {year_counts['A']} | {year_counts['B']} | {year_counts['C']} | {total} |")
+    
+    output.append("")
+    output.append("---")
+    output.append("")
+    
+    # Detailed listings - alphabetized
+    output.append("## Detailed Listings")
+    output.append("")
+    
+    # Sort alphabetically by hymn name
+    for hymn_name in sorted(hymn_counts.keys(), key=lambda x: x.lower()):
+        count = hymn_counts[hymn_name]
+        year_counts = hymn_year_counts[hymn_name]
+        
+        output.append(f"### {hymn_name}")
+        output.append("")
+        output.append(f"**Year A:** {year_counts['A']} | **Year B:** {year_counts['B']} | **Year C:** {year_counts['C']} | **Total:** {count}")
+        output.append("")
+        
+        # Get unique composers
+        composers = set(e['composer'] for e in hymn_details[hymn_name] if e['composer'])
+        if composers:
+            output.append(f"**Composers:** {', '.join(sorted(composers))}")
+            output.append("")
+        
+        # List all occurrences
+        output.append("**Appears in:**")
+        output.append("")
+        
+        # Group by page
+        pages = defaultdict(list)
+        for entry in hymn_details[hymn_name]:
+            pages[entry['page']].append(entry)
+        
+        for page in sorted(pages.keys()):
+            entries = pages[page]
+            years_cats = [f"Year {e['year']} ({e['category']})" 
+                         for e in entries]
+            output.append(f"- **{page}**: {', '.join(years_cats)}")
+        
+        output.append("")
+        output.append("---")
+        output.append("")
+    
+    return "\n".join(output)
+
+
+# Generate and print the index
+print(generate_hymn_index_markdown())
+```

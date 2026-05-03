@@ -13,79 +13,71 @@ hymns:
     processional:
       list:
         - name: "All Glory, Laud, and Honor"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
         - name: "My God, my God, why have you abandoned me?"
           book: RA
-          priority: preferred
-        - name: "Psalm 22: My God, My God"
-          composer: Manion
-          book: BB
-          priority: optional
+          priority: required
     offertory:
       list:
-        - name: "At the Name of Jesus"
-          tune: "KING'S WESTON"
-          book: BB
+        - name: "What Wondrous Love is This"
+          book: G
           priority: required
     communion:
       list:
-        - name: "What Wondrous Love"
-          book: BB
+        - name: "Psalm of Hope"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Jesus, Remember Me"
-          book: BB
-          note:  "*a capella*"
+        - name: "Stay Here and Keep Watch"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Lift High the Cross"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
         - name: "Near the Cross"
-          composer: "William H. Doane"
         - name: "Lord, Let Me Walk"
   b:
     processional:
       list:
         - name: "All Glory, Laud, and Honor"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
         - name: "My God, my God, why have you abandoned me?"
           book: RA
-          priority: preferred
-        - name: "Psalm 22: My God, My God"
-          composer: Manion
-          book: BB
-          priority: optional
+          priority: required
     offertory:
       list:
         - name: "Crown Him With Many Crowns"
-          book: BB
-          priority: required
+          book: G
+          priority: optional
+        - name: "You, Lord, Are Both Lamb and Shepherd"
+          verses: 1-3
+          book: G
+          priority: optional
     communion:
       list:
         - name: "O Sacred Head, Surrounded"
-          tune: "PASSION CHORALE"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Hail, Redeemer, King Divine"
-          book: BB
+        - name: "In Manus Tuas, Pater"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Lift High the Cross"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -96,43 +88,37 @@ hymns:
     processional:
       list:
         - name: "All Glory, Laud, and Honor"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
         - name: "My God, my God, why have you abandoned me?"
           book: RA
-          priority: preferred
-        - name: "Psalm 22: My God, My God"
-          composer: Manion
-          book: BB
-          priority: optional
+          priority: required
     offertory:
       list:
-        - name: "At the Name of Jesus"
-          composer: "Walker"
-          book: BB
+        - name: "Palm Sunday Processional"
+          book: G
           priority: required
     communion:
       list:
         - name: "Were You There"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Jesus, Remember Me"
-          book: BB
+          book: G
           note:  "*a capella*"
           priority: required
     recessional:
       list:
         - name: "Lift High the Cross"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
         - name: "When Jesus Wept"
-          composer: "William Billings"
 """
 ```
 
@@ -1986,7 +1972,7 @@ and saw these events.
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -1998,7 +1984,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -2010,7 +1996,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -2018,7 +2004,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

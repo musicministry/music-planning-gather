@@ -12,8 +12,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "Praise to the Lord"
-          book: BB
+        - name: "Praise to the Lord, the Almighty"
+          book: G
           priority: required
     psalm:
       list:
@@ -27,32 +27,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "One Love Released"
-          book: BB
-          priority: preferred
         - name: "One Bread, One Body"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
     communion:
       list:
-        - name: "Seed, Scattered and Sown"
-          book: BB
-          priority: preferred
         - name: "Shepherd of Souls"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
     meditation:
       list:
-        - name: "O Sacrament Most Holy"
-          book: BB
-          priority: preferred
         - name: "Let All Mortal Flesh Keep Silence"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
     recessional:
       list:
         - name: "Holy God, We Praise Thy Name"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -60,8 +51,8 @@ hymns:
   b:
     processional:
       list:
-        - name: "At the Lamb's High Feast"
-          book: BB
+        - name: "At the Lamb's High Feast We Sing"
+          book: G
           priority: required
     psalm:
       list:
@@ -75,27 +66,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "O Sacrament Most Holy"
-          book: BB
-          priority: preferred
         - name: "Alleluia! Sing to Jesus"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
     communion:
       list:
-        - name: "Take and Eat"
-          book: BB
+        - name: "Draw Near"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Panis Angelicus"
-          tune: "sacris solemniis"
-          book: BB
+        - name: "Hail Our Savior's Glorious Body"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Holy God, We Praise Thy Name"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -105,7 +92,7 @@ hymns:
     processional:
       list:
         - name: "Alleluia! Sing to Jesus"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -120,22 +107,22 @@ hymns:
     offertory:
       list:
         - name: "Gift of Finest Wheat"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "O Sacrament Most Holy"
-          book: BB
+        - name: "Take and Eat"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Jesus, My Lord, My God, My All"
-          book: BB
+        - name: "I Come With Joy"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Holy God, We Praise Thy Name"
-          book: BB
+          book: G
           priority: required
 """
 ```
@@ -144,17 +131,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -888,7 +870,7 @@ they filled twelve wicker baskets.
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -900,7 +882,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -912,7 +894,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -920,7 +902,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

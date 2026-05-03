@@ -12,8 +12,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "Holy, Holy, Holy"
-          book: BB
+        - name: "Holy, Holy, Holy! Lord God Almighty!"
+          book: G
           priority: required
     psalm:
       list:
@@ -23,22 +23,22 @@ hymns:
     offertory:
       list:
         - name: "Holy God, We Praise Thy Name"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "What Wondrous Love"
-          book: BB
+        - name: "What Wondrous Love is This"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "On This Day, the First of Days"
-          book: BB
+        - name: "For God So Loved the World"
+          book: G
           priority: required
     recessional:
       list:
         - name: "O God, Almighty Father"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -47,8 +47,8 @@ hymns:
   b:
     processional:
       list:
-        - name: "Holy, Holy, Holy"
-          book: BB
+        - name: "Holy, Holy, Holy! Lord God Almighty!"
+          book: G
           priority: required
     psalm:
       list:
@@ -57,29 +57,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "All Hail, Adored Trinity"
-          book: BB
+        - name: "Come Now, Almighty King"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Lord, Who at Thy First Eucharist"
-          book: BB
+        - name: "Lord, Who at Your First Eucharist"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Abba! Father"
-          book: BB
+        - name: "How Wonderful the Three-in-One"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Go Make of All Disciples"
-          book: BB
-          priority: preferred
+          book: G
+          priority: required
   c:
     processional:
       list:
-        - name: "Holy, Holy, Holy"
-          book: BB
+        - name: "Holy, Holy, Holy! Lord God Almighty!"
+          book: G
           priority: required
     psalm:
       list:
@@ -89,23 +89,23 @@ hymns:
     offertory:
       list:
         - name: "O God, Almighty Father"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "All Hail, Adored Trinity"
-          book: BB
+        - name: "How Wonderful the Three-in-One"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Father, We Praise You"
-          book: BB
+        - name: "The Play of the Godhead"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "God, We Praise You"
-          book: BB
-          priority: required
+        - name: "Now Thank We All Our God"
+          book: G
+          priority: preferred
 """
 ```
 
@@ -113,17 +113,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -481,7 +476,7 @@ and declare it to you."
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -493,7 +488,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -505,7 +500,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -513,7 +508,7 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
 
 ::: {.red}

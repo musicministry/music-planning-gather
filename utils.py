@@ -2,10 +2,40 @@ from great_tables import GT, loc, style, from_column
 from IPython.display import display, Markdown
 from titlecase import titlecase
 import pandas as pd
+import requests
 import yaml
 import re
 
-def get_url(hymn, urls):
+# =============================================================================
+# Load video YAMLs from GitHub
+
+# Gather index
+gather_index_url = 'https://raw.githubusercontent.com/musicministry/song-urls/refs/heads/gather/gather.yml'
+gather_index = yaml.safe_load(requests.get(gather_index_url).content)
+
+# Anthem index
+supplemental_index_url = 'https://raw.githubusercontent.com/musicministry/song-urls/refs/heads/supplemental/supplemental.yml'
+anthem_index = yaml.safe_load(requests.get(supplemental_index_url).content)
+
+# Mass settings index
+mass_index_url = 'https://raw.githubusercontent.com/musicministry/song-urls/refs/heads/gather/mass-settings.yml'
+mass_index = yaml.safe_load(requests.get(mass_index_url).content)
+
+# Combine to support URL lookup
+gather_index = gather_index | anthem_index | mass_index
+
+# -----------------------------------------------------------------------------
+
+def keyify(string: str):
+    """Convert human-readable titlecase to lowercase hyphen-separated string."""
+    # Remove notes, if any
+    if "|" in string:
+        string = string.split("(")[0].strip()
+    # Remove punctuation and special characters
+    string = re.sub(r'[^a-zA-Z0-9]', ' ', string).strip().lower()
+    return '-'.join(string.split())
+
+def get_hymn_url(hymn):
     """Get video URL for 'hymn' from `urls`. Returns 'No URL found' if the hymn is not found in the URL list."""
     # Append composer name, if available, to hymn name
     hymn_key = hymn['name'] + f' ({hymn["composer"]}' if 'composer' in hymn.keys() else hymn['name']
@@ -16,8 +46,20 @@ def get_url(hymn, urls):
     # Replace spaces and make lowercase
     hymn_key = hymn_key.replace('  ', ' ').replace(' ', '-').lower()
     # Add hyperlink
-    if hymn_key in urls.keys():
-        return urls[hymn_key]
+    if keyify(hymn_key) in gather_index.keys():
+        return gather_index[keyify(hymn_key)]['url']
+    else:
+        return None
+
+def get_url(name, swap=False):
+    """Return the video URL for hymn or song `name`. If the `name` has a colon and needs to be swapped, for example, `Gloria: Heritage Mass` needs to become `Heritage Mass: Gloria`, use `swap = True`."""
+    # Reverse the name, if needed
+    if swap:
+        name = ' '.join(name.split(': ')[::-1])
+
+    # Extract the URL
+    if keyify(name) in gather_index.keys():
+        return gather_index[keyify(name)]['url']
     else:
         return None
 
@@ -32,14 +74,14 @@ def to_small_caps(text):
     }
     return ''.join(small_caps.get(char, char) for char in text.lower())
 
-def make_name(hymn, urls, index=None):
+def make_name(hymn, index=None):
     """Append hymn tune, composer, and/or verses to title and add hyperlink to video."""
     new_text = titlecase(hymn['name']) + f' (<span style="font-variant:small-caps;">{hymn["tune"].lower()}</span>)' if 'tune' in hymn.keys() else titlecase(hymn['name'])
     # Add URL, if available
-    hymn_url = get_url(hymn=hymn, urls=urls)
+    hymn_url = get_hymn_url(hymn=hymn)
     if hymn_url is not None:
         if index is not None:
-            new_text = f'[{new_text}]({hymn_url})\index[{index}]{{new_text}}'
+            new_text = f'[{new_text}]({hymn_url})\\index[{index}]{{new_text}}'
         else:
             new_text = f'[{new_text}]({hymn_url})'
     # Add year, if available
@@ -52,14 +94,14 @@ def make_name(hymn, urls, index=None):
     new_text = new_text + f' ({hymn["note"]})' if 'note' in hymn.keys() else new_text
     return new_text
 
-def make_psalm(psalm, urls, index=None):
+def make_psalm(psalm, index=None):
     """Append tune, composer, and/or verses to title and add hyperlink to video."""
     new_text = psalm['name'] + f' (<span style="font-variant:small-caps;">{psalm["tune"]}</span>)' if 'tune' in psalm.keys() else psalm['name']
     # Add URL, if available
-    psalm_url = get_url(hymn=psalm, urls=urls)
+    psalm_url = get_hymn_url(hymn=psalm)
     if psalm_url is not None:
         if index is not None:
-            new_text = f'[{new_text}]({psalm_url})\index[{index}]{{new_text}}'
+            new_text = f'[{new_text}]({psalm_url})\\index[{index}]{{new_text}}'
         else:
             new_text = f'[{new_text}]({psalm_url})'
     # Add composer name, if available
@@ -70,8 +112,8 @@ def make_psalm(psalm, urls, index=None):
     new_text = new_text + f' ({psalm["note"]})' if 'note' in psalm.keys() else new_text
     return new_text
 
-def hymnlist(hymns, urls, index=None):
-    """Create a hymn list table from contents of `hymns` and URLs from 'urls'"""
+def hymnlist(hymns, index=None):
+    """Create a hymn list table from contents of `hymns`"""
         
     def remove_dupes(l, char=''):
         """Replace duplicated items in list `l` with `char`"""
@@ -91,7 +133,7 @@ def hymnlist(hymns, urls, index=None):
     df = pd.DataFrame({
         'hymn': remove_dupes([titlecase(hymn.replace('-', ' ')) for hymn in hymnsnew for i in hymns[hymn]['list']]),
         'hymnal': [(i['book'] if '](' in i['book'].lower() else ''.join(l for l in i['book'] if l.isupper())) if 'book' in i.keys() else '' for hymn in hymnsnew for i in hymns[hymn]['list']],
-        'options': [f'<i>{make_psalm(i, urls=urls, index=index)}</i>' if 'psalm' in hymn else make_name(i, urls=urls, index=index) for hymn in hymnsnew for i in hymns[hymn]['list']],
+        'options': [f'<i>{make_psalm(i, index=index)}</i>' if 'psalm' in hymn else make_name(i, index=index) for hymn in hymnsnew for i in hymns[hymn]['list']],
         'priority': [i['priority'] if 'priority' in i.keys() else 'none' for hymn in hymnsnew for i in hymns[hymn]['list']]
     })
     df['options'] = df['options'].str.replace('Verses', 'verses')
@@ -126,7 +168,7 @@ def hymnlist(hymns, urls, index=None):
             )
     gtbl.show()
 
-def masssetting(mass, urls, index=None):
+def masssetting(mass, index=None):
     """Create a Mass setting table from contents of `mass` and URLs from 'urls'"""
         
     def remove_dupes(l, char=''):
@@ -139,14 +181,21 @@ def masssetting(mass, urls, index=None):
                 tmp.append(i)
         return tmp
     
-    def make_part(hymn, urls, index=None):
+    def make_part(hymn, part, index=None):
         """Append hymn tune, composer, and/or verses to title and add hyperlink to video."""
+        # Get URL
+        if part.lower() == 'holy-holy-holy':
+            part = 'holy'
+        hymn_key = titlecase(f'{hymn['name']}: {part}')
+        if 'option' in hymn.keys():
+            hymn_key = f'{hymn_key} {hymn['option'][0]}'
+        hymn_url = get_url(name=hymn_key)
+
+        # Add URL
         new_text = titlecase(hymn['name'])
-        # Add URL, if available
-        hymn_url = get_url(hymn=hymn, urls=urls)
         if hymn_url is not None:
             if index is not None:
-                new_text = f'[{new_text}]({hymn_url})\index[{index}]{{new_text}}'
+                new_text = f'[{new_text}]({hymn_url})\\index[{index}]{{new_text}}'
             else:
                 new_text = f'[{new_text}]({hymn_url})'
         # Add year, if available
@@ -165,7 +214,7 @@ def masssetting(mass, urls, index=None):
     df = pd.DataFrame({
         'hymn': remove_dupes([titlecase(part.replace('-', ' ')) for part in mass for i in mass[part]['list']]),
         'hymnal': [(i['book'] if '](' in i['book'].lower() else ''.join(l for l in i['book'] if l.isupper())) if 'book' in i.keys() else '' for part in mass for i in mass[part]['list']],
-        'options': [make_part(i, urls=urls, index=index) for part in mass for i in mass[part]['list']],
+        'options': [make_part(i, part=part, index=index) for part in mass for i in mass[part]['list']],
         'priority': [i['priority'] if 'priority' in i.keys() else 'none' for part in mass for i in mass[part]['list']]
     })
     df['options'] = df['options'].str.replace('Verses', 'verses')
@@ -296,8 +345,8 @@ def check_for_anthems(params):
             pass
     return False
 
-def anthemlist(hymns, urls, index=None):
-    """Create a table of choral anthem suggestions as listed in `hymns` with video URLs from `urls`"""
+def anthemlist(hymns, index=None):
+    """Create a table of choral anthem suggestions as listed in `hymns` with video URLs"""
     
     if check_for_anthems(hymns):
     
@@ -310,12 +359,7 @@ def anthemlist(hymns, urls, index=None):
         for yr, ls in hymns.items():
             if 'anthems' in ls.keys():
                 if yr == 'abc':
-                    display(Markdown('| [**Years A, B, C**]{.red} | %s |' % ("\n | |".join([make_name(i, urls=urls, index=index) for i in ls["anthems"]["list"] if "anthems"]))))                    
+                    display(Markdown('| [**Years A, B, C**]{.red} | %s |' % ("\n | |".join([make_name(i, index=index) for i in ls["anthems"]["list"] if "anthems"]))))                    
                 else:
-                    display(Markdown('| [**Year %s**]{.red} | %s |' % (yr.upper(), "\n | |".join([make_name(i, urls=urls, index=index) for i in ls["anthems"]["list"] if "anthems"]))))
-            # else:
-            #     if yr == 'abc':
-            #         display(Markdown('| [**Years A, B, C**]{.red} | |'))
-            #     else:
-            #         display(Markdown('| [**Year %s**]{.red} | |' % yr.upper()))
+                    display(Markdown('| [**Year %s**]{.red} | %s |' % (yr.upper(), "\n | |".join([make_name(i, index=index) for i in ls["anthems"]["list"] if "anthems"]))))
         display(Markdown(': Choral anthems could be sung before Mass, in place of an offertory hymn, in place of a Communion hymn (if appropriate), or after Communion for meditation. {tbl-colwidths="[15,85]"}'))

@@ -11,8 +11,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "Jesus Christ is Risen Today"
-          book: BB
+        - name: "That Easter Day with Joy Was Bright"
+          book: G
           priority: preferred
     psalm:
       list:
@@ -21,33 +21,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "God Is Love"
-          book: BB
-          priority: preferred
         - name: "Now the Green Blade Rises"
-          book: BB
-          priority: optional
+          book: G
+          priority: preferred
     communion:
       list:
-        - name: "Send Us Your Spirit, O Lord"
-          book: BB
+        - name: "Come Down, O Love Divine"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Isaiah 49"
-          book: BB
+        - name: "Holy Spirit, Come to Us"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "One Spirit, One Church"
-          book: BB
+        - name: "O Spirit All-Embracing"
+          book: G
           priority: required
   b:
     processional:
       list:
-        - name: "Christ, the Lord, Is Risen Today"
-          tune: "LLANFAIR"
-          book: BB
+        - name: "That Easter Day with Joy Was Bright"
+          book: G
           priority: preferred
     psalm:
       list:
@@ -56,32 +52,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Christians, Let Us Love One Another"
-          book: BB
+        - name: "Come Down, O Love Divine"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Come Down, O Love Divine"
-          book: BB
+        - name: "No Greater Love"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "On This Day, O Beautiful Mother"
-          book: BB
-          priority: optional
-        - name: "God So Loved the World"
-          composer: "John Stainer"
+        - name: "Holy Spirit, Come to Us"
+          book: G
           priority: optional
     recessional:
       list:
-        - name: "One Spirit, One Church"
-          book: BB
+        - name: "O Spirit All-Embracing"
+          book: G
           priority: required
   c:
     processional:
       list:
-        - name: "Alleluia No. 1"
-          book: BB
+        - name: "That Easter Day with Joy Was Bright"
+          book: G
           priority: preferred
     psalm:
       list:
@@ -90,23 +83,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Come, O Holy Spirit"
-          book: BB
+        - name: "Come Down, O Love Divine"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Love Has Come"
-          book: BB
+        - name: "Unless a Grain of Wheat"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Peace"
-          book: BB
-          priority: required
+        - name: "O Radiant Light"
+          book: G
+          priority: preferred
     recessional:
       list:
-        - name: "One Spirit, One Church"
-          book: BB
+        - name: "O Spirit All-Embracing"
+          book: G
           priority: required
 """
 ```
@@ -115,17 +108,12 @@ hymns:
 #| label: Setup and helper functions
 #| echo: false
 import sys
-import yaml
 sys.path.append('/workspaces/planning-book')
 sys.path.append('../../')
 import utils
 
 # Front matter YAML and check for errors
 params = utils.get_params(frontmatter)
-
-# Video links
-with open('../../_hymns.yml', 'r') as vf:
-    videos = yaml.safe_load(vf)
 ```
 
 :::  {.red}
@@ -546,7 +534,7 @@ so that when it happens you may believe.”
 #| label: Year A
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['a'], urls=videos)
+utils.hymnlist(params['hymns']['a'])
 ```
 
 ::: {.titlered}
@@ -558,7 +546,7 @@ utils.hymnlist(params['hymns']['a'], urls=videos)
 #| label: Year B
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['b'], urls=videos)
+utils.hymnlist(params['hymns']['b'])
 ```
 
 ::: {.titlered}
@@ -570,7 +558,7 @@ utils.hymnlist(params['hymns']['b'], urls=videos)
 #| label: Year C
 #| echo: false
 #| output: asis
-utils.hymnlist(params['hymns']['c'], urls=videos)
+utils.hymnlist(params['hymns']['c'])
 ```
 
 
@@ -578,11 +566,5 @@ utils.hymnlist(params['hymns']['c'], urls=videos)
 #| label: Anthems
 #| echo: false
 #| output: asis
-utils.anthemlist(hymns=params['hymns'], urls=videos)
+utils.anthemlist(hymns=params['hymns'])
 ```
-
-::: {.red}
-### Notes
-:::
-
-* If Mothers' Day falls on this week, “[On This Day, O Beautiful Mother](https://www.youtube.com/watch?v=Sn5sz5D67BY)” (BB) may be sung as a Meditation hymn.
