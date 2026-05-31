@@ -11,8 +11,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "The King of Glory"
-          book: BB
+        - name: "Come to Us"
+          book: G
           priority: required
     psalm:
       list:
@@ -22,29 +22,30 @@ hymns:
     offertory:
       list:
         - name: "I Heard the Voice of Jesus Say"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Taste and See"
           composer: Moore
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Come to Me"
-          book: BB
+          composer: Bell
+          book: G
           priority: required
     recessional:
       list:
-        - name: "They’ll Know We Are Christians"
-          book: BB
-          priority: preferred
+        - name: "We Shall Rise Again"
+          book: G
+          priority: required
   b:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -54,29 +55,30 @@ hymns:
     offertory:
       list:
         - name: "" 
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Taste and See"
           composer: Moore
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Come to Me"
-          book: BB
+          composer: Bell
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Your Grace Is Enough"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
   c:
     processional:
       list:
-        - name: "Let Heaven Rejoice"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     psalm:
       list:
@@ -86,23 +88,24 @@ hymns:
     offertory:
       list:
         - name: "The Servant Song"
-          book: BB
+          book: G
           priority: preferred
     communion:
       list:
         - name: "Taste and See"
-          composer: Kendzia
-          book: BB
+          composer: Moore
+          book: G
           priority: required
     meditation:
       list:
         - name: "Come to Me"
-          book: BB
+          composer: Bell
+          book: G
           priority: required
     recessional:
       list:
         - name: "Lord, You Give the Great Commission"
-          book: BB
+          book: G
           priority: required
 """
 ```
