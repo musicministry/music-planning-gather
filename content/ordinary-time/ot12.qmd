@@ -67,9 +67,9 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: "Though the Mountains May Fall"
+        - name: "You Walk Along the Seashore"
           book: G
-          priority: preferred
+          priority: required
   c:
     processional:
       list:
