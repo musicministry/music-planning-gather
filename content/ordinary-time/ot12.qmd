@@ -11,9 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Gather Your People"
+          book: G
+          priority: flexible
     psalm:
       list:
         - name: "Lord, in your great love, answer me."
@@ -22,29 +22,29 @@ hymns:
     offertory:
       list:
         - name: "Be Not Afraid"
-          book: BB
-          priority: required
+          book: G
+          priority: preferred
     communion:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Pan de Vida"
+          book: G
+          priority: flexible
     meditation:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "All Will Be Well"
+          book: G
+          priority: flexible
     recessional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Though the Mountains May Fall"
+          book: G
+          priority: flexible
   b:
     processional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "How Firm a Foundation"
+          book: G
+          priority: preferred
     psalm:
       list:
         - name: "Give thanks to the Lord, his love is everlasting."
@@ -53,28 +53,28 @@ hymns:
     offertory:
       list:
         - name: "Eternal Father, Strong to Save"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Be Still, My Soul"
-          book: BB
+        - name: "Be Not Afraid"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Be Not Afraid"
-          book: BB
+        - name: "All Will Be Well"
+          book: G
           priority: required
     recessional:
       list:
-        - name: ""
-          book: BB
-          priority: preferred
+        - name: "You Walk Along the Seashore"
+          book: G
+          priority: required
   c:
     processional:
       list:
         - name: "Baptized in Water"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -83,32 +83,32 @@ hymns:
           priority: preferred
         - name: "Psalm 63: My Soul is Thirsting"
           composer: Joncas
-          book: BB
+          book: G
           prioritiy: optional
-        - name: "Psalm 63: My Soul Thirsts"
-          composer: Schutte
-          book: BB
+        - name: "Psalm 63: My Soul Is Thirsting"
+          composer: Angrisano
+          book: G
           prioritiy: optional
     offertory:
       list:
         - name: "One Bread, One Body"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Pan de Vida"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Shepherd of Souls"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Take Up Your Cross"
           tune: "ERHALT UNS, HERR"
-          book: BB
+          book: G
           priority: required
 """
 ```

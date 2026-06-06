@@ -11,10 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: "Take Up Your Cross"
-          tune: "ERHALT UNS, HERR"
-          book: BB
-          priority: required
+        - name: "Lift Up Your Hearts"
+          book: G
+          priority: preferred
     psalm:
       list:
         - name: "For ever I will sing the goodness of the Lord."
@@ -23,24 +22,25 @@ hymns:
     offertory:
       list:
         - name: "Baptized in Water"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Lord, Who at Thy First Eucharist"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Unless A Grain of Wheat"
           composer: Farrell
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Church of God, Elect and Glorious"
-          book: BB
-          priority: preferred
+        - name: "Take Up Your Cross"
+          tune: "ERHALT UNS, HERR"
+          book: G
+          priority: required
   b:
     processional:
       list:
@@ -55,22 +55,22 @@ hymns:
     offertory:
       list:
         - name: "We Remember"
-          book: BB
+          book: G
           priority: preferred
     communion:
       list:
-        - name: "One Love Released"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
     meditation:
       list:
-        - name: "Loving and Forgiving"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
     recessional:
       list:
-        - name: "God, We Praise You"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
   c:
     processional:
@@ -91,21 +91,18 @@ hymns:
     communion:
       list:
         - name: "Center of My Life"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Lord, Who at Thy First Eucharist"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Tell the Good News"
-          book: BB
-          priority: optional
-        - name: "The Spirit Sends Us Forth"
-          book: BB
-          priority: optional
+        - name: "Go to the World"
+          book: G
+          priority: required
 """
 ```
 

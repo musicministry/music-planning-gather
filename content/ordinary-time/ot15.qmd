@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "Come to the Feast"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -22,24 +22,24 @@ hymns:
     offertory:
       list:
         - name: "Seed, Scattered and Sown"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Unless A Grain of Wheat"
           composer: Farrell
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Give Me Ears to Listen"
-          book: BB
+        - name: "Open My Eyes"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Take the Word of God with You"
-          book: BB
-          priority: required
+        - name: "There's a Wideness in God's Mercy"
+          book: G
+          priority: flexibel
   b:
     processional:
       list:
@@ -58,24 +58,24 @@ hymns:
           priority: required
     communion:
       list:
-        - name: "How Lovely Is Your Dwelling Place"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     meditation:
       list:
         - name: "Eat This Bread"
-          book: BB
+          book: G
           priority: preferred
     recessional:
       list:
         - name: "Lord, You Give the Great Commission"
-          book: BB
+          book: G
           priority: required
   c:
     processional:
       list:
-        - name: "Immortal, Invisible, God Only Wise"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
     psalm:
       list:
@@ -85,22 +85,22 @@ hymns:
     offertory:
       list:
         - name: "Whatsoever You Do"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Take and Eat"
-          book: BB
+          book: G
           priority: preferred
     meditation:
       list:
-        - name: "How Lovely Is Your Dwelling Place"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Lord, to Whom Shall We Go"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
 """
 ```
