@@ -21,13 +21,12 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Seed, Scattered and Sown"
+        - name: ""
           book: G
           priority: required
     communion:
       list:
         - name: "Unless A Grain of Wheat"
-          composer: Farrell
           book: G
           priority: required
     meditation:
@@ -39,7 +38,7 @@ hymns:
       list:
         - name: "There's a Wideness in God's Mercy"
           book: G
-          priority: flexibel
+          priority: flexible
   b:
     processional:
       list:
