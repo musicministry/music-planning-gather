@@ -12,6 +12,7 @@ hymns:
     processional:
       list:
         - name: "Gather Your People"
+          composer: Hurd
           book: G
           priority: flexible
     psalm:
@@ -22,6 +23,7 @@ hymns:
     offertory:
       list:
         - name: "Be Not Afraid"
+          composer: Dufford
           book: G
           priority: preferred
     communion:
