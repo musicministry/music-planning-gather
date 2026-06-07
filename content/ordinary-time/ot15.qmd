@@ -21,7 +21,7 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: ""
+        - name: "Open My Eyes"
           book: G
           priority: required
     communion:
