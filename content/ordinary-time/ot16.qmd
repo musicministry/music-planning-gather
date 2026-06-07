@@ -1,5 +1,5 @@
 ---
-title: "NTH SUNDAY IN ORDINARY TIME"
+title: "SIXTEENTH SUNDAY IN ORDINARY TIME"
 ---
 
 ```{python}
@@ -11,9 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: "To Jesus Christ, Our Sovereign King"
-          book: BB
-          priority: preferred
+        - name: "Gather Us In"
+          book: G
+          priority: flexible
     psalm:
       list:
         - name: "Lord, you are good and forgiving."
@@ -21,29 +21,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "As Grains of Wheat"
-          book: BB
+        - name: "The Reign of God"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Seed, Scattered and Sown"
-          book: BB
-          priority: required
+        - name: "Many and Great"
+          book: G
+          priority: preferred
     meditation:
       list:
-        - name: "O God, You Search Me"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
     recessional:
       list:
-        - name: ""
-          book: BB
+        - name: "To Jesus Christ, Our Sovereign King"
+          book: G
           priority: required
   b:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -52,33 +52,33 @@ hymns:
           priority: preferred
         - name: "Psalm 23: My Shepherd is the Lord"
           composer: Gelineau
-          book: BB
+          book: G
           priority: optional
     offertory:
       list:
         - name: "I Heard the Voice of Jesus Say"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Shepherd Me, O God"
-          book: BB
+        - name: "Psalm 23: Shepherd Me, O God"
+          book: G
           priority: required
     meditation:
       list:
-        - name: ""
-          book: BB
+        - name: "Heart of a Shepherd"
+          book: G
           priority: required
     recessional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: preferred
   c:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -88,23 +88,22 @@ hymns:
     offertory:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Lord, Whose Love in Humble Service"
-          tune: "HOLY MANNA"
-          book: BB
+          book: G
           priority: required
 """
 ```
