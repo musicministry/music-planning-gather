@@ -11,8 +11,8 @@ hymns:
   a:
     processional:
       list:
-        - name: ""
-          book: BB
+        - name: "Though the Mountains May Fall"
+          book: G
           priority: required
     psalm:
       list:
@@ -21,29 +21,35 @@ hymns:
           priority: required
     offertory:
       list:
+        - name: "How Firm a Foundation"
+          book: G
+          priority: optional
         - name: "Be Not Afraid"
-          book: BB
-          priority: required
+          book: G
+          priority: optional
     communion:
       list:
-        - name: ""
-          book: BB
+        - name: "You Satisfy the Hungry Heart"
+          book: G
           priority: required
     meditation:
       list:
-        - name: ""
-          book: BB
+        - name: "Precious Lord, Take My Hand"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Eternal Father, Strong to Save"
-          book: BB
-          priority: required
+          book: G
+          priority: preferred
+        - name: "Jesus, Lead the Way"
+          book: G
+          priority: optional
   b:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -52,33 +58,33 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Look Beyond"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
         - name: "Eat This Bread"
-          book: BB
+          book: G
           priority: optional
     communion:
       list:
         - name: "I Am the Bread of Life"
           composer: "Toolan"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Shepherd of Souls"
-          book: BB
+          book: G
           priority: preferred
     recessional:
       list:
         - name: "We Shall Rise Again"
-          book: BB
+          book: G
           priority: required
   c:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -87,23 +93,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Faith of Our Fathers"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
     communion:
       list:
-        - name: "Gift of Finest Wheat"
-          book: BB
+        - name: "You Satisfy the Hungry Heart"
+          book: G
           priority: preferred
     meditation:
       list:
         - name: "Jerusalem, My Happy Home"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Guide Me, O Thou Great Redeemer"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
 """
 ```
