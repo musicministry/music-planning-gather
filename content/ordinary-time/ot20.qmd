@@ -11,9 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: "Let Us Go to the Altar"
-          book: BB
-          priority: preferred
+        - name: "As We Gather at Your Table"
+          book: G
+          priority: flexible
     psalm:
       list:
         - name: "O God, let all the nations praise you."
@@ -21,29 +21,32 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "We Cannot Measure How You Heal"
+          book: G
+          priority: optional
+        - name: "Healing River of the Spirit"
+          book: G
+          priority: optional
     communion:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Let Us Be Bread"
+          book: G
+          priority: preferred
     meditation:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Dwelling Place"
+          book: G
+          priority: flexible
     recessional:
       list:
-        - name: "I Sing the Mighty Power of God"
-          book: BB
+        - name: "There's a Wideness in God's Mercy"
+          book: G
           priority: preferred
   b:
     processional:
       list:
-        - name: "Immortal, Invisible, God Only Wise"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     psalm:
       list:
@@ -53,23 +56,22 @@ hymns:
     offertory:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "I Am the Bread of Life"
-          composer: Toolan
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Bread for the World"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
     recessional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: preferred
     anthems:
       list:
@@ -78,7 +80,7 @@ hymns:
     processional:
       list:
         - name: "Lift High the Cross"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -88,23 +90,22 @@ hymns:
     offertory:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Bread of Life"
-          book: BB
-          composer: Farrell
+        - name: ""
+          book: G
           priority: preferred
     meditation:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
 """
 ```
