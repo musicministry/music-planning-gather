@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "Come to the Feast"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -22,28 +22,37 @@ hymns:
     offertory:
       list:
         - name: "Come to the Water"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Here At This Table"
-          book: BB
-          priority: required
+        - name: "I Am the Bread of Life"
+          book: G
+          priority: optional
+        - name: "The Love of the Lord"
+          book: G
+          priority: optional
     meditation:
       list:
-        - name: ""
-          book: BB
+        - name: "Come to Us"
+          book: G
+          priority: optional
+        - name: "You Are All We Have"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Sing a Joyful Song"
-          book: BB
-          priority: required
+        - name: "Love Divine, All Loves Excelling"
+          book: G
+          priority: optional
+        - name: "Neither Death nor Life"
+          book: G
+          priority: optional
   b:
     processional:
       list:
         - name: "Praise, My Soul, the King of Heaven"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -52,33 +61,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Look Beyond"
-          book: BB
-          priority: optional
-        - name: "What Feast of Love"
-          book: BB
+        - name: ""
+          book: G
           priority: optional
     communion:
       list:
         - name: "Eat This Bread"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Living Streams"
-          book: BB
-          note: 3x
+        - name: ""
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Guide Me, O Thou Great Redeemer"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
   c:
     processional:
       list:
         - name: "O God, Our Help in Ages Past"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -88,22 +93,22 @@ hymns:
     offertory:
       list:
         - name: "In Every Age"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Bread for the World"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     meditation:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
 """
 ```
