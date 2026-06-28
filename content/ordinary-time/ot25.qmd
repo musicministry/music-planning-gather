@@ -11,9 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: "Sing a Joyful Song"
-          book: BB
-          priority: required
+        - name: "Glory and Praise to Our God"
+          book: G
+          priority: flexible
     psalm:
       list:
         - name: "The Lord is near to all who call upon him."
@@ -22,28 +22,30 @@ hymns:
     offertory:
       list:
         - name: "You Are Near"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Seek Ye First"
+          book: G
+          priority: preferred
     meditation:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "You Are All We Have"
+          tune: Taize
+          book: G
+          priority: preferred
     recessional:
       list:
-        - name: "Immortal, Invisible, God Only Wise"
-          book: BB
-          priority: preferred
+        - name: "The Kingdom of God"
+          tune: LAUDATE DOMINUM
+          book: G
+          priority: required
   b:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -53,28 +55,28 @@ hymns:
     offertory:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "We Remember"
-          book: BB
+          book: G
           priority: preferred
     meditation:
       list:
         - name: "You, Lord, Are Both Lamb and Shepherd"
-          book: BB
+          book: G
           priority: preferred
     recessional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: preferred
   c:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -84,22 +86,22 @@ hymns:
     offertory:
       list:
         - name: "I Want to Walk as a Child of the Light"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "I Received the Living God"
-          book: BB
+        - name: "I Receive the Living God"
+          book: G
           priority: required
     meditation:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
 """
 ```
@@ -406,7 +408,7 @@ Hear this, you who trample upon the needy
 and destroy the poor of the land!  
 "When will the new moon be over," you ask,  
 "that we may sell our grain,  
-and the sabbath, that we may display the wheat?  
+and the saGath, that we may display the wheat?  
 We will diminish the ephah,  
 add to the shekel,  
 and fix our scales for cheating!  
