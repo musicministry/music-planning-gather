@@ -11,13 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: "At the Name of Jesus"
-          composer: Walker
-          book: BB
+        - name: "All Hail the Power of Jesus' Name!"
+          book: G
           priority: preferred
-        - name: "To Jesus Christ, Our Sovereign King"
-          book: BB
-          priority: optional
     psalm:
       list:
         - name: "Remember your mercies, O Lord."
@@ -25,23 +21,26 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Remember Your Love"
-          book: BB
-          priority: required
+        - name: "Lord of All Nations, Gramt Me Grace"
+          book: G
+          priority: preferred
     communion:
       list:
-        - name: "To You, O Lord"
-          book: BB
+        - name: "Where Two or Three Are Gathered"
+          book: 
           priority: preferred
     meditation:
       list:
-        - name: "Jesus, the Lord"
-          book: BB
-          priority: preferred
+        - name: "At the Name of Jesus"
+          book: G
+          priority: optional
+        - name: "In the Cross of Christ"
+          book: G
+          priority: optional
     recessional:
       list:
-        - name: ""
-          book: BB
+        - name: "To Jesus Christ, Our Sovereign King"
+          book: G
           priority: required
   b:
     processional:
