@@ -31,10 +31,7 @@ hymns:
       list:
         - name: "Keep in Mind"
           book: G
-          priority: optional
-        - name: ""
-          book: G
-          priority: optional
+          priority: preferred
     meditation:
       list:
         - name: "Psalm 91: Be With Me"
