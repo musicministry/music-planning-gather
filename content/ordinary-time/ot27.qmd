@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -21,26 +21,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "All Good Gifts"
-          book: BB
-          priority: preferred
+        - name: "Christ Is Made the Sure Foundation"
+          book: G
+          priority: flexible
     communion:
       list:
-        - name: "One Love Released"
-          book: BB
-          priority: preferred
         - name: "One Bread, One Body"
-          book: BB
-          priority: optional
+          book: G
+          priority: preferred
     meditation:
       list:
         - name: "We Are Many Parts"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
   b:
     processional:

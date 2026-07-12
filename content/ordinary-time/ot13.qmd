@@ -26,19 +26,18 @@ hymns:
           priority: required
     communion:
       list:
-        - name: "Lord, Who at Thy First Eucharist"
+        - name: "Lord, Who at Your First Eucharist"
           book: G
           priority: required
     meditation:
       list:
         - name: "Unless A Grain of Wheat"
-          composer: Farrell
           book: G
           priority: required
     recessional:
       list:
         - name: "Take Up Your Cross"
-          tune: "ERHALT UNS, HERR"
+          tune: "ERHALT UNS HERR"
           book: G
           priority: required
   b:

@@ -11,8 +11,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "Church of God, Elect and Glorious"
-          book: BB
+        - name: "The Church’s One Foundation"
+          book: G
           priority: required
     psalm:
       list:
@@ -21,29 +21,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "The Church’s One Foundation"
-          book: BB
+        - name: "As a Fire Is Meant for Burning"
+          book: G
           priority: required
     communion:
       list:
-        - name: ""
-          book: BB
+        - name: "I Received the Living God"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "I Received the Living God"
-          book: BB
+        - name: "All Glory Is Yours"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "One Spirit, One Church"
-          book: BB
+        - name: "Sing a New Church"
+          book: G
           priority: required
   b:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -52,30 +52,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Your Words Are Spirit and Life"
-          composer: Farrell
-          book: BB
+        - name: ""
+          book: G
           priority: required
     communion:
       list:
-        - name: "Lord, to Whom Shall We Go"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Look Beyond"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     recessional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: preferred
   c:
     processional:
       list:
         - name: "Gather Your People"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -84,28 +83,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "From All That Dwell Below the Skies"
-          tune: "DUKE STREET"
-          book: BB
-          priority: optional
-        - name: "From All That Dwell Below the Skies"
-          tune: "OLD HUNDREDTH"
-          book: BB
+        - name: ""
+          book: G
           priority: optional
     communion:
       list:
         - name: "Behold the Lamb"
-          book: BB
+          book: G
           priority: preferred
     meditation:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Go Make of All Disciples"
-          book: BB
+          book: G
           priority: required
 """
 ```

@@ -11,9 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "As We Gather at Your Table"
+          book: G
+          priority: preferred
     psalm:
       list:
         - name: "If today you hear his voice, harden not your heart."
@@ -21,30 +21,32 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Psalm 42: As the Deer Longs"
-          tune: "O WALY WALY"
-          book: BB
+        - name: "Where Two or Three Are Gathered"
+          book: G
           priority: required
     communion:
       list:
-        - name: "When We Eat This Bread"
-          book: BB
-          priority: required
+        - name: "Bread of Life from Heaven"
+          book: G
+          priority: optional
+        - name: "Let Us Be Bread"
+          book: G
+          priority: optional
     meditation:
       list:
         - name: "Open My Eyes"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Let There Be Peace On Earth"
+          book: G
+          priority: flexible
   b:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -53,30 +55,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Give Me Ears to Listen"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     communion:
       list:
-        - name: "Psalm 42: As the Deer Longs"
-          tune: "O WALY WALY"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Blessed by Your Sacrifice"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     recessional:
       list:
         - name: "Lift High the Cross"
-          book: BB
+          book: G
           priority: preferred
   c:
     processional:
       list:
-        - name: "Immortal, Invisible, God Only Wise"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     psalm:
       list:
@@ -86,24 +87,23 @@ hymns:
     offertory:
       list:
         - name: "In Every Age"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Psalm 42: As the Deer Longs"
-          tune: "O WALY WALY"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     meditation:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Take Up Your Cross"
           tune: "ERHALT UNS, HERR"
-          book: BB
+          book: G
           priority: required
 """
 ```

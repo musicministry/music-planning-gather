@@ -11,9 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Diverse in Culture, Nation, Race"
+          book: G
+          priority: preferred
     psalm:
       list:
         - name: "The Lord is kind and merciful, slow to anger, and rich in compassion."
@@ -21,34 +21,40 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Servant Song"
-          book: BB
+        - name: "The Servant Song"
+          book: G
           priority: preferred
+        - name: "O God of Every Nation"
+          book: G
+          priority: optional
     communion:
       list:
         - name: "Keep in Mind"
-          book: BB
-          priority: optional
-        - name: "This Bread that we Share"
-          book: BB
-          priority: optional
+          book: G
+          priority: preferred
     meditation:
       list:
-        - name: "Psalm 91: Be With Me, Lord"
+        - name: "Psalm 91: Be With Me"
           composer: Haugen
-          book: BB
+          book: G
           priority: preferred
+        - name: "Make Me a Channel of Your Peace"
+          book: G
+          priority: optional
     recessional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Resucito"
+          book: G
+          priority: optional
+        - name: "The Master Came to Bring Good News"
+          book: G
+          priority: optional
   b:
     processional:
       list:
         - name: "Take Up Your Cross"
           tune: "ERHALT UNS, HERR"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -57,29 +63,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Whatsoever You Do"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
     communion:
       list:
         - name: "Shelter Me, O God"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Blessed by Your Sacrifice"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     recessional:
       list:
         - name: "Lift High the Cross"
-          book: BB
+          book: G
           priority: preferred
   c:
     processional:
       list:
-        - name: "Immortal, Invisible, God Only Wise"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     psalm:
       list:
@@ -89,26 +95,26 @@ hymns:
     offertory:
       list:
         - name: "Remember Your Love"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Our Blessing Cup"
-          book: BB
+        - name: ""
+          book: G
           composer: Hurd
           priority: preferred
     meditation:
       list:
         - name: "Softly and Tenderly Jesus is Calling"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Change Our Hearts"
-          book: BB
+          book: G
           priority: optional
         - name: "There’s a Wideness in God’s Mercy"
-          book: BB
+          book: G
           priority: optional
 """
 ```

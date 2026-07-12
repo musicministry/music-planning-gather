@@ -13,7 +13,7 @@ hymns:
       list:
         - name: "Take Up Your Cross"
           tune: "ERHALT UNS, HERR"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -22,40 +22,40 @@ hymns:
           priority: preferred
         - name: "Psalm 63: My Soul is Thirsting"
           composer: Joncas
-          book: BB
+          book: G
           priority: optional
-        - name: "Psalm 63: My Soul Thirsts"
-          composer: Schutte
-          book: BB
+        - name: "Psalm 63: My Soul is Thirsting"
+          composer: Angrisano
+          book: G
           priority: optional
     offertory:
       list:
-        - name: ""
-          book: BB
+        - name: "The Summons"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Blessed by Your Sacrifice"
-          book: BB
-          priority: preferred
         - name: "Keep in Mind"
-          book: BB
+          book: G
+          priority: optional
+        - name: "Unless a Grain of Wheat"
+          book: G
           priority: optional
     meditation:
       list:
-        - name: ""
-          book: BB
+        - name: "Jesus, Your Spirit in Us"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Lift High the Cross"
-          book: BB
+          book: G
           priority: preferred
   b:
     processional:
       list:
-        - name: "All the Earth"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
     psalm:
       list:
@@ -64,23 +64,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "All Good Gifts"
-          book: BB
+        - name: ""
+          book: 
           priority: required
     communion:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: preferred
     anthems:
       list:
@@ -89,7 +89,7 @@ hymns:
     processional:
       list:
         - name: "Gather Us In"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -99,23 +99,22 @@ hymns:
     offertory:
       list:
         - name: "Lord, Whose Love in Humble Service"
-          tune: "HOLY MANNA"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Humbly, Lord, We Worship You"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
     meditation:
       list:
         - name: "Dwelling Place"
-          book: BB
+          book: G
           priority: preferred
     recessional:
       list:
         - name: "Praise, My Soul, the King of Heaven"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:

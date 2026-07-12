@@ -11,8 +11,8 @@ hymns:
   a:
     processional:
       list:
-        - name: ""
-          book: BB
+        - name: "Come, Host of Heaven's High Dwelling Place"
+          book: G
           priority: required
     psalm:
       list:
@@ -21,29 +21,31 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: ""
-          book: BB
+        - name: "The Reign of God"
+          book: G
           priority: required
     communion:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Bread of Life from Heaven"
+          book: G
+          priority: flexible
     meditation:
       list:
-        - name: "Abba! Father"
-          book: BB
+        - name: "The Kingdom of God"
+          tune: Taizé
+          book: G
           priority: required
     recessional:
       list:
-        - name: ""
-          book: BB
+        - name: "The Kingdom of God"
+          tune: LAUDATE DOMINUM
+          book: G
           priority: required
   b:
     processional:
       list:
-        - name: "Table of Plenty"
-          book: BB
+        - name: ""
+          book: G
           priority: preferred
     psalm:
       list:
@@ -52,32 +54,32 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Gift of Finest Wheat"
-          book: BB
+        - name: "You Satisfy the Hungry Heart"
+          book: G
           priority: required
     communion:
       list:
-        - name: "One Love Released"
-          book: BB
+        - name: ""
+          book: G
           priority: optional
-        - name: "The Supper of the Lord"
-          book: BB
+        - name: ""
+          book: G
           priority: optional
     meditation:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Sing a Joyful Song"
-          book: BB
+        - name: ""
+          book: G
           priority: required
   c:
     processional:
       list:
         - name: "All Are Welcome"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -87,22 +89,22 @@ hymns:
     offertory:
       list:
         - name: "Seek Ye First"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Abba! Father"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     recessional:
       list:
         - name: "Let All Things Now Living"
-          book: BB
+          book: G
           priority: required
 """
 ```
