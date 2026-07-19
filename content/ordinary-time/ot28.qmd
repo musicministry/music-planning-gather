@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "Come to the Feast"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -21,26 +21,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Gift of Finest Wheat"
-          book: BB
+        - name: "You Satisfy the Hungry Heart"
+          book: G
           priority: preferred
     communion:
       list:
-        - name: "The Supper of the Lord"
-          book: BB
+        - name: "Where Two or Three Are Gathered"
+          book: G
           priority: preferred
     meditation:
       list:
-        - name: "Bread for the World"
-          book: BB
-          priority: optional
         - name: "Canticle of the Turning"
-          book: BB
-          priority: optional
+          book: G
+          priority: preferred
     recessional:
       list:
         - name: "Joyful, Joyful, We Adore Thee"
-          book: BB
+          book: G
           priority: preferred
   b:
     processional:
