@@ -11,7 +11,7 @@ hymns:
   a:
     processional:
       list:
-        - name: ""
+        - name: "Lift Up Your Hearts to the Lord"
           book: BB
           priority: required
     psalm:
@@ -21,24 +21,24 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: ""
-          book: BB
+        - name: "Lord of All Nations, Grant Me Grace"
+          book: G
           priority: required
     communion:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Set Your Hearts on the Higher Gifts"
+          book: G
+          priority: preferred
     meditation:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "How Can I Keep from Singing?"
+          book: G
+          priority: flexible
     recessional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "They'll Know We Are Christians"
+          book: G
+          priority: preferred
   b:
     processional:
       list:
