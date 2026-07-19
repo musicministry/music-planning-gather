@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "City of God"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -21,11 +21,11 @@ hymns:
           priority: preferred
         - name: "Psalm 63: My Soul is Thirsting"
           composer: Joncas
-          book: RA
+          book: G
           priority: optional
-        - name: "Psalm 63: My Soul Thirsts"
-          composer: Schutte
-          book: RA
+        - name: "Psalm 63: My Soul is Thirsting"
+          composer: Angrisano
+          book: G
           priority: optional
     offertory:
       list:
@@ -35,19 +35,18 @@ hymns:
     communion:
       list:
         - name: "In the Breaking of the Bread"
-          composer: Hurd
-          book: BB
+          book: g
           priority: required
     meditation:
       list:
         - name: "Psalm 23: My Shepherd is the Lord"
           notes: "Antiphon I, Gelineau Tone"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "In the Day of the Lord"
-          book: BB
+        - name: "We Shall Rise Again"
+          book: G
           priority: preferred
     anthems:
       list:
