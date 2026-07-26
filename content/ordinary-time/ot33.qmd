@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "Christ, Be Our Light"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -21,14 +21,13 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "All Good Gifts"
-          book: BB
-          priority: required
+        - name: "God of Day and God of Darkness"
+          book: G
+          priority: preferred
     communion:
       list:
         - name: "Behold the Lamb"
-          composer: Willett
-          book: BB
+          book: G
           priority: preferred
     meditation:
       list:
@@ -37,8 +36,8 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: "In the Day of the Lord"
-          book: BB
+        - name: "City of God"
+          book: G
           priority: preferred
   b:
     processional:
