@@ -74,7 +74,7 @@ hymns:
   c:
     processional:
       list:
-        - name: "To Jesus Christ, Our Sovereign King"
+        - name: "Come Now, Almighty King"
           book: G
           priority: required
     psalm:
