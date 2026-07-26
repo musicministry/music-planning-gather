@@ -33,6 +33,9 @@ hymns:
        - name: "On the Journey to Emmaus"
          book: G
          priority: optional
+       - name: "Come, You Faithful, Raise the Strain"
+         book: G
+         priority: optional
     meditation:
       list:
         - name: "Worthy Is the Lamb"
@@ -61,8 +64,8 @@ hymns:
           priority: required
     communion:
       list:
-        - name: "Come, You Faithful, Raise the Strain"
-          book: 
+        - name: "Draw Near"
+          book: G
           priority: required
     meditation:
       list:
@@ -92,7 +95,7 @@ hymns:
           priority: required
     communion:
       list:
-        - name: ""
+        - name: "Joyous Cup"
           book: G
           priority: required
     meditation:
