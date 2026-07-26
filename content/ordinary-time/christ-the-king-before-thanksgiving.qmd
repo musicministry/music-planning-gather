@@ -12,9 +12,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "At the Name of Jesus"
-          tune: "KING’S WESTON"
-          book: BB
+        - name: "Christ Is the King!"
+          book: G
           priority: required
     psalm:
       list:
@@ -24,34 +23,28 @@ hymns:
     offertory:
       list:
         - name: "Crown Him with Many Crowns"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Hail, Redeemer, King Divine"
-          book: BB
-          priority: required
-        - name: "Come, Ye Thankful People, Come"
-          book: BB
+        - name: "Come, You Thankful People, Come"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Thanks Be to God"
-          book: BB
+        - name: "Father, We Thank You, Who Have Planted"
+          book: G
           priority: required
     recessional:
       list:
         - name: "All Hail the Power of Jesus’ Name"
-          book: BB
-          priority: optional
-        - name: "Hail Thee, Festival Day"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
   b:
     processional:
       list:
         - name: "To Jesus Christ, Our Sovereign King"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -61,34 +54,28 @@ hymns:
     offertory:
       list:
         - name: "Crown Him with Many Crowns"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Hail, Redeemer, King Divine"
-          book: BB
-          priority: required
-        - name: "Come, Ye Thankful People, Come"
-          book: BB
+        - name: "Come, You Thankful People, Come"
+          book: G
           priority: required
     meditation:
       list:
         - name: "For the Beauty of the Earth"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Alleluia! Sing to Jesus"
-          book: BB
-          priority: optional
-        - name: "Hail Thee, Festival Day"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
   c:
     processional:
       list:
-        - name: "The King of Kings, Christ Jesus Reigns"
-          book: BB
+        - name: "To Jesus Christ, Our Sovereign King"
+          book: G
           priority: required
     psalm:
       list:
@@ -98,29 +85,23 @@ hymns:
     offertory:
       list:
         - name: "Crown Him with Many Crowns"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Hail, Redeemer, King Divine"
-          book: BB
-          priority: required
-        - name: "Come, Ye Thankful People, Come"
-          book: BB
+        - name: "Come, You Thankful People, Come"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "For the Fruits of This Creation"
-          book: BB
+        - name: "At the Table of Jesus"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Rejoice, the Lord is King"
-          book: BB
-          priority: optional
-        - name: "Hail Thee, Festival Day"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
 """
 ```
 
