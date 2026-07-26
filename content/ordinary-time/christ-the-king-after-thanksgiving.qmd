@@ -12,9 +12,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "At the Name of Jesus"
-          tune: "KING’S WESTON"
-          book: BB
+        - name: "Christ is the King!"
+          book: G
           priority: required
     psalm:
       list:
@@ -24,31 +23,31 @@ hymns:
     offertory:
       list:
         - name: "Crown Him with Many Crowns"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Hail, Redeemer, King Divine"
-          book: BB
-          priority: required
+        - name: "You, Lord, Are Both Lamb and Shepherd"
+          book: G
+          priority: optional
+       - name: "On the Journey to Emmaus"
+         book: G
+         priority: optional
     meditation:
       list:
         - name: "Worthy Is the Lamb"
-          book: BB
+          book: Handout
           priority: required
     recessional:
       list:
         - name: "All Hail the Power of Jesus’ Name"
-          book: BB
-          priority: optional
-        - name: "Hail Thee, Festival Day"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
   b:
     processional:
       list:
         - name: "To Jesus Christ, Our Sovereign King"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -58,31 +57,28 @@ hymns:
     offertory:
       list:
         - name: "Crown Him with Many Crowns"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Hail, Redeemer, King Divine"
-          book: BB
+        - name: "Come, You Faithful, Raise the Strain"
+          book: 
           priority: required
     meditation:
       list:
         - name: "Worthy Is the Lamb"
-          book: BB
+          book: Handout
           priority: required
     recessional:
       list:
         - name: "Alleluia! Sing to Jesus"
-          book: BB
-          priority: optional
-        - name: "Hail Thee, Festival Day"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
   c:
     processional:
       list:
-        - name: "The King of Kings, Christ Jesus Reigns"
-          book: BB
+        - name: "Come Now, Almighty King"
+          book: G
           priority: required
     psalm:
       list:
@@ -92,26 +88,23 @@ hymns:
     offertory:
       list:
         - name: "Crown Him with Many Crowns"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Hail, Redeemer, King Divine"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     meditation:
       list:
         - name: "Worthy Is the Lamb"
-          book: BB
+          book: Handout
           priority: required
     recessional:
       list:
         - name: "Rejoice, the Lord is King"
-          book: BB
-          priority: optional
-        - name: "Hail Thee, Festival Day"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
 """
 ```
 
