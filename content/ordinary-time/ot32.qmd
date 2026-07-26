@@ -29,13 +29,13 @@ hymns:
           priority: optional
     offertory:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Wisdom, My Road"
+          book: G
+          priority: preferred
     communion:
       list:
         - name: "In the Breaking of the Bread"
-          book: g
+          book: G
           priority: required
     meditation:
       list:
