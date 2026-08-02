@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,10 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-286ccb6d66a8c4fd5ac573dcd3fe1a04.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-332e9394c2592982cd86000e1fa7fb3f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -203,7 +206,6 @@ window.Quarto = {
   <li><a href="#summary-table" id="toc-summary-table" class="nav-link active" data-scroll-target="#summary-table">Summary Table</a></li>
   <li><a href="#detailed-listings" id="toc-detailed-listings" class="nav-link" data-scroll-target="#detailed-listings">Detailed Listings</a>
   <ul class="collapse">
-  <li><a href="#tis-good-lord-to-be-here" id="toc-tis-good-lord-to-be-here" class="nav-link" data-scroll-target="#tis-good-lord-to-be-here">’Tis Good, Lord, To Be Here</a></li>
   <li><a href="#a-hymn-of-glory-let-us-sing" id="toc-a-hymn-of-glory-let-us-sing" class="nav-link" data-scroll-target="#a-hymn-of-glory-let-us-sing">A Hymn of Glory Let Us Sing!</a></li>
   <li><a href="#a-mighty-fortress" id="toc-a-mighty-fortress" class="nav-link" data-scroll-target="#a-mighty-fortress">A Mighty Fortress</a></li>
   <li><a href="#a-voice-cries-out" id="toc-a-voice-cries-out" class="nav-link" data-scroll-target="#a-voice-cries-out">A Voice Cries Out</a></li>
@@ -343,6 +345,7 @@ window.Quarto = {
   <li><a href="#hail-the-day-that-sees-him-rise" id="toc-hail-the-day-that-sees-him-rise" class="nav-link" data-scroll-target="#hail-the-day-that-sees-him-rise">Hail the Day That Sees Him Rise</a></li>
   <li><a href="#hail-thee-festival-day" id="toc-hail-thee-festival-day" class="nav-link" data-scroll-target="#hail-thee-festival-day">Hail Thee, Festival Day</a></li>
   <li><a href="#hail-holy-queen" id="toc-hail-holy-queen" class="nav-link" data-scroll-target="#hail-holy-queen">Hail, Holy Queen</a></li>
+  <li><a href="#hail-holy-queen-enthroned-above" id="toc-hail-holy-queen-enthroned-above" class="nav-link" data-scroll-target="#hail-holy-queen-enthroned-above">Hail, Holy Queen, Enthroned Above</a></li>
   <li><a href="#hail-redeemer-king-divine" id="toc-hail-redeemer-king-divine" class="nav-link" data-scroll-target="#hail-redeemer-king-divine">Hail, Redeemer, King Divine</a></li>
   <li><a href="#hallelujah-chorus" id="toc-hallelujah-chorus" class="nav-link" data-scroll-target="#hallelujah-chorus">Hallelujah Chorus</a></li>
   <li><a href="#handout" id="toc-handout" class="nav-link" data-scroll-target="#handout">Handout</a></li>
@@ -444,12 +447,13 @@ window.Quarto = {
   <li><a href="#love-divine-all-loves-excelling" id="toc-love-divine-all-loves-excelling" class="nav-link" data-scroll-target="#love-divine-all-loves-excelling">Love Divine, All Loves Excelling</a></li>
   <li><a href="#love-one-another" id="toc-love-one-another" class="nav-link" data-scroll-target="#love-one-another">Love One Another</a></li>
   <li><a href="#luke-1-my-soul-rejoices" id="toc-luke-1-my-soul-rejoices" class="nav-link" data-scroll-target="#luke-1-my-soul-rejoices">Luke 1: My Soul Rejoices</a></li>
+  <li><a href="#luke-146-53-magnificat" id="toc-luke-146-53-magnificat" class="nav-link" data-scroll-target="#luke-146-53-magnificat">Luke 1:46-53: Magnificat</a></li>
+  <li><a href="#luke-146-53-my-soul-gives-glory" id="toc-luke-146-53-my-soul-gives-glory" class="nav-link" data-scroll-target="#luke-146-53-my-soul-gives-glory">Luke 1:46-53: My Soul Gives Glory</a></li>
   <li><a href="#luke-146-55-magnificat-chepponis" id="toc-luke-146-55-magnificat-chepponis" class="nav-link" data-scroll-target="#luke-146-55-magnificat-chepponis">Luke 1:46-55: Magnificat (Chepponis)</a></li>
   <li><a href="#luke-2-song-of-simeon" id="toc-luke-2-song-of-simeon" class="nav-link" data-scroll-target="#luke-2-song-of-simeon">Luke 2: Song of Simeon</a></li>
   <li><a href="#make-me-a-channel-of-your-peace" id="toc-make-me-a-channel-of-your-peace" class="nav-link" data-scroll-target="#make-me-a-channel-of-your-peace">Make Me a Channel of Your Peace</a></li>
   <li><a href="#many-and-great" id="toc-many-and-great" class="nav-link" data-scroll-target="#many-and-great">Many and Great</a></li>
   <li><a href="#maranatha" id="toc-maranatha" class="nav-link" data-scroll-target="#maranatha">Maranatha</a></li>
-  <li><a href="#marys-song" id="toc-marys-song" class="nav-link" data-scroll-target="#marys-song">Mary’s Song</a></li>
   <li><a href="#merciful-god-ash-wednesday" id="toc-merciful-god-ash-wednesday" class="nav-link" data-scroll-target="#merciful-god-ash-wednesday">Merciful God (<em>Ash Wednesday</em>)</a></li>
   <li><a href="#merciful-god-lent-communion" id="toc-merciful-god-lent-communion" class="nav-link" data-scroll-target="#merciful-god-lent-communion">Merciful God (Lent Communion)</a></li>
   <li><a href="#merciful-god-lent-gathering" id="toc-merciful-god-lent-gathering" class="nav-link" data-scroll-target="#merciful-god-lent-gathering">Merciful God (Lent Gathering)</a></li>
@@ -480,6 +484,7 @@ window.Quarto = {
   <li><a href="#o-how-lovely-is-your-dwelling-place" id="toc-o-how-lovely-is-your-dwelling-place" class="nav-link" data-scroll-target="#o-how-lovely-is-your-dwelling-place">O How Lovely Is Your Dwelling Place</a></li>
   <li><a href="#o-little-town-of-bethlehem" id="toc-o-little-town-of-bethlehem" class="nav-link" data-scroll-target="#o-little-town-of-bethlehem">O Little Town of Bethlehem</a></li>
   <li><a href="#o-lord-i-am-not-worthy" id="toc-o-lord-i-am-not-worthy" class="nav-link" data-scroll-target="#o-lord-i-am-not-worthy">O Lord, I Am Not Worthy</a></li>
+  <li><a href="#o-most-holy-one" id="toc-o-most-holy-one" class="nav-link" data-scroll-target="#o-most-holy-one">O Most Holy One</a></li>
   <li><a href="#o-radiant-light" id="toc-o-radiant-light" class="nav-link" data-scroll-target="#o-radiant-light">O Radiant Light</a></li>
   <li><a href="#o-sacred-head-surrounded" id="toc-o-sacred-head-surrounded" class="nav-link" data-scroll-target="#o-sacred-head-surrounded">O Sacred Head, Surrounded</a></li>
   <li><a href="#o-sanctissima" id="toc-o-sanctissima" class="nav-link" data-scroll-target="#o-sanctissima">O Sanctissima</a></li>
@@ -608,7 +613,6 @@ window.Quarto = {
   <li><a href="#thou-must-leave-thy-lowly-dwelling" id="toc-thou-must-leave-thy-lowly-dwelling" class="nav-link" data-scroll-target="#thou-must-leave-thy-lowly-dwelling">Thou Must Leave Thy Lowly Dwelling</a></li>
   <li><a href="#though-the-mountains-may-fall" id="toc-though-the-mountains-may-fall" class="nav-link" data-scroll-target="#though-the-mountains-may-fall">Though the Mountains May Fall</a></li>
   <li><a href="#to-jesus-christ-our-sovereign-king" id="toc-to-jesus-christ-our-sovereign-king" class="nav-link" data-scroll-target="#to-jesus-christ-our-sovereign-king">To Jesus Christ, Our Sovereign King</a></li>
-  <li><a href="#transfigure-us-o-lord" id="toc-transfigure-us-o-lord" class="nav-link" data-scroll-target="#transfigure-us-o-lord">Transfigure Us, O Lord</a></li>
   <li><a href="#transform-us" id="toc-transform-us" class="nav-link" data-scroll-target="#transform-us">Transform Us</a></li>
   <li><a href="#tree-of-life" id="toc-tree-of-life" class="nav-link" data-scroll-target="#tree-of-life">Tree of Life</a></li>
   <li><a href="#turn-to-the-living-god" id="toc-turn-to-the-living-god" class="nav-link" data-scroll-target="#turn-to-the-living-god">Turn to the Living God</a></li>
@@ -680,8 +684,8 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Total unique hymns:</strong> 451<br>
-<strong>Total occurrences:</strong> 1417</p>
+<p>YAML parsing error: while scanning a simple key in “<unicode string="">”, line 31, column 11: noteL Year A ^ could not find expected ‘:’ in “<unicode string="">”, line 32, column 11: book: G ^ <strong>Total unique hymns:</strong> 452<br>
+<strong>Total occurrences:</strong> 1408</unicode></unicode></p>
 <section id="summary-table" class="level2">
 <h2 class="anchored" data-anchor-id="summary-table">Summary Table</h2>
 <table class="caption-top table">
@@ -696,984 +700,984 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td>’Tis Good, Lord, To Be Here</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>3</td>
-</tr>
-<tr class="even">
 <td>A Hymn of Glory Let Us Sing!</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>A Mighty Fortress</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>A Voice Cries Out</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Abba! Father</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Abide With Me</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Adoro Te Devote</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Again We Keep This Solemn Fast</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Age to Age</td>
 <td>3</td>
 <td>2</td>
 <td>2</td>
 <td>7</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>All Are Welcome</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>All Creatures of Our God and King</td>
 <td>0</td>
 <td>2</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>All Glory Is Yours</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>All Glory, Laud, and Honor</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>All Good Gifts</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>All Hail the Power of Jesus’ Name!</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>All Hail the Power of Jesus’ Name</td>
 <td>2</td>
 <td>0</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>All People That on Earth Do Dwell</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>All Praise and Glad Thanksgiving</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>All the Earth</td>
 <td>1</td>
 <td>2</td>
 <td>1</td>
 <td>4</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>All the Ends of the Earth</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>All Who Hunger</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>All Will Be Well</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Alleluia No.&nbsp;1</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Alleluia! Sing to Jesus</td>
 <td>1</td>
 <td>4</td>
 <td>2</td>
 <td>7</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Amazing Grace</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>And Love Was Born (Sewell)</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>And the River Will Rise</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Angels We Have Heard on High</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Angels, from the Realms of Glory</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Arise and Shine</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Arise, Arise, and Shine</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>As a Fire Is Meant for Burning</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>As We Gather at Your Table</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>As With Gladness Men of Old</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ashes</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>At the Cross Her Station Keeping</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>At the Lamb’s High Feast We Sing</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>At the Name of Jesus</td>
 <td>4</td>
 <td>1</td>
 <td>1</td>
 <td>6</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ave Verum Corpus</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Away in a Manger</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Baptized in Water</td>
 <td>2</td>
 <td>1</td>
 <td>2</td>
 <td>5</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Be Joyful Mary</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Be Joyful, Mary</td>
 <td>3</td>
 <td>3</td>
 <td>2</td>
 <td>8</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Be Not Afraid</td>
 <td>3</td>
 <td>3</td>
 <td>1</td>
 <td>7</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Be Still, for the Presence of the Lord</td>
 <td>0</td>
 <td>3</td>
 <td>0</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Be Thou My Vision</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
-<td>Behold the Lamb</td>
-<td>6</td>
-<td>6</td>
-<td>5</td>
-<td>17</td>
-</tr>
 <tr class="even">
+<td>Behold the Lamb</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>14</td>
+</tr>
+<tr class="odd">
 <td>Behold the Wood</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Beyond the Moon and Stars</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Birthday of a King</td>
 <td>0</td>
 <td>2</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Blessed Feasts of Blessed Martyrs</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Blest Be the Lord</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Bread for the World</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Bread of Life</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Bread of Life from Heaven</td>
 <td>2</td>
 <td>1</td>
 <td>1</td>
 <td>4</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>By All Your Saints Still Striving</td>
 <td>6</td>
 <td>6</td>
 <td>7</td>
 <td>19</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Cantate Domino (Pitoni)</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Canticle of the Turning</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Center of My Life</td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
 <td>3</td>
 </tr>
-<tr class="even">
-<td>Change Our Hearts</td>
-<td>3</td>
-<td>4</td>
-<td>3</td>
-<td>10</td>
-</tr>
 <tr class="odd">
+<td>Change Our Hearts</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr class="even">
 <td>Child of Mary Newly Born</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Child of the Poor / What Child Is This</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Christ Before Us</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Christ Is Made the Sure Foundation</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Christ Lives Among Us</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Christ, Be Our Light</td>
 <td>2</td>
 <td>2</td>
 <td>1</td>
 <td>5</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Christ, Circle Round Us</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Christ, the Lord, Is Risen Today</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 <td>4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Christ, the Lord, is Risen Today</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Church of God, Elect and Glorious</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>City of God</td>
 <td>4</td>
 <td>1</td>
 <td>0</td>
 <td>5</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Cold Was the Stable</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Come Down, O Love Divine</td>
 <td>1</td>
 <td>3</td>
 <td>1</td>
 <td>5</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Come Now, Almighty King</td>
 <td>0</td>
 <td>2</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Come to Me</td>
 <td>2</td>
 <td>1</td>
 <td>1</td>
 <td>4</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Come to the Banquet</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Come to the Feast</td>
 <td>3</td>
 <td>0</td>
 <td>2</td>
 <td>5</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Come to the Water</td>
 <td>3</td>
 <td>3</td>
 <td>2</td>
 <td>8</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Come to Us</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Come, Holy Ghost</td>
 <td>2</td>
 <td>2</td>
 <td>2</td>
 <td>6</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Come, Host of Heaven’s High Dwelling Place</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Come, Lord Jesus</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Come, Thou Long-Expected Jesus</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Come, Ye Thankful People, Come</td>
 <td>2</td>
 <td>2</td>
 <td>1</td>
 <td>5</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Come, You Faithful, Raise the Strain</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Comfort, Comfort, O My People</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Creator of the Stars of Night</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Crown Him with Many Crowns</td>
 <td>3</td>
 <td>3</td>
 <td>3</td>
 <td>9</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Crown Him With Many Crowns</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Cry of the Poor</td>
 <td>2</td>
 <td>2</td>
 <td>2</td>
 <td>6</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Cry Out With Joy and Gladness</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Diverse in Culture, Nation, Race</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Dixit Maria</td>
 <td>2</td>
 <td>2</td>
 <td>3</td>
 <td>7</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Dona Nobis Pacem</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Draw Near</td>
 <td>0</td>
 <td>2</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Dwelling Place</td>
 <td>4</td>
 <td>2</td>
 <td>4</td>
 <td>10</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Easter Alleluia</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Eat This Bread</td>
 <td>1</td>
 <td>3</td>
 <td>0</td>
 <td>4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Emmaus</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Et in Terra Pax</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Eternal Father, Strong to Save</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Every Valley</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Eye Has Not Seen</td>
 <td>1</td>
 <td>2</td>
 <td>0</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Faith of Our Fathers</td>
 <td>4</td>
 <td>3</td>
 <td>4</td>
 <td>11</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Father, We Thank You, Who Have Planted</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>For All the Saints</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>For God So Loved the World</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>For the Beauty of the Earth</td>
 <td>1</td>
 <td>2</td>
 <td>1</td>
 <td>4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>For the Fruits of This Creation</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>For the Healing of the Nations</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>For Unto Us</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Forty Days and Forty Nights</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>From All That Dwell Below the Skies</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>From Ashes to the Living Font</td>
 <td>0</td>
 <td>0</td>
 <td>5</td>
 <td>5</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Gather the People</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Gather Us In</td>
 <td>2</td>
 <td>2</td>
 <td>1</td>
 <td>5</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Gather Your People</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Gesú Bambino (When Blossoms Flowered)</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Gift of Finest Wheat</td>
 <td>2</td>
 <td>0</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Gloria in Excelsis (Vivaldi)</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Glory and Praise to Our God</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Go Make of All Disciples</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Go to the World</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Go to the World!</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Go, Tell It on the Mountain</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>God Is Forgiveness</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>God Is Love</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>God is Love</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>God of the Hungry</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>God Rest You, Merry Gentlemen</td>
 <td>2</td>
 <td>2</td>
 <td>3</td>
 <td>7</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>God So Loved the World</td>
 <td>2</td>
 <td>2</td>
 <td>0</td>
 <td>4</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>God Will Wipe the Tears</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>God, Whose Purpose is to Kindle</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Good Christian Friends, Rejoice</td>
 <td>3</td>
 <td>2</td>
 <td>2</td>
 <td>7</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Hail Mary, Gentle Woman</td>
 <td>2</td>
 <td>2</td>
 <td>3</td>
 <td>7</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Hail Our Savior’s Glorious Body</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Hail our Savior’s Glorious Body</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Hail the Day That Sees Him Rise</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Hail Thee, Festival Day</td>
 <td>2</td>
 <td>2</td>
 <td>2</td>
 <td>6</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Hail, Holy Queen</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
+</tr>
+<tr class="even">
+<td>Hail, Holy Queen, Enthroned Above</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
 </tr>
 <tr class="odd">
 <td>Hail, Redeemer, King Divine</td>
@@ -2363,10 +2367,10 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td>Love Divine, All Loves Excelling</td>
+<td>1</td>
 <td>2</td>
-<td>3</td>
-<td>3</td>
-<td>8</td>
+<td>2</td>
+<td>5</td>
 </tr>
 <tr class="even">
 <td>Love One Another</td>
@@ -2377,10 +2381,24 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td>Luke 1: My Soul Rejoices</td>
-<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
 <td>4</td>
-<td>3</td>
-<td>10</td>
+</tr>
+<tr class="even">
+<td>Luke 1:46-53: Magnificat</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>Luke 1:46-53: My Soul Gives Glory</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
 </tr>
 <tr class="even">
 <td>Luke 1:46-55: Magnificat (Chepponis)</td>
@@ -2418,221 +2436,221 @@ window.Quarto = {
 <td>1</td>
 </tr>
 <tr class="odd">
-<td>Mary’s Song</td>
-<td>2</td>
-<td>2</td>
-<td>2</td>
-<td>6</td>
-</tr>
-<tr class="even">
 <td>Merciful God (<em>Ash Wednesday</em>)</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Merciful God (Lent Communion)</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Merciful God (Lent Gathering)</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Near the Cross</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Neither Death nor Life</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Night of Silence / Silent Night</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>No Greater Love</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Now Thank We All Our God</td>
 <td>1</td>
 <td>0</td>
 <td>2</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Now the Green Blade Rises</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Nowell! Nowell! Nowell!</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>O Bless the Lord, My Soul</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>O Breathe on Me, O Breath of God</td>
 <td>2</td>
 <td>2</td>
 <td>3</td>
 <td>7</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>O Breathe On Me, O Breath of God</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>O Come, All Ye Faithful</td>
 <td>3</td>
 <td>3</td>
 <td>3</td>
 <td>9</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>O Come, Divine Messiah</td>
 <td>1</td>
 <td>2</td>
 <td>1</td>
 <td>4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>O Come, Little Children</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>O Come, O Come, Emmanuel</td>
 <td>3</td>
 <td>3</td>
 <td>2</td>
 <td>8</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>O God Beyond All Praising</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>O God of Every Nation</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>O God of Exodus</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>O God, Almighty Father</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>O God, Beyond All Praising</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>O God, Our Help in Ages Past</td>
 <td>2</td>
 <td>1</td>
 <td>4</td>
 <td>7</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>O God, You Search Me</td>
 <td>2</td>
 <td>2</td>
 <td>3</td>
 <td>7</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>O Holy Night</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>O Holy Spirit, by Whose Breath</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>O How Amiable</td>
 <td>2</td>
 <td>2</td>
 <td>4</td>
 <td>8</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>O How Lovely Is Your Dwelling Place</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>O Little Town of Bethlehem</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>O Lord, I Am Not Worthy</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
+</tr>
+<tr class="odd">
+<td>O Most Holy One</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
 </tr>
 <tr class="even">
 <td>O Radiant Light</td>
@@ -2944,10 +2962,10 @@ window.Quarto = {
 </tr>
 <tr class="even">
 <td>Rejoice, the Lord is King</td>
+<td>0</td>
 <td>1</td>
-<td>2</td>
+<td>3</td>
 <td>4</td>
-<td>7</td>
 </tr>
 <tr class="odd">
 <td>Remember You Are Dust</td>
@@ -3525,327 +3543,320 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td>To Jesus Christ, Our Sovereign King</td>
-<td>3</td>
-<td>3</td>
 <td>2</td>
-<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
 </tr>
 <tr class="even">
-<td>Transfigure Us, O Lord</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>3</td>
-</tr>
-<tr class="odd">
 <td>Transform Us</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Tree of Life</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Turn to the Living God</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ubi Caritas</td>
 <td>2</td>
 <td>2</td>
 <td>2</td>
 <td>6</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Unless a Grain of Wheat</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Unless A Grain of Wheat</td>
 <td>3</td>
 <td>1</td>
 <td>1</td>
 <td>5</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Wake from Your Sleep</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Wake, O Wake, and Sleep No Longer</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>We Are Many Parts</td>
 <td>2</td>
 <td>0</td>
 <td>2</td>
 <td>4</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>We Are the Light of the World</td>
 <td>4</td>
 <td>1</td>
 <td>2</td>
 <td>7</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>We Cannot Measure How You Heal</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>We Gather Together</td>
 <td>0</td>
 <td>2</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>We Remember</td>
 <td>3</td>
 <td>5</td>
 <td>3</td>
 <td>11</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>We Shall Rise Again</td>
 <td>4</td>
 <td>1</td>
 <td>1</td>
 <td>6</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>We Three Kings</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>We Walk By Faith</td>
 <td>2</td>
 <td>2</td>
 <td>1</td>
 <td>5</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Welcome the Light</td>
 <td>1</td>
 <td>0</td>
 <td>2</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Were You There</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>What Child is This</td>
 <td>2</td>
 <td>2</td>
 <td>2</td>
 <td>6</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>What Feast of Love</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>What Star Is This</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>What Wondrous Love</td>
 <td>2</td>
 <td>1</td>
 <td>1</td>
 <td>4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>What Wondrous Love is This</td>
 <td>2</td>
 <td>0</td>
 <td>2</td>
 <td>4</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Whatsoever You Do</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>When Jesus Comes to Be Baptized</td>
 <td>3</td>
 <td>3</td>
 <td>3</td>
 <td>9</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>When Jesus Wept</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>When We Eat this Bread</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>When Will He Come?</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Where Two or Three Are Gathered</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>While Shepherds Watched Their Flock</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Wisdom’s Feast</td>
 <td>1</td>
 <td>2</td>
 <td>0</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>With Joyful Expectancy</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Wood of the Cradle</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Word of God, Come Down on Earth</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Worthy is the Lamb</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Worthy Is the Lamb</td>
 <td>2</td>
 <td>2</td>
 <td>2</td>
 <td>6</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Worthy Is the Lamb (Manalo)</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
 <td>3</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ye Watchers and Ye Holy Ones</td>
 <td>3</td>
 <td>2</td>
 <td>2</td>
 <td>7</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>You Are All We Have</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>You Are Near</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
 <td>2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>You Are the Light of the World</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>You Satisfy the Hungry Heart</td>
 <td>2</td>
 <td>1</td>
 <td>1</td>
 <td>4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>You Walk Along the Seashore</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>You, Lord, Are Both Lamb and Shepherd</td>
 <td>1</td>
 <td>3</td>
 <td>0</td>
 <td>4</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Your Words Are Spirit and Life</td>
 <td>0</td>
 <td>1</td>
@@ -3858,15 +3869,6 @@ window.Quarto = {
 </section>
 <section id="detailed-listings" class="level2">
 <h2 class="anchored" data-anchor-id="detailed-listings">Detailed Listings</h2>
-<section id="tis-good-lord-to-be-here" class="level3">
-<h3 class="anchored" data-anchor-id="tis-good-lord-to-be-here">’Tis Good, Lord, To Be Here</h3>
-<p><strong>Year A:</strong> 1 | <strong>Year B:</strong> 1 | <strong>Year C:</strong> 1 | <strong>Total:</strong> 3</p>
-<p><strong>Appears in:</strong></p>
-<ul>
-<li><strong>FEAST OF THE TRANSFIGURATION OF THE LORD</strong>: Year A (offertory), Year B (offertory), Year C (offertory)</li>
-</ul>
-<hr>
-</section>
 <section id="a-hymn-of-glory-let-us-sing" class="level3">
 <h3 class="anchored" data-anchor-id="a-hymn-of-glory-let-us-sing">A Hymn of Glory Let Us Sing!</h3>
 <p><strong>Year A:</strong> 1 | <strong>Year B:</strong> 1 | <strong>Year C:</strong> 1 | <strong>Total:</strong> 3</p>
@@ -4306,12 +4308,11 @@ window.Quarto = {
 </section>
 <section id="behold-the-lamb" class="level3">
 <h3 class="anchored" data-anchor-id="behold-the-lamb">Behold the Lamb</h3>
-<p><strong>Year A:</strong> 6 | <strong>Year B:</strong> 6 | <strong>Year C:</strong> 5 | <strong>Total:</strong> 17</p>
+<p><strong>Year A:</strong> 5 | <strong>Year B:</strong> 5 | <strong>Year C:</strong> 4 | <strong>Total:</strong> 14</p>
 <p><strong>Composers:</strong> Willett</p>
 <p><strong>Appears in:</strong></p>
 <ul>
 <li><strong>FEAST OF THE PRESENTATION OF THE LORD</strong>: Year A (communion), Year B (communion), Year C (communion)</li>
-<li><strong>FEAST OF THE TRANSFIGURATION OF THE LORD</strong>: Year A (meditation), Year B (meditation), Year C (meditation)</li>
 <li><strong>SECOND SUNDAY IN ORDINARY TIME</strong>: Year A (communion), Year B (communion)</li>
 <li><strong>SECOND SUNDAY OF LENT</strong>: Year B (meditation)</li>
 <li><strong>SOLEMNITY OF THE NATIVITY OF SAINT JOHN THE BAPTIST: MASS DURING THE DAY</strong>: Year A (communion), Year B (communion), Year C (communion)</li>
@@ -4445,11 +4446,10 @@ window.Quarto = {
 </section>
 <section id="change-our-hearts" class="level3">
 <h3 class="anchored" data-anchor-id="change-our-hearts">Change Our Hearts</h3>
-<p><strong>Year A:</strong> 3 | <strong>Year B:</strong> 4 | <strong>Year C:</strong> 3 | <strong>Total:</strong> 10</p>
+<p><strong>Year A:</strong> 2 | <strong>Year B:</strong> 3 | <strong>Year C:</strong> 2 | <strong>Total:</strong> 7</p>
 <p><strong>Appears in:</strong></p>
 <ul>
 <li><strong>ASH WEDNESDAY</strong>: Year A (recessional), Year B (recessional), Year C (recessional)</li>
-<li><strong>FEAST OF THE TRANSFIGURATION OF THE LORD</strong>: Year A (recessional), Year B (recessional), Year C (recessional)</li>
 <li><strong>FIFTH SUNDAY OF LENT</strong>: Year B (recessional)</li>
 <li><strong>SECOND SUNDAY OF LENT</strong>: Year B (recessional)</li>
 <li><strong>THIRD SUNDAY OF LENT</strong>: Year A (recessional)</li>
@@ -5261,6 +5261,16 @@ window.Quarto = {
 </ul>
 <hr>
 </section>
+<section id="hail-holy-queen-enthroned-above" class="level3">
+<h3 class="anchored" data-anchor-id="hail-holy-queen-enthroned-above">Hail, Holy Queen, Enthroned Above</h3>
+<p><strong>Year A:</strong> 2 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 2 | <strong>Total:</strong> 6</p>
+<p><strong>Appears in:</strong></p>
+<ul>
+<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: MASS DURING THE DAY</strong>: Year A (offertory), Year B (offertory), Year C (offertory)</li>
+<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: VIGIL MASS</strong>: Year A (offertory), Year B (offertory), Year C (offertory)</li>
+</ul>
+<hr>
+</section>
 <section id="hail-redeemer-king-divine" class="level3">
 <h3 class="anchored" data-anchor-id="hail-redeemer-king-divine">Hail, Redeemer, King Divine</h3>
 <p><strong>Year A:</strong> 2 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 2 | <strong>Total:</strong> 6</p>
@@ -5401,6 +5411,7 @@ window.Quarto = {
 <section id="holy-is-his-name-1" class="level3">
 <h3 class="anchored" data-anchor-id="holy-is-his-name-1">Holy Is His Name</h3>
 <p><strong>Year A:</strong> 2 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 2 | <strong>Total:</strong> 6</p>
+<p><strong>Composers:</strong> Talbot</p>
 <p><strong>Appears in:</strong></p>
 <ul>
 <li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: MASS DURING THE DAY</strong>: Year A (anthems), Year B (anthems), Year C (anthems)</li>
@@ -6238,11 +6249,10 @@ window.Quarto = {
 </section>
 <section id="love-divine-all-loves-excelling" class="level3">
 <h3 class="anchored" data-anchor-id="love-divine-all-loves-excelling">Love Divine, All Loves Excelling</h3>
-<p><strong>Year A:</strong> 2 | <strong>Year B:</strong> 3 | <strong>Year C:</strong> 3 | <strong>Total:</strong> 8</p>
+<p><strong>Year A:</strong> 1 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 2 | <strong>Total:</strong> 5</p>
 <p><strong>Appears in:</strong></p>
 <ul>
 <li><strong>EIGHTEENTH SUNDAY IN ORDINARY TIME</strong>: Year A (recessional)</li>
-<li><strong>FEAST OF THE TRANSFIGURATION OF THE LORD</strong>: Year A (processional), Year B (processional), Year C (processional)</li>
 <li><strong>FOURTH SUNDAY IN ORDINARY TIME</strong>: Year C (recessional)</li>
 <li><strong>SECOND SUNDAY OF LENT</strong>: Year B (processional)</li>
 <li><strong>SOLEMNITY OF THE MOST SACRED HEART OF JESUS</strong>: Year B (processional), Year C (processional)</li>
@@ -6260,13 +6270,31 @@ window.Quarto = {
 </section>
 <section id="luke-1-my-soul-rejoices" class="level3">
 <h3 class="anchored" data-anchor-id="luke-1-my-soul-rejoices">Luke 1: My Soul Rejoices</h3>
-<p><strong>Year A:</strong> 3 | <strong>Year B:</strong> 4 | <strong>Year C:</strong> 3 | <strong>Total:</strong> 10</p>
+<p><strong>Year A:</strong> 1 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 1 | <strong>Total:</strong> 4</p>
 <p><strong>Appears in:</strong></p>
 <ul>
-<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: MASS DURING THE DAY</strong>: Year A (offertory), Year B (offertory), Year C (offertory)</li>
-<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: VIGIL MASS</strong>: Year A (offertory), Year B (offertory), Year C (offertory)</li>
 <li><strong>SOLEMNITY OF THE IMMACULATE CONCEPTION OF THE BLESSED VIRGIN MARY</strong>: Year A (offertory), Year B (offertory), Year C (offertory)</li>
 <li><strong>THIRD SUNDAY OF ADVENT</strong>: Year B (offertory)</li>
+</ul>
+<hr>
+</section>
+<section id="luke-146-53-magnificat" class="level3">
+<h3 class="anchored" data-anchor-id="luke-146-53-magnificat">Luke 1:46-53: Magnificat</h3>
+<p><strong>Year A:</strong> 2 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 2 | <strong>Total:</strong> 6</p>
+<p><strong>Appears in:</strong></p>
+<ul>
+<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: MASS DURING THE DAY</strong>: Year A (communion), Year B (communion), Year C (communion)</li>
+<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: VIGIL MASS</strong>: Year A (communion), Year B (communion), Year C (communion)</li>
+</ul>
+<hr>
+</section>
+<section id="luke-146-53-my-soul-gives-glory" class="level3">
+<h3 class="anchored" data-anchor-id="luke-146-53-my-soul-gives-glory">Luke 1:46-53: My Soul Gives Glory</h3>
+<p><strong>Year A:</strong> 2 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 2 | <strong>Total:</strong> 6</p>
+<p><strong>Appears in:</strong></p>
+<ul>
+<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: MASS DURING THE DAY</strong>: Year A (communion), Year B (communion), Year C (communion)</li>
+<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: VIGIL MASS</strong>: Year A (communion), Year B (communion), Year C (communion)</li>
 </ul>
 <hr>
 </section>
@@ -6315,16 +6343,6 @@ window.Quarto = {
 <p><strong>Appears in:</strong></p>
 <ul>
 <li><strong>FIRST SUNDAY OF ADVENT</strong>: Year A (meditation)</li>
-</ul>
-<hr>
-</section>
-<section id="marys-song" class="level3">
-<h3 class="anchored" data-anchor-id="marys-song">Mary’s Song</h3>
-<p><strong>Year A:</strong> 2 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 2 | <strong>Total:</strong> 6</p>
-<p><strong>Appears in:</strong></p>
-<ul>
-<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: MASS DURING THE DAY</strong>: Year A (communion), Year B (communion), Year C (communion)</li>
-<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: VIGIL MASS</strong>: Year A (communion), Year B (communion), Year C (communion)</li>
 </ul>
 <hr>
 </section>
@@ -6615,6 +6633,16 @@ window.Quarto = {
 <p><strong>Appears in:</strong></p>
 <ul>
 <li><strong>NINTH SUNDAY OF SEASON</strong>: Year A (communion), Year C (communion)</li>
+</ul>
+<hr>
+</section>
+<section id="o-most-holy-one" class="level3">
+<h3 class="anchored" data-anchor-id="o-most-holy-one">O Most Holy One</h3>
+<p><strong>Year A:</strong> 2 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 2 | <strong>Total:</strong> 6</p>
+<p><strong>Appears in:</strong></p>
+<ul>
+<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: MASS DURING THE DAY</strong>: Year A (meditation), Year B (meditation), Year C (meditation)</li>
+<li><strong>SOLEMNITY OF THE ASSUMPTION OF THE BLESSED VIRGIN MARY: VIGIL MASS</strong>: Year A (meditation), Year B (meditation), Year C (meditation)</li>
 </ul>
 <hr>
 </section>
@@ -7058,12 +7086,11 @@ window.Quarto = {
 </section>
 <section id="rejoice-the-lord-is-king" class="level3">
 <h3 class="anchored" data-anchor-id="rejoice-the-lord-is-king">Rejoice, the Lord is King</h3>
-<p><strong>Year A:</strong> 1 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 4 | <strong>Total:</strong> 7</p>
+<p><strong>Year A:</strong> 0 | <strong>Year B:</strong> 1 | <strong>Year C:</strong> 3 | <strong>Total:</strong> 4</p>
 <p><strong>Appears in:</strong></p>
 <ul>
 <li><strong>CHRIST THE KING | After Thanksgiving Day</strong>: Year C (recessional)</li>
 <li><strong>CHRIST THE KING | Prior to Thanksgiving Day</strong>: Year C (recessional)</li>
-<li><strong>FEAST OF THE TRANSFIGURATION OF THE LORD</strong>: Year A (recessional), Year B (recessional), Year C (recessional)</li>
 <li><strong>THIRD SUNDAY OF ADVENT</strong>: Year B (recessional), Year C (processional)</li>
 </ul>
 <hr>
@@ -7895,23 +7922,13 @@ window.Quarto = {
 </section>
 <section id="to-jesus-christ-our-sovereign-king" class="level3">
 <h3 class="anchored" data-anchor-id="to-jesus-christ-our-sovereign-king">To Jesus Christ, Our Sovereign King</h3>
-<p><strong>Year A:</strong> 3 | <strong>Year B:</strong> 3 | <strong>Year C:</strong> 2 | <strong>Total:</strong> 8</p>
+<p><strong>Year A:</strong> 2 | <strong>Year B:</strong> 2 | <strong>Year C:</strong> 1 | <strong>Total:</strong> 5</p>
 <p><strong>Appears in:</strong></p>
 <ul>
 <li><strong>CHRIST THE KING | After Thanksgiving Day</strong>: Year B (processional)</li>
 <li><strong>CHRIST THE KING | Prior to Thanksgiving Day</strong>: Year B (processional)</li>
-<li><strong>FEAST OF THE TRANSFIGURATION OF THE LORD</strong>: Year A (processional), Year B (processional), Year C (processional)</li>
 <li><strong>SIXTEENTH SUNDAY IN ORDINARY TIME</strong>: Year A (recessional)</li>
 <li><strong>TWENTY-SIXTH SUNDAY IN ORDINARY TIME</strong>: Year A (recessional), Year C (processional)</li>
-</ul>
-<hr>
-</section>
-<section id="transfigure-us-o-lord" class="level3">
-<h3 class="anchored" data-anchor-id="transfigure-us-o-lord">Transfigure Us, O Lord</h3>
-<p><strong>Year A:</strong> 1 | <strong>Year B:</strong> 1 | <strong>Year C:</strong> 1 | <strong>Total:</strong> 3</p>
-<p><strong>Appears in:</strong></p>
-<ul>
-<li><strong>FEAST OF THE TRANSFIGURATION OF THE LORD</strong>: Year A (communion), Year B (communion), Year C (communion)</li>
 </ul>
 <hr>
 </section>
