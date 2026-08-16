@@ -13,7 +13,7 @@ hymns:
     processional:
       list:
         - name: "Immaculate Mary"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -22,27 +22,34 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Luke 1: My Soul Rejoices"
-          book: BB
+        - name: "Hail, Holy Queen, Enthroned Above"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Mary's Song"
-          book: BB
-          priority: required
+        - name: "Luke 1:46-53: My Soul Gives Glory"
+          book: G
+          priority: optional
+        - name: "Luke 1:46-53: Magnificat"
+          book: G
+          priority: optional
     meditation:
       list:
         - name: "O Sanctissima"
-          book: BB
-          priority: required
+          book: G
+          priority: optional
+        - name: "O Most Holy One"
+          book: G
+          priority: optional
     recessional:
       list:
         - name: "Sing of Mary"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
         - name: "Holy Is His Name"
+          composer: Talbot
 """
 ```
 

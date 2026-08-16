@@ -13,10 +13,10 @@ hymns:
     processional:
       list:
         - name: "To Jesus Christ, Our Sovereign King"
-          book: BB
+          book: G
           priority: optional
         - name: "Love Divine, All Loves Excelling"
-          book: BB
+          book: G
           note: "*all verses*"
           priority: optional
     psalm:
@@ -26,27 +26,35 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "'Tis Good, Lord, To Be Here"
-          book: BB
+        - name: "How Good, Lord, To Be Here!"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Transfigure Us, O Lord"
-          book: BB
+        - name: "Transform Us"
+          book: G
           priority: required
     meditation:
       list:
+        - name: "You, Lord, Are Both Lamb and Shepherd"
+          noteL Year A
+          book: G
+          priority: required
+        - name: "Tree of Life"
+          note: "Year B (General and 4th Sunday verses)"
+          book: G
+          priority: preferred
         - name: "Behold the Lamb"
-          book: BB
-          composer: Willett
+          note: Year C
+          book: G
           priority: required
     recessional:
       list:
         - name: "Rejoice, the Lord is King"
-          book: BB
+          book: G
           priority: optional
         - name: "Change Our Hearts"
-          book: BB
+          book: G
           priority: optional
 """
 ```
