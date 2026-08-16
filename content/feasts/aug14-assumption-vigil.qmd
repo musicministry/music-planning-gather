@@ -29,10 +29,7 @@ hymns:
       list:
         - name: "Luke 1:46-53: My Soul Gives Glory"
           book: G
-          priority: optional
-        - name: "Luke 1:46-53: Magnificat"
-          book: G
-          priority: optional
+          priority: required
     meditation:
       list:
         - name: "O Sanctissima"
