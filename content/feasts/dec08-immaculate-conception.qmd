@@ -13,7 +13,7 @@ hymns:
     processional:
       list:
         - name: "Immaculate Mary"
-          book: "BB"
+          book: "G"
           priority: required
     psalm:
       list:
@@ -22,28 +22,25 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Luke 1: My Soul Rejoices"
-          book: BB
+        - name: "Mary, First among Believers"
+          book: G
+          verses: "1,3, 5"
           priority: required
     communion:
       list:
-        - name: "The Angel Gabriel from Heaven Came"
-          book: BB
-          verses: "1-3"
+        - name: "Luke 1:46-53: Magnificat"
+          book: G
           priority: required
     meditation:
       list:
         - name: "Hail Mary, Gentle Woman"
-          book: BB
-          priority: optional
-        - name: "See How the Virgin Waits"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
     recessional:
       list:
-        - name: "Song of Mary"
-          book: BB
-          verses: "1-2"
+        - name: "I Sing a Maid"
+          book: G
+          verses: "1"
           priority: required
     anthems:
       list:
