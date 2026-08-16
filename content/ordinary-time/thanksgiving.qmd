@@ -12,8 +12,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "Come, Ye Thankful People, Come"
-          book: BB
+        - name: "Come, You Thankful People, Come"
+          book: G
           priority: required
     psalm:
       list:
@@ -26,28 +26,28 @@ hymns:
     offertory:
       list:
         - name: "For the Beauty of the Earth"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: "Gift of Finest Wheat"
-          book: BB
+        - name: "You Satisfy the Hungry Heart"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "For the Fruits of This Creation"
-          book: BB
+        - name: "In the Lord I'll Be Ever Thankful"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Now Thank We All Our God"
-          book: BB
+          book: G
           priority: required
   b:
     processional:
       list:
         - name: "We Gather Together"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -59,29 +59,29 @@ hymns:
           priority: optional
     offertory:
       list:
-        - name: "For the Fruits of This Creation"
-          book: BB
+        - name: "Praise and Thanksgiving"
+          book: G
           priority: required
     communion:
       list:
-        - name: "Here At This Table"
-          book: BB
+        - name: "At the Table of Jesus"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "All Good Gifts"
-          book: BB
+        - name: "In the Lord I'll Be Ever Thankful"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Let All Things Now Living"
-          book: BB
+          book: G
           priority: required
   c:
     processional:
       list:
-        - name: "Table of Plenty"
-          book: BB
+        - name: "Canticle of the Sun"
+          book: G
           priority: required
     psalm:
       list:
@@ -93,27 +93,24 @@ hymns:
           priority: optional
     offertory:
       list:
-        - name: "All Good Gifts"
-          book: BB
+        - name: "Father, We Thank You, Who Have Planted"
+          book: G
           priority: required
     communion:
       list:
-        - name: "The Supper of the Lord"
-          book: BB
+        - name: "We Come to Your Feast"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "For the Beauty of the Earth"
-          book: BB
+        - name: "In the Lord I'll Be Ever Thankful"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Thanks Be to God"
-          book: BB
-          priority: preferred
         - name: "Sing of the Lord’s Goodness"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
   abc:
     anthems:
       list:

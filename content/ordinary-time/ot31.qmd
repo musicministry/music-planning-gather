@@ -11,9 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Praise to the Lord"
+          book: G
+          priority: flexible
     psalm:
       list:
         - name: "In you, Lord, I have found my peace."
@@ -21,24 +21,24 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Make Me a Channel of Your Peace"
+          book: G
+          priority: preferred
     communion:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Where Two or Three Are Gathered"
+          book: G
+          priority: preferred
     meditation:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Dona Nobis Pacem"
+          book: G
+          priority: preferred
     recessional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Praise to You, O Christ, Our Savior"
+          book: G
+          priority: preferred
   b:
     processional:
       list:

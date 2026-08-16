@@ -11,9 +11,9 @@ hymns:
   a:
     processional:
       list:
-        - name: ""
+        - name: "Canticle of the Sun"
           book: G
-          priority: required
+          priority: flexible
     psalm:
       list:
         - name: "The vineyard of the Lord is the house of Israel."
@@ -36,9 +36,9 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: ""
+        - name: "Now Thank We All Our God"
           book: G
-          priority: required
+          priority: flexible
   b:
     processional:
       list:

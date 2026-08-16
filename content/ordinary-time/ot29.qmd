@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "Sing a New Song"
-          book: BB
+          book: G
           priority: preferred
     psalm:
       list:
@@ -22,29 +22,29 @@ hymns:
     offertory:
       list:
         - name: "Only This I Want"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "Draw Near"
+          book: G
+          priority: flexible
     meditation:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: ""
-          book: BB
-          priority: required
+        - name: "How Great Thou Art"
+          book: G
+          priority: flexible
   b:
     processional:
       list:
         - name: ""
-          book: BB
-          priority: required
+          book: G
+          priority: flexible
     psalm:
       list:
         - name: "Lord, let your mercy be on us, as we place our trust in you."
