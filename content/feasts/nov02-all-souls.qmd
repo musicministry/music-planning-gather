@@ -13,26 +13,30 @@ hymns:
     processional:
       list:
         - name: "O God, Our Help in Ages Past"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
-        - name: "The Lord is kind and merciful."
-          book: RA
-          priority: optional
         - name: "The salvation of the just comes from the Lord."
           book: RA
+          priority: preferred
+        - name: "Psalm 103: The Lord is Kind and Merciful"
+          composer: Cotter
+          book: G
+          priority: optional
+        - name: "Psalm 103: The Lord is Kind and Merciful"
+          composer: Haugen
+          book: G
           priority: optional
     offertory:
       list:
         - name: "I Know that My Redeemer Lives"
-          composer: Soper
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Shepherd of Souls"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
@@ -41,13 +45,13 @@ hymns:
           note: "see note below"
           priority: optional
         - name: "Unless A Grain of Wheat"
-          book: BB
+          book: G
           note: "see note below"
           priority: optional
     recessional:
       list:
         - name: "We Shall Rise Again"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -56,7 +60,7 @@ hymns:
     processional:
       list:
         - name: "O God, Our Help in Ages Past"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -64,30 +68,33 @@ hymns:
           book: RA
           priority: optional
         - name: "Psalm 23: My Shepherd is the Lord"
-          book: BB
+          book: G
           priority: optional
         - name: "Though I walk in the valley of darkness, I fear no evil, for you are with me."
           book: RA
           priority: optional
     offertory:
       list:
-        - name: "Jerusalem, My Happy Home"
-          book: BB
-          priority: required
+        - name: "Dwellers in the Holy City"
+          book: G
+          priority: optional
+        - name: "Come, You Faithful, Raise the Strain"
+          book: G
+          priority: optional
     communion:
       list:
         - name: "Keep in Mind"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Shepherd of Souls"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Sing with All the Saints in Glory"
-          book: BB
+          book: G
           priority: preferred
     anthems:
       list:
@@ -97,7 +104,7 @@ hymns:
     processional:
       list:
         - name: "O God, Our Help in Ages Past"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -110,23 +117,25 @@ hymns:
     offertory:
       list:
         - name: "O Breathe on Me, O Breath of God"
-          book: BB
-          priority: required
+          book: G
+          priority: optional
+        - name: "How Firm a Foundation"
+          book: G
+          priority: optional
     communion:
       list:
         - name: "Shepherd of Souls"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "I Am the Bread of Life"
-          composer: Toolan
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "We Shall Rise Again"
-          book: BB
+          book: G
           priority: required
 """
 ```
