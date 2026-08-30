@@ -9,11 +9,11 @@ subtitle: "November 1"
 
 frontmatter = """
 hymns:
-  a:
+  abc:
     processional:
       list:
         - name: "Ye Watchers and Ye Holy Ones"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -23,86 +23,29 @@ hymns:
     offertory:
       list:
         - name: "For All the Saints"
-          book: BB
-          priority: required
+          book: G
+          priority: required      
     communion:
       list:
-        - name: "Worthy Is the Lamb"
-          book: BB
+        - name: "We Are the Light of the World"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "We Are the Light of the World"
-          book: BB
-          priority: required
+        - name: "For All the Saints Who've Shown Your Love"
+          book: G
+          priority: optional
+        - name: "Worthy is the Lamb"
+          book: G
+          priority: optional
     recessional:
       list:
-        - name: "Lead Me, Lord"
-          book: BB
-          priority: required
-  b:
-    processional:
-      list:
-        - name: "For All the Saints"
-          book: BB
-          priority: required
-    psalm:
-      list:
-        - name: "Lord, this is the people that longs to see your face."
-          book: RA
-          priority: required
-    offertory:
-      list:
-        - name: "We Are the Light of the World"
-          book: BB
-          priority: required
-    communion:
-      list:
+        - name: "For the Faithful Who Have Answered"
+          book: G
+          priority: optional
         - name: "How Firm a Foundation"
-          book: BB
-          priority: required
-    meditation:
-      list:
-        - name: "Worthy Is the Lamb"
-          book: BB
-          priority: required
-    recessional:
-      list:
-        - name: "Blessed Feasts of Blessed Martyrs"
-          book: BB
-          priority: required
-  c:
-    processional:
-      list:
-        - name: "By All Your Saints Still Striving"
-          verses: "1-3"
-          book: BB
-          priority: required
-    psalm:
-      list:
-        - name: "Lord, this is the people that longs to see your face."
-          book: RA
-          priority: required
-    offertory:
-      list:
-        - name: "For All the Saints"
-          book: BB
-          priority: required
-    communion:
-      list:
-        - name: "We Are the Light of the World"
-          book: BB
-          priority: required
-    meditation:
-      list:
-        - name: "Worthy Is the Lamb"
-          book: BB
-          priority: required
-    recessional:
-      list:
-        - name: "How Firm a Foundation"
-          book: BB
-          priority: required
+          book: G
+          priority: optional
 """
 ```
 
