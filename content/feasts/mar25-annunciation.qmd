@@ -12,13 +12,9 @@ hymns:
   abc:
     processional:
       list:
-        - name: "By All Your Saints Still Striving"
-          verses: "1, 5*, and 3"
-          book: BB
-          priority: preferred
-        - name: "Sing of Mary"
-          book: BB
-          priority: optional
+        - name: "I Sing a Maid"
+          book: G
+          priority: required
     psalm:
       list:
         - name: "Here I am, Lord; I come to do your will."
@@ -26,27 +22,27 @@ hymns:
           priority: preferred
         - name: "Psalm 40: Here I Am"
           composer: Cooney
-          book: BB
+          book: G
           priority: optional
     offertory:
       list:
         - name: "Here I Am, Lord" 
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Hail Mary, Gentle Woman"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "The Angel Gabriel from Heaven Came"
-          book: BB
+        - name: "Sing of Mary"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Hail, Holy Queen"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
