@@ -12,6 +12,7 @@ hymns:
     processional:
       list:
         - name: "Sing a New Song"
+          composer: Schutte
           book: G
           priority: preferred
     psalm:
