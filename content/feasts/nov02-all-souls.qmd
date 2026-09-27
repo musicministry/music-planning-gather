@@ -30,7 +30,8 @@ hymns:
           priority: optional
     offertory:
       list:
-        - name: "I Know that My Redeemer Lives"
+        - name: "I Know that My Redeemer Lives!"
+          tune: DUKE STREET
           book: G
           priority: required
     communion:
@@ -40,14 +41,9 @@ hymns:
           priority: required
     meditation:
       list:
-        - name: "Christ Before Us"
-          book: BB
-          note: "see note below"
-          priority: optional
         - name: "Unless A Grain of Wheat"
           book: G
-          note: "see note below"
-          priority: optional
+          priority: preferred
     recessional:
       list:
         - name: "We Shall Rise Again"
