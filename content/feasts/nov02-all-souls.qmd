@@ -30,7 +30,7 @@ hymns:
           priority: optional
     offertory:
       list:
-        - name: "I Know that My Redeemer Lives!"
+        - name: "I Know That My Redeemer Lives!"
           tune: "DUKE STREET"
           book: G
           priority: required
