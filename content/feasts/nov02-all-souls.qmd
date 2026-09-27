@@ -31,7 +31,7 @@ hymns:
     offertory:
       list:
         - name: "I Know that My Redeemer Lives!"
-          tune: DUKE STREET
+          tune: "DUKE STREET"
           book: G
           priority: required
     communion:
