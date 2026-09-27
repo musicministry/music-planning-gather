@@ -36,7 +36,8 @@ hymns:
           book: G
           priority: optional
         - name: "Worthy is the Lamb"
-          book: G
+          composer: Manalo
+          book: handout
           priority: optional
     recessional:
       list:
