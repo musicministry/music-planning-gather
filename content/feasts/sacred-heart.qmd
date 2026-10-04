@@ -12,9 +12,9 @@ hymns:
   a:
     processional:
       list:
-        - name: "O Bless the Lord, My Soul"
-          book: BB
-          priority: preferred
+        - name: "Praise to the Lord, the Almighty"
+          book: G
+          priority: flexible
     psalm:
       list:
         - name: "The Lord’s kindness is everlasting to those who fear him."
@@ -22,32 +22,29 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Come to Me"
-          book: BB
-          priority: required
+        - name: "I Will Sing a Song of Love"
+          book: G
+          priority: flexible
     communion:
       list:
         - name: "What Wondrous Love"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Abide With Me"
-          book: BB
-          priority: preferred
         - name: "How Great Thou Art"
-          book: BB
-          priority: optional
+          book: G
+          priority: preferred
     recessional:
       list:
         - name: "We Shall Rise Again"
-          book: BB
+          book: G
           priority: required
   b:
     processional:
       list:
         - name: "Love Divine, All Loves Excelling"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -57,31 +54,28 @@ hymns:
     offertory:
       list:
         - name: "I Heard the Voice of Jesus Say"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Come Down, O Love Divine"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "What Feast of Love"
-          book: BB
-          priority: optional
         - name: "Dwelling Place"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
     recessional:
       list:
-        - name: "God Is Love"
-          book: BB
-          priority: required
+        - name: "You Are Called to Tell the Story"
+          book: G
+          priority: flexible
   c:
     processional:
       list:
         - name: "Love Divine, All Loves Excelling"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -91,26 +85,26 @@ hymns:
     offertory:
       list:
         - name: "The King of Love My Shepherd Is"
-          book: BB
+          book: G
           priority: optional
         - name: "Like a Shepherd"
-          book: BB
+          book: G
           priority: optional
     communion:
       list:
         - name: "I Have Loved You"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Ubi Caritas"
           composer: Hurd
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "There's a Wideness in God's Mercy"
-          book: BB
+          book: G
           priority: required
   abc:
     anthems:
@@ -189,7 +183,7 @@ from the place of slavery,
 and ransomed you from the hand of Pharaoh, king of Egypt.  
 Understand, then, that the LORD, your God, is God indeed,  
 the faithful God who keeps his merciful covenant  
-down to the thousandth generation. 
+down to the thousandth generation  
 toward those who love him and keep his commandments,  
 but who repays with destruction a person who hates him;  
 he does not dally with such a one,  
