@@ -13,11 +13,10 @@ hymns:
     processional:
       list:
         - name: "Take Up Your Cross"
-          tune: "erhalt uns, herr"
-          book: BB
+          book: G
           priority: preferred
         - name: "Crown Him with Many Crowns"
-          book: BB
+          book: G
           priority: optional
     psalm:
       list:
@@ -26,28 +25,30 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "At the Name of Jesus"
-          tune: "king's weston"
-          book: BB
-          priority: preferred
         - name: "Only This I Want"
-          book: BB
+          book: G
+          priority: optional
+        - name: "All Hail the Power of Jesus' Name!"
+          book: G
           priority: optional
     communion:
       list:
-        - name: "One Love Released"
-          book: BB
+        - name: "You, Lord, Are Both Lamb and Shepherd"
+          book: G
           priority: preferred
     meditation:
       list:
         - name: "What Wondrous Love"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Lift High the Cross"
-          book: BB
-          priority: required
+          book: G
+          priority: preferred
+        - name: "The Kingdom of God"
+          book: G
+          priority: optinal
 """
 ```
 

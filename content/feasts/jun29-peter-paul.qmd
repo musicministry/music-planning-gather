@@ -12,9 +12,9 @@ hymns:
   abc:
     processional:
       list:
-        - name: "By All Your Saints Still Striving"
-          verses: "1, 8*, and 3"
-          book: BB
+        - name: "A Living Faith"
+          book: G
+          verse: "1, 4 (if needed)"
           priority: preferred
     psalm:
       list:
@@ -24,32 +24,32 @@ hymns:
     offertory:
       list:
         - name: "The Summons"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Only This I Want"
-          book: BB
+          book: G
           priority: optional
         - name: "Taste and See"
-          composer: Moore
-          book: BB
+          book: G
           priority: optional
     meditation:
       list:
-        - name: "Simon, Son of John"
-          priority: preferred
-        - name: "Age to Age"
-          book: BB
+        - name: "The Love of the Lord"
+          book: G
           priority: optional
-        - name: "Cry of the Poor"
-          book: BB
+        - name: "Heart of a Shepherd"
+          book: G
+          priority: optional
+        - name: "Psalm 34: The Cry of the Poor"
+          book: G
           priority: optional
     recessional:
       list:
-        - name: "Faith of Our Fathers"
-          book: BB
-          priority: required
+        - name: "Canticle of the Sun"
+          book: G
+          priority: preferred
 """
 ```
 

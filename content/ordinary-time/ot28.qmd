@@ -36,7 +36,7 @@ hymns:
           priority: preferred
     recessional:
       list:
-        - name: "Joyful, Joyful, We Adore Thee"
+        - name: "Joyful, Joyful, We Adore You"
           book: G
           priority: preferred
   b:

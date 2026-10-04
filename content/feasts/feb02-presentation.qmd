@@ -13,10 +13,10 @@ hymns:
     processional:
       list:
         - name: "The King of Glory"
-          book: BB
+          book: G
           priority: optional
-        - name: "Lift Up Your Heads, Ye Mighty Gates"
-          book: BB
+        - name: "All Glory, Laud, and Honor"
+          book: G
           priority: optional
     psalm:
       list:
@@ -25,24 +25,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "In His Temple Now Behold Him"
-          book: BB
+        - name: "Luke 2:29-34: Nunc Dimittis"
+          book: G
           priority: required
     communion:
       list:
         - name: "Behold the Lamb"
-          composer: Willett
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Luke 2: Song of Simeon"
-          book: BB
+        - name: "Now Let Your Servant Go in Peace"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Christ, Be Our Light"
-          book: BB
+          book: G
           priority: required
 """
 ```

@@ -11,8 +11,8 @@ hymns:
   a:
     processional:
       list:
-        - name: "Lift Up Your Hearts to the Lord"
-          book: BB
+        - name: "Lift Up Your Hearts"
+          book: G
           priority: required
     psalm:
       list:
@@ -26,7 +26,7 @@ hymns:
           priority: required
     communion:
       list:
-        - name: "Set Your Hearts on the Higher Gifts"
+        - name: "Set Your Heart on the Higher Gifts"
           book: G
           priority: preferred
     meditation:
@@ -43,7 +43,7 @@ hymns:
     processional:
       list:
         - name: "Gather Us In"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -53,29 +53,29 @@ hymns:
     offertory:
       list:
         - name: "Eye Has Not Seen"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Taste and See"
           composer: Moore
-          book: BB
+          book: G
           priority: preferred
     meditation:
       list:
         - name: "Open My Eyes"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Joyful, Joyful, We Adore Thee"
-          book: BB
+        - name: "Joyful, Joyful, We Adore You"
+          book: G
           priority: preferred
   c:
     processional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -85,7 +85,7 @@ hymns:
     offertory:
       list:
         - name: "The Cry of the Poor"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
@@ -95,12 +95,12 @@ hymns:
     meditation:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: ""
-          book: BB
+          book: G
           priority: required
 """
 ```

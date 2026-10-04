@@ -12,8 +12,8 @@ hymns:
   abc:
     processional:
       list:
-        - name: "The Church's One Foundation"
-          book: BB
+        - name: "O Holy City, Seen of John"
+          book: G
           priority: required
     psalm:
       list:
@@ -22,33 +22,26 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Church of God, Elect and Glorious"
-          book: BB
-          priority: required
+        - name: "Christ Is Made the Sure Foundation"
+          book: G
+          priority: preferred
     communion:
       list:
-        - name: "Adoro Te Devote"
-          book: BB
-          priority: optional
-        - name: "Jesu, Joy of Our Desiring"
-          book: BB
-          priority: optional
-        - name: "When We Eat this Bread"
-          book: BB
-          priority: optional
+        - name: "Draw Near"
+          book: G
+          priority: flexible
     meditation:
       list:
-        - name: "O How Lovely Is Your Dwelling Place"
-          book: BB
-          composer: DeBruyn
-          priority: preferred
+        - name: "Healing River"
+          book: G
+          priority: optional
         - name: "Father, We Thank You, Who Have Planted"
-          book: BB
+          book: G
           priority: optional
     recessional:
       list:
-        - name: "One Spirit, One Church"
-          book: BB
+        - name: "How Firm a Foundation"
+          book: G
           priority: required
 """
 ```

@@ -24,7 +24,11 @@ hymns:
       list:
         - name: "Praise We the Lord This Day"
           book: G
-          priority: required
+          priority: preferred
+        - name: "Mary, First among Believers"
+          book: G
+          verses: "1, 3, 5"
+          priority: optional
     communion:
       list:
         - name: "Luke 1:46-55: Manificat"
@@ -42,7 +46,7 @@ hymns:
       list:
         - name: "I Sing a Maid"
           book: G
-          verses: 1
+          verses: "1"
           priority: required
     anthems:
       list:

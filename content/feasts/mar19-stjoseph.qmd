@@ -12,9 +12,8 @@ hymns:
   abc:
     processional:
       list:
-        - name: "By All Your Saints Still Striving"
-          verses: "1, 4*, and 3"
-          book: BB
+        - name: "Mary, First among Believers"
+          book: G
           priority: required
     psalm:
       list:
@@ -24,22 +23,23 @@ hymns:
     offertory:
       list:
         - name: "Be Not Afraid"
-          book: BB
+          book: G
           priority: preferred
     communion:
       list:
-        - name: "Holy Patron, Thee Saluting"
-          book: BB
-          priority: required
+        - name: "I Come with Joy"
+          book: G
+          priority: flexible
     meditation:
       list:
-        - name: "Dwelling Place"
-          book: BB
+        - name: "The Aye Carol"
+          book: G
           priority: preferred
     recessional:
       list:
         - name: "Faith of Our Fathers"
-          book: BB
+          verse: 1 only
+          book: G
           priority: required
 """
 ```

@@ -12,38 +12,36 @@ hymns:
   abc:
     processional:
       list:
-        - name: "By All Your Saints Still Striving"
-          verses: "1, 7*, and 3"
-          book: BB
-          priority: preferred
         - name: "On Jordan's Bank"
-          book: BB
-          priority: optional
+          book: G
+          priority: required
     psalm:
       list:
-        - name: "Since my mother's womb, you have been my strength."
+        - name: "I praise you for I am wonderfully made."
           book: RA
           priority: required
     offertory:
       list:
-        - name: "Ye Watchers and Ye Holy Ones"
-          book: BB
-          priority: required
+        - name: "In Christ There Is No East or West"
+          book: G
+          priority: optional
+        - name: "Canticle of the Turning"
+          book: G
+          priority: optional
     communion:
       list:
         - name: "Behold the Lamb"
-          composer: Willett
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "O God, You Search Me"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
-        - name: "When Jesus Comes to Be Baptized"
-          book: BB
+        - name: "Ye Watchers and Ye Holy Ones"
+          book: G
           priority: required
 """
 ```
