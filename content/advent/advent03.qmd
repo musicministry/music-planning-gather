@@ -12,100 +12,98 @@ hymns:
     processional:
       list:
         - name: "The King of Glory"
-          book: "Breaking Bread"
+          book: G
           priority: preferred
     psalm:
       list:
         - name: "Lord, come and save us."
-          book: "Respond and Acclaim"
+          book: RA
           priority: required
     offertory:
       list:
         - name: "O Come, O Come, Emmanuel"
-          book: "Breaking Bread"
+          book: G
           priority: required
     communion:
       list:
         - name: "Savior of the Nations, Come"
-          book: "Breaking Bread"
+          book: G
           priority: preferred
     meditation:
       list:
         - name: "Lo, How a Rose E’er Blooming"
-          book: "Breaking Bread"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Let Heaven Rejoice"
-          book: "Breaking Bread"
+        - name: "Awake! Awake, and Greet the New Morn"
+          book: G
           priority: preferred
   b:
     processional:
       list:
         - name: "O Come, O Come, Emmanuel"
-          book: "Breaking Bread"
+          book: G
           priority: required
     psalm:
       list:
         - name: "My soul rejoices in my God."
-          book: "Respond and Acclaim"
+          book: RA
           priority: required
     offertory:
       list:
-        - name: "Luke 1: My Soul Rejoices"
-          book: "Breaking Bread"
+        - name: "Luke 1: 46-53: My Soul Gives Glory"
+          book: G
           priority: required
     communion:
       list:
         - name: "Savior of the Nations, Come"
-          book: "Breaking Bread"
+          book: G
           priority: preferred
     meditation:
       list:
-        - name: "Come, Lord Jesus"
-          composer: Ridge
-          book: "Breaking Bread"
-          priority: preferred
+        - name: "Creator of the Stars of Night"
+          book: G
+          priority: flexible
     recessional:
       list:
         - name: "Rejoice, the Lord is King"
-          book: "Breaking Bread"
+          book: G
           priority: required
     anthems:
       list:
-        - name: "Luke 1:46-55: Magnificat (Chepponis)"
-        - name: "Holy is His Name"
+        - name: "Luke 1:46-55: Magníficat"
+        - name: "Luke 1: 46-55: Holy is Your Name"
   c:
     processional:
       list:
         - name: "Rejoice, the Lord is King"
-          book: "Breaking Bread"
+          book: G
           priority: required
     psalm:
       list:
         - name: "Cry out with joy and gladness: for among you is the great and Holy One of Israel."
-          book: "Respond and Acclaim"
+          book: RA
           priority: required
     offertory:
       list:
         - name: "On Jordan’s Bank"
-          book: "Breaking Bread"
+          book: G
           priority: required
     communion:
       list:
         - name: "There Is a Longing"
-          book: "Breaking Bread"
+          book: G
           priority: preferred
     meditation:
       list:
-        - name: "Song of Mary"
-          verses: 1-2
-          book: "Breaking Bread"
+        - name: "I Sing a Maid"
+          verses: 1
           priority: preferred
     recessional:
       list:
-        - name: "Let Heaven Rejoice"
-          book: "Breaking Bread"
+        - name: "Awake! Awake, and Greet the New Morn"
+          book: G
           priority: required
     anthems:
       list:
