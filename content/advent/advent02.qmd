@@ -12,75 +12,71 @@ hymns:
     processional:
       list:
         - name: "On Jordan’s Bank"
-          book: "Breaking Bread"
+          book: G
           priority: required
     psalm:
       list:
         - name: "Justice shall flourish in his time, and fullness of peace for ever."
-          book: "Respond and Acclaim"
-          priority: preferred
-        - name: "Psalm 72: Justice Shall Flourish"
-          composer: Cooney
-          book: "Breaking Bread"
-          priority: optional
+          book: RA
+          priority: required
     offertory:
       list:
         - name: "There Is a Longing"
-          book: "Breaking Bread"
+          book: G
           priority: required
     communion:
       list:
         - name: "A Voice Cries Out"
-          book: "Breaking Bread"
+          book: G
           priority: required
     meditation:
       list:
         - name: "Lo, How a Rose E’er Blooming"
-          book: "Breaking Bread"
-          priority: optional
-        - name: "Proclaim the Joyful Message"
-          book: "Breaking Bread"
-          priority: optional
+          book: G
+          priority: required
     recessional:
       list:
         - name: "People, Look East"
-          book: "Breaking Bread"
+          book: G
           priority: preferred
     anthems:
       list:
         - name: "And the River Will Rise"
+        - name: "Proclaim the Joyful Message"
   b:
     processional:
       list:
         - name: "On Jordan’s Bank"
-          book: "Breaking Bread"
+          book: G
           priority: required
     psalm:
       list:
         - name: "Lord, let us see your kindness, and grant us your salvation."
-          book: "Respond and Acclaim"
+          book: RA
           priority: required
     offertory:
       list:
         - name: "Comfort, Comfort, O My People"
-          book: "Breaking Bread"
+          book: G
           priority: required
     communion:
       list:
         - name: "A Voice Cries Out"
-          book: "Breaking Bread"
-          priority: required
+          book: G
+          priority: optional
+        - name: "Comfort, My People"
+          book: G
+          priority: optional
     meditation:
       list:
         - name: "Like a Shepherd"
-          composer: Dufford
-          book: "Breaking Bread"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Every Valley"
-          book: "Breaking Bread"
-          priority: required
+        - name: "Sing Out, Earth and Skies!"
+          book: G
+          priority: flexible
     anthems:
       list:
         - name: "He Shall Feed His Flock (Handel’s Messiah)"
@@ -88,34 +84,33 @@ hymns:
     processional:
       list:
         - name: "People, Look East"
-          book: "Breaking Bread"
+          book: G
           priority: required
     psalm:
       list:
         - name: "The Lord has done great things for us; we are filled with joy."
-          book: "Respond and Acclaim"
+          book: RA
           priority: required
     offertory:
       list:
         - name: "All Hail the Power of Jesus’ Name"
-          tune: Coronation
-          book: "Breaking Bread"
+          book: G
           priority: preferred
     communion:
       list:
         - name: "A Voice Cries Out"
-          book: "Breaking Bread"
+          book: G
           priority: required
     meditation:
       list:
         - name: "Creator of the Stars of Night"
-          book: "Breaking Bread"
+          book: G
           priority: preferred
     recessional:
       list:
-        - name: "Every Valley"
-          book: "Breaking Bread"
-          priority: required
+        - name: "Sing Out, Earth and Skies!"
+          book: G
+          priority: flexible
 """
 ```
 
