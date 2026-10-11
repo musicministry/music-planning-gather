@@ -11,69 +11,64 @@ hymns:
   a:
     processional:
       list:
-        - name: "Come, Thou Long-Expected Jesus"
-          tune: stuttgart
-          book: "Breaking Bread"
+        - name: "Come, O Long-Expected Jesus"
+          book: G
           priority: required
     psalm:
       list:
         - name: "Let us go rejoicing to the house of the Lord."
-          book: "Respond and Acclaim"
+          book: RA
           priority: required
     offertory:
       list:
-        - name: "The Advent of Our King"
-          book: "Breaking Bread"
-          priority: preferred
         - name: "Lord of All Hopefulness"
-          book: "Breaking Bread"
-          priority: optional
+          book: G
+          priority: flexible
     communion:
       list:
-        - name: "Wake, O Wake, and Sleep No Longer"
-          book: "Breaking Bread"
-          priority: required
+        - name: "Jesus, Hope of the World"
+          book: G
+          priority: flexible
     meditation:
       list:
-        - name: "Maranatha"
-          composer: Westphal
-          book: "Breaking Bread"
+        - name: "Maranatha, Lord Messiah"
+          book: G
           priority: required
     recessional:
       list:
         - name: "City of God"
-          book: "Breaking Bread"
+          book: G
           priority: required
   b:
     processional:
       list:
         - name: "Come Now, Almighty King"
-          book: "Breaking Bread"
+          book: G
           priority: required
     psalm:
       list:
         - name: "Lord, make us turn to you; let us see your face and we shall be saved."
-          book: "Respond and Acclaim"
+          book: RA
           priority: required
     offertory:
       list:
-        - name: "The Advent of Our King"
-          book: "Breaking Bread"
+        - name: ""
+          book: G
           priority: required
     communion:
       list:
         - name: "Eye Has Not Seen"
-          book: "Breaking Bread"
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Abba! Father"
-          book: "Breaking Bread"
-          priority: required
+        - name: "I Lift My Soul to You"
+          book: G
+          priority: flexible
     recessional:
       list:
         - name: "O Come, Divine Messiah"
-          book: "Breaking Bread"
+          book: G
           priority: preferred
     anthems:
       list:
@@ -82,45 +77,33 @@ hymns:
     processional:
       list:
         - name: "The King of Glory"
-          book: "Breaking Bread"
+          book: G
           priority: required
     psalm:
       list:
         - name: "To You, O Lord, I lift my soul."
-          book: "Breaking Bread"
+          book: RA
           priority: required
     offertory:
       list:
-        - name: "The Advent of Our King"
-          book: "Breaking Bread"
-          priority: preferred
         - name: "Lord of All Hopefulness"
-          book: "Breaking Bread"
-          priority: optional
+          book: G
+          priority: flexible
     communion:
       list:
-        - name: "Bread of Life"
-          composer: Farrell
-          tune: "Advent/Christmas"
-          book: "Breaking Bread"
-          verses: 1-2
-          priority: optional
         - name: "Savior of the Nations, Come"
-          book: "Breaking Bread"
-          priority: optional
+          book: G
+          priority: preferred
     meditation:
       list:
-        - name: "Beyond the Moon and Stars"
-          book: "Breaking Bread"
+        - name: ""
+          book: G
           priority: required
     recessional:
       list:
-        - name: "Lift Up Your Heads, Ye Mighty Gates"
-          book: "Breaking Bread"
+        - name: ""
+          book: G
           priority: preferred
-        - name: "In the Day of the Lord"
-          book: "Breaking Bread"
-          priority: optional
     anthems:
       list:
         - name: "Lo! He Comes With Clouds Descending"
