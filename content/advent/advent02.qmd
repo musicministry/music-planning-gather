@@ -61,12 +61,9 @@ hymns:
           priority: required
     communion:
       list:
-        - name: "A Voice Cries Out"
-          book: G
-          priority: optional
         - name: "Comfort, My People"
           book: G
-          priority: optional
+          priority: required
     meditation:
       list:
         - name: "Like a Shepherd"
@@ -74,7 +71,7 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: "Sing Out, Earth and Skies!"
+        - name: O Holy City, Seen by John"
           book: G
           priority: flexible
     anthems:
