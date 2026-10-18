@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "Songs of Thankfulness and Praise"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -21,26 +21,26 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "We Three Kings"
-          book: BB
+        - name: "We Three Kings of Orient Are"
+          book: G
           priority: required
     communion:
       list:
         - name: "The First Nowell"
-          book: BB
+          book: G
           priority: preferred
         - name: "What Child is This"
-          book: BB
+          book: G
           priority: optional
     meditation:
       list:
-        - name: "What Star Is This"
-          book: BB
+        - name: "As With Gladness Men of Old"
+          book: G
           priority: required
     recessional:
       list:
-        - name: "As With Gladness Men of Old"
-          book: BB
+        - name: "What Star Is This"
+          book: G
           priority: required
   a:
     anthems:
