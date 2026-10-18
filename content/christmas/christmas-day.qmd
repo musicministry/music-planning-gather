@@ -13,44 +13,45 @@ hymns:
     processional:
       list:
         - name: "O Come, All Ye Faithful"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
         - name: "All the ends of the Earth have seen the power of God."
           book: RA
           priority: optional
-        - name: "Psalm 98: All the Ends of the Earth (Hurd)"
-          book: BB
+        - name: "Psalm 98: All the Ends of the Earth"
+          book: G
           priority: preferred
     offertory:
       list:
         - name: "God Rest You, Merry Gentlemen"
           year: A
-          book: BB
+          book: G
           priority: required
         - name: "Good Christian Friends, Rejoice"
           year: B
-          book: BB
+          book: G
           priority: required
-        - name: "The Snow Lay on the Ground"
+        - name: "Awake! Awake, and Greet the New Morn"
           year: C
-          book: BB
+          note: "Christmas lyrics"
+          book: G
           priority: required
     communion:
       list:
         - name: "It Came Upon the Midnight Clear"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Of the Father’s Love Begotten"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Joy to the World"
-          book: BB
+          book: G
           priority: required
   a:
     anthems:
