@@ -13,7 +13,7 @@ hymns:
     processional:
       list:
         - name: "O Come, All Ye Faithful"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -21,25 +21,21 @@ hymns:
           book: RA
           priority: optional
         - name: "Psalm 96: Today is Born Our Savior"
-          composer: "Hughes"
-          priority: optional
-        - name: "Psalm 96: Today is Born Our Savior"
-          composer: "O'Brien"
-          priority: optional
+          priority: preferred
     offertory:
       list:
         - name: "O Little Town of Bethlehem"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Night of Silence / Silent Night"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Of the Father’s Love Begotten"
-          book: BB
+          book: G
           priority: optional
         - name: "O Holy Night"
           book: "[Appx A](../appendices/A-o-holy-night.qmd)"
@@ -47,7 +43,7 @@ hymns:
     recessional:
       list:
         - name: "Hark! The Herald Angels Sing"
-          book: BB
+          book: G
           priority: required
   a:
 
