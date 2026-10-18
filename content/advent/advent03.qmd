@@ -102,7 +102,7 @@ hymns:
           priority: preferred
     recessional:
       list:
-        - name: "Awake! Awake, and Greet the New Morn"
+        - name: "People Look East"
           book: G
           priority: required
     anthems:
