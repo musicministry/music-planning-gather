@@ -13,7 +13,7 @@ hymns:
     processional:
       list:
         - name: "O Come, O Come, Emmanuel"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -23,28 +23,29 @@ hymns:
     offertory:
       list:
         - name: "Lo, How a Rose E'er Blooming"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Silent Night"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Of the Father’s Love Begotten"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Joy to the World"
-          book: BB
+          book: G
           priority: required
   a:
     anthems:
       list:
         - name: Child of Mary Newly Born
         - name: In the Bleak Midwinter (Darke)
+        - name: O Holy Night
   b:
     anthems:
       list:
