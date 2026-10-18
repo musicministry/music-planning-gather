@@ -23,7 +23,10 @@ hymns:
       list:
         - name: "Lord of All Hopefulness"
           book: G
-          priority: flexible
+          priority: optional
+        - name: "Awake! Awake, and Greet the New Morn"
+          book: G
+          priority: optional
     communion:
       list:
         - name: "Jesus, Hope of the World"
@@ -52,7 +55,7 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: ""
+        - name: "When the King Shall Come Again"
           book: G
           priority: required
     communion:
@@ -67,7 +70,7 @@ hymns:
           priority: flexible
     recessional:
       list:
-        - name: "O Come, Divine Messiah"
+        - name: "Awake! Awake, and Greet the New Morn"
           book: G
           priority: preferred
     anthems:
@@ -96,12 +99,12 @@ hymns:
           priority: preferred
     meditation:
       list:
-        - name: ""
+        - name: "Like a Shepherd"
           book: G
           priority: required
     recessional:
       list:
-        - name: ""
+        - name: "Awake! Awake, and Greet the New Morn"
           book: G
           priority: preferred
     anthems:
