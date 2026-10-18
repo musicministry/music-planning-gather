@@ -12,7 +12,7 @@ hymns:
     processional:
       list:
         - name: "Angels, from the Realms of Glory"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -21,23 +21,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "While Shepherds Watched Their Flock"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     communion:
       list:
         - name: "Once in Royal David’s City"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Infant Holy, Infant Lowly"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Angels We Have Heard on High"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
@@ -47,7 +47,7 @@ hymns:
     processional:
       list:
         - name: "Angels, from the Realms of Glory"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -57,22 +57,22 @@ hymns:
     offertory:
       list:
         - name: "Infant Holy, Infant Lowly"
-          book: BB
+          book: G
           priority: required
     communion:
       list:
         - name: "Once in Royal David’s City"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
-        - name: "Luke 2: Song of Simeon"
-          book: BB
+        - name: "Luke 2:29-34 Nunc Dimíttis"
+          book: G
           priority: required
     recessional:
       list:
         - name: "Hark! The Herald Angels Sing"
-          book: BB
+          book: G
           priority: preferred
     anthems:
       list:
@@ -82,7 +82,7 @@ hymns:
     processional:
       list:
         - name: "Angels, from the Realms of Glory"
-          book: BB
+          book: G
           priority: required
     psalm:
       list:
@@ -91,23 +91,23 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "O Come, Little Children"
-          book: BB
+        - name: ""
+          book: G
           priority: required
     communion:
       list:
         - name: "Once in Royal David’s City"
-          book: BB
+          book: G
           priority: required
     meditation:
       list:
         - name: "Infant Holy, Infant Lowly"
-          book: BB
+          book: G
           priority: required
     recessional:
       list:
         - name: "Joy to the World"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
