@@ -111,6 +111,7 @@ hymns:
           priority: required
     anthems:
       list:
+        - name: "Carol at the Manger"
         - name: "Cold Was the Stable"
         - name: "O How Amiable"
 """
