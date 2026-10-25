@@ -8,10 +8,10 @@ title: "EPIPHANY OF THE LORD"
 
 frontmatter = """
 hymns:
-  abc:
+  a:
     processional:
       list:
-        - name: "Songs of Thankfulness and Praise"
+        - name: "As with Gladness Men of Old"
           book: G
           priority: required
     psalm:
@@ -29,9 +29,40 @@ hymns:
         - name: "The First Nowell"
           book: G
           priority: preferred
-        - name: "What Child is This"
+    meditation:
+      list:
+        - name: "Lord, Today"
           book: G
-          priority: optional
+          priority: flexible
+    recessional:
+      list:
+        - name: "What Star Is This"
+          book: G
+          priority: required
+    anthems:
+      list:
+        - name: Welcome the Light
+  b:
+    processional:
+      list:
+        - name: "Songs of Thankfulness and Praise"
+          book: G
+          priority: required
+    psalm:
+      list:
+        - name: "Lord, every nation on earth will adore you."
+          book: RA
+          priority: required
+    offertory:
+      list:
+        - name: "We Three Kings of Orient Are"
+          book: G
+          priority: required
+    communion:
+      list:
+        - name: "Epiphany Carol"
+          book: G
+          priority: preferred
     meditation:
       list:
         - name: "As With Gladness Men of Old"
@@ -42,15 +73,40 @@ hymns:
         - name: "What Star Is This"
           book: G
           priority: required
-  a:
-    anthems:
-      list:
-        - name: Welcome the Light
-  b:
     anthems:
       list:
         - name: Wood of the Cradle
   c:
+    processional:
+      list:
+        - name: "Epiphany Carol"
+          book: G
+          priority: required
+    psalm:
+      list:
+        - name: "Lord, every nation on earth will adore you."
+          book: RA
+          priority: required
+    offertory:
+      list:
+        - name: "We Three Kings of Orient Are"
+          book: G
+          priority: required
+    communion:
+      list:
+        - name: "What Child is This"
+          book: G
+          priority: required
+    meditation:
+      list:
+        - name: "As With Gladness Men of Old"
+          book: G
+          priority: required
+    recessional:
+      list:
+        - name: "What Star Is This"
+          book: G
+          priority: required
     anthems:
       list:
         - name: "Nowell! Nowell! Nowell!"
