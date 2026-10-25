@@ -11,7 +11,7 @@ hymns:
   a:
     processional:
       list:
-        - name: "Angels, from the Realms of Glory"
+        - name: "Hark! The Herald Angels Sing"
           book: G
           priority: required
     psalm:
@@ -81,7 +81,7 @@ hymns:
   c:
     processional:
       list:
-        - name: "Angels, from the Realms of Glory"
+        - name: "Angels We Have Heard on High"
           book: G
           priority: required
     psalm:
