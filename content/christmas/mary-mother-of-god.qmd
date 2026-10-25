@@ -12,8 +12,9 @@ hymns:
   abc:
     processional:
       list:
-        - name: "Sing of Mary, Pure and Lowly"
+        - name: "I Sing a Maid"
           book: G
+          verses: "1-3"
           priority: required
     psalm:
       list:
@@ -37,10 +38,12 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: "I Sing a Maid"
+        - name: "Sing of Mary, Pure and Lowly"
           book: G
-          verses: "1-3"
-          priority: required
+          priority: optional
+        - name: "Let There Be Peace On Earth"
+          book: G
+          priority: optional
   a:
     anthems:
       list:
