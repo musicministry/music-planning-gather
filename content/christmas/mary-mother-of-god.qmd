@@ -52,6 +52,7 @@ hymns:
     anthems:
       list:
         - name: Birthday of a King
+        - name: Dream a Dream
   c:
     anthems:
       list:
