@@ -8,12 +8,12 @@ title: "BAPTISM OF THE LORD"
 
 frontmatter = """
 hymns:
-  a:
+  abc:
     processional:
       list:
-        - name: "When Jesus Comes to Be Baptized"
-          book: BB
-          priority: required
+        - name: "Praise to You, O Christ, Our Savior"
+          book: G
+          priority: flexible
     psalm:
       list:
         - name: "The Lord will bless his people with peace."
@@ -22,93 +22,29 @@ hymns:
     offertory:
       list:
         - name: "Good Christian Friends, Rejoice"
-          book: BB
-          priority: required
+          book: G
+          priority: preferred
     communion:
       list:
-        - name: "Jesus to Jordan's Waters Came"
-          book: BB
+        - name: "When John Baptized by Jordan's River"
+          book: G
           priority: required
     meditation:
       list:
         - name: "I Have Loved You"
-          book: BB
+          book: G
           priority: optional
-        - name: "Spirit and Grace"
-          book: BB
+        - name: "Behold the Lamb"
+          book: G
           priority: optional
     recessional:
       list:
         - name: "Go, Tell It on the Mountain"
-          book: BB
+          book: G
           priority: required
     anthems:
       list:
         - name: "Praise to God Whose Love Was Shown"
-  b:
-    processional:
-      list:
-        - name: "When Jesus Comes to Be Baptized"
-          book: BB
-          priority: required
-    psalm:
-      list:
-        - name: "You will draw water joyfully from the springs of salvation."
-          book: RA
-          priority: required
-    offertory:
-      list:
-        - name: "The Snow Lay on the Ground"
-          book: BB
-          priority: required
-    communion:
-      list:
-        - name: "Jesus to Jordan's Waters Came"
-          book: BB
-          priority: required
-    meditation:
-      list:
-        - name: "Come to the Water"
-          book: BB
-          priority: required
-    recessional:
-      list:
-        - name: "Go, Tell It on the Mountain"
-          book: BB
-          priority: required
-  c:
-    processional:
-      list:
-        - name: "When Jesus Comes to Be Baptized"
-          book: BB
-          priority: required
-    psalm:
-      list:
-        - name: "O bless the Lord, my soul."
-          book: RA
-          priority: required
-    offertory:
-      list:
-        - name: "God Rest You, Merry Gentlemen"
-          book: BB
-          priority: required
-    communion:
-      list:
-        - name: "Jesus to Jordan's Waters Came"
-          book: BB
-          priority: required
-    meditation:
-      list:
-        - name: "Spirit and Grace"
-          book: BB
-          priority: required
-    recessional:
-      list:
-        - name: "Go, Tell It on the Mountain"
-          book: BB
-          priority: required
-    anthems:
-      list:
         - name: "Cantate Domino (Pitoni)"
 """
 ```
