@@ -64,6 +64,7 @@ hymns:
       list:
         - name: Gloria in Excelsis (Vivaldi)
         - name: Sussex Carol
+        - name: The People Who Walked in Darkness
   c:
     anthems:
       list:
