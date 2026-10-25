@@ -113,6 +113,7 @@ hymns:
       list:
         - name: "Carol at the Manger"
         - name: "Cold Was the Stable"
+        - name: "Sing Alleluia"
         - name: "O How Amiable"
 """
 ```
