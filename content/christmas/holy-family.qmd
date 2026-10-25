@@ -21,7 +21,7 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: ""
+        - name: "The Aye Carol"
           book: G
           priority: required
     communion:
@@ -91,7 +91,7 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: ""
+        - name: "The Aye Carol"
           book: G
           priority: required
     communion:
