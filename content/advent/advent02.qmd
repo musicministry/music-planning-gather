@@ -71,7 +71,7 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: O Holy City, Seen by John"
+        - name: "O Holy City, Seen by John"
           book: G
           priority: flexible
     anthems:
