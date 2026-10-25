@@ -31,6 +31,15 @@ hymns:
       list:
         - name: "Night of Silence / Silent Night"
           book: G
+          note: Year A
+          priority: required
+        - name: "Nativity Carol"
+          book: G
+          note: Year B
+          priority: required
+        - name: "Wood of the Cradle"
+          book: G
+          note: Year C
           priority: required
     meditation:
       list:
@@ -46,7 +55,6 @@ hymns:
           book: G
           priority: required
   a:
-
     anthems:
       list:
         - name: Et in Terra Pax
