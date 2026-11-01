@@ -21,12 +21,9 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Lord of All Hopefulness"
-          book: G
-          priority: optional
         - name: "Awake! Awake, and Greet the New Morn"
           book: G
-          priority: optional
+          priority: preferred
     communion:
       list:
         - name: "Jesus, Hope of the World"
