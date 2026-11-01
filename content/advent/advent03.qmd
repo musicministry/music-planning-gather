@@ -31,12 +31,12 @@ hymns:
           priority: preferred
     meditation:
       list:
-        - name: "Lo, How a Rose E’er Blooming"
+        - name: "Creator of the Stars of Night"
           book: G
           priority: required
     recessional:
       list:
-        - name: "Awake! Awake, and Greet the New Morn"
+        - name: "When the King Shall Come Again"
           book: G
           priority: preferred
   b:
@@ -52,22 +52,25 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "Luke 1: 46-53: My Soul Gives Glory"
+        - name: "Savior of the Nations, Come"
           book: G
           priority: required
     communion:
       list:
-        - name: "Savior of the Nations, Come"
+        - name: "Luke 1: 46-53: My Soul Gives Glory"
           book: G
-          priority: preferred
+          priority: optional
+        - name: "Luke 1: 46-55: Magníficat"
+          book: G
+          priority: optional
     meditation:
       list:
-        - name: "Creator of the Stars of Night"
+        - name: "A Voice Cries Out"
           book: G
-          priority: flexible
+          priority: required
     recessional:
       list:
-        - name: "Rejoice, the Lord is King"
+        - name: "Awake! Awake, and Greet the New Morn"
           book: G
           priority: required
     anthems:
@@ -77,7 +80,7 @@ hymns:
   c:
     processional:
       list:
-        - name: "Rejoice, the Lord is King"
+        - name: "On Jordan's Bank"
           book: G
           priority: required
     psalm:
@@ -87,7 +90,7 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "On Jordan’s Bank"
+        - name: "O Come, O Come, Emmanuel"
           book: G
           priority: required
     communion:
@@ -102,7 +105,7 @@ hymns:
           priority: preferred
     recessional:
       list:
-        - name: "People, Look East"
+        - name: "Rejoice, the Lord is King"
           book: G
           priority: required
     anthems:
