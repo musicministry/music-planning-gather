@@ -90,7 +90,7 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "All Hail the Power of Jesus’ Name"
+        - name: "When the King Shall Come Again"
           book: G
           priority: preferred
     communion:
