@@ -20,7 +20,7 @@ hymns:
         - name: "Today is born our Savior, Christ the Lord."
           book: RA
           priority: optional
-        - name: "Psalm 96: Today is Born Our Savior"
+        - name: "Psalm 96: Today Is Born Our Savior"
           composer: Hughes
           book: G
           priority: preferred
