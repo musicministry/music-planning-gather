@@ -57,10 +57,10 @@ hymns:
           priority: required
     communion:
       list:
-        - name: "Luke 1: 46-53: My Soul Gives Glory"
+        - name: "Luke 1:46-53: My Soul Gives Glory"
           book: G
           priority: optional
-        - name: "Luke 1: 46-55: Magníficat"
+        - name: "Luke 1:46-55: Magníficat"
           book: G
           priority: optional
     meditation:
@@ -76,7 +76,7 @@ hymns:
     anthems:
       list:
         - name: "Luke 1:46-55: Magníficat"
-        - name: "Luke 1: 46-55: Holy is Your Name"
+        - name: "Luke 1:46-55: Holy is Your Name"
   c:
     processional:
       list:
