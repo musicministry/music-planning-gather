@@ -31,7 +31,7 @@ hymns:
           priority: optional
     communion:
       list:
-        - name: "Luke 1:46-55: Manificat"
+        - name: "Luke 1:46-55: Magníficat"
           book: G
           priority: preferred
         - name: "Creator of the Stars of Night"
