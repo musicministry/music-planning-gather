@@ -21,6 +21,7 @@ hymns:
           book: RA
           priority: optional
         - name: "Psalm 96: Today is Born Our Savior"
+          book: G
           priority: preferred
     offertory:
       list:
