@@ -45,7 +45,7 @@ hymns:
           priority: required
     meditation:
       list:
-        - name: "Of the Father’s Love Begotten"
+        - name: "Of the Father's Love Begotten"
           book: G
           priority: required
     recessional:
