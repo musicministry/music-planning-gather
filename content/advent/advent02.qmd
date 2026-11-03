@@ -11,7 +11,7 @@ hymns:
   a:
     processional:
       list:
-        - name: "On Jordan’s Bank"
+        - name: "On Jordan's Bank"
           book: G
           priority: required
     psalm:
@@ -31,7 +31,7 @@ hymns:
           priority: required
     meditation:
       list:
-        - name: "Lo, How a Rose E’er Blooming"
+        - name: "Lo, How a Rose E'er Blooming"
           book: G
           priority: required
     recessional:
@@ -46,7 +46,7 @@ hymns:
   b:
     processional:
       list:
-        - name: "On Jordan’s Bank"
+        - name: "On Jordan's Bank"
           book: G
           priority: required
     psalm:
@@ -71,12 +71,12 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: "O Holy City, Seen by John"
+        - name: "O Holy City, Seen of John"
           book: G
           priority: flexible
     anthems:
       list:
-        - name: "He Shall Feed His Flock (Handel’s Messiah)"
+        - name: "He Shall Feed His Flock (Handel's Messiah)"
   c:
     processional:
       list:
