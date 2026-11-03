@@ -61,12 +61,12 @@ hymns:
           priority: required
     communion:
       list:
-        - name: "Once in Royal David’s City"
+        - name: "Once in Royal David's City"
           book: G
           priority: required
     meditation:
       list:
-        - name: "Luke 2:29-34 Nunc Dimíttis"
+        - name: "Luke 2:29-34: Nunc Dimíttis"
           book: G
           priority: required
     recessional:
