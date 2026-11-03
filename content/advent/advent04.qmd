@@ -11,7 +11,7 @@ hymns:
   a:
     processional:
       list:
-        - name: "O Come, Divine Messiah"
+        - name: "O Come, Divine Messiah!"
           book: G
           priority: required
     psalm:
@@ -45,7 +45,7 @@ hymns:
   b:
     processional:
       list:
-        - name: "O Come, Divine Messiah"
+        - name: "O Come, Divine Messiah!"
           book: G
           priority: required
     psalm:
@@ -79,7 +79,7 @@ hymns:
   c:
     processional:
       list:
-        - name: "O Come, Divine Messiah"
+        - name: "O Come, Divine Messiah!"
           book: G
           priority: required
     psalm:
