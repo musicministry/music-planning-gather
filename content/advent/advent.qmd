@@ -23,7 +23,7 @@ mass:
           priority: none
     holy-holy-holy:
       list:
-        - name: "Missa Emmanual"
+        - name: "Missa Emmanuel"
           book: GIA
           priority: required
     memorial-acclamation:
