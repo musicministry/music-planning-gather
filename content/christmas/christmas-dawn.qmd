@@ -59,6 +59,7 @@ hymns:
     anthems:
       list:
         - name: Lo! He Comes With Clouds Descending
+          composer: Rutter
         - name: Personent Hodie
   c:
     anthems:

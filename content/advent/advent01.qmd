@@ -107,6 +107,7 @@ hymns:
     anthems:
       list:
         - name: "Lo! He Comes With Clouds Descending"
+          composer: Rutter
 """
 ```
 
