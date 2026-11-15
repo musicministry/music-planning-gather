@@ -11,7 +11,7 @@ hymns:
   a:
     processional:
       list:
-        - name: "How Good, Lord, To Be Here"
+        - name: "How Good, Lord, To Be Here!"
           book: G
           priority: required
     psalm:
@@ -45,9 +45,8 @@ hymns:
   b:
     processional:
       list:
-        - name: "Love Divine, All Loves Excelling"
+        - name: "How Good, Lord, To Be Here!"
           book: G
-          note: "*all verses*"
           priority: required
     psalm:
       list:
@@ -56,7 +55,7 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "How Good, Lord, To Be Here"
+        - name: "Transform Us"
           book: G
           priority: required
     communion:
@@ -83,7 +82,7 @@ hymns:
   c:
     processional:
       list:
-        - name: "How Good, Lord, To Be Here"
+        - name: "How Good, Lord, To Be Here!"
           book: G
           priority: required
     psalm:
