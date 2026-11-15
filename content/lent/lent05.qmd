@@ -11,7 +11,7 @@ hymns:
   a:
     processional:
       list:
-        - name: "Lord, Who Throughout These Forty Days"
+        - name: "Blest Be the Lord"
           book: G
           priority: preferred
     psalm:
