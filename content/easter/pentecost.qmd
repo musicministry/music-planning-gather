@@ -117,7 +117,7 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: "O Spirit All-Embracing"
+        - name: "Lord, You Give the Great Commission"
           book: G
           priority: required
 """
