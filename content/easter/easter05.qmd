@@ -62,7 +62,7 @@ hymns:
           priority: required
     offertory:
       list:
-        - name: "I Know That My Redeemer Lives"
+        - name: "At the Lamb's High Feast We Sing"
           tune: DUKE STREET
           book: G
           priority: preferred
@@ -79,7 +79,7 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: "Joyful, Joyful, We Adore You"
+        - name: "I Know That My Redeemer Lives"
           book: G
           priority: preferred
   c:
@@ -112,7 +112,7 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: "Joyful, Joyful, We Adore You"
+        - name: "All Creatures of Our God and King"
           book: G
           priority: preferred
 """
