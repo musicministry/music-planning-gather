@@ -12,7 +12,7 @@ hymns:
   a:
     processional:
       list:
-        - name: "Sing With All the Saints in Glory"
+        - name: "At the Lamb's High Feast"
           book: G
           priority: preferred
     psalm:
