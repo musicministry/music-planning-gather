@@ -38,6 +38,12 @@ hymns:
         - name: "We Walk By Faith"
           book: G
           priority: required
+          note: Years A and B
+        - name: "Be Not Afraid"
+          composer: Taíze
+          book: G
+          note: Year C
+          priority: required
     recessional:
       list:
         - name: "Sing to the Mountains"
