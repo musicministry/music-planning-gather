@@ -46,7 +46,12 @@ hymns:
       list:
         - name: "Be Joyful, Mary"
           book: G
-          priority: required
+          priority: preferred
+        - name: "Be Not Afraid"
+          book: G
+          composer: Taíze
+          priority: optional
+          note: "Year A (see note below)"
     recessional:
       list:
         - name: "The Strife is O'er"
@@ -440,4 +445,5 @@ utils.anthemlist(hymns=params['hymns'])
 
 * If available, the Festival Alleluia (GIA) is used for the **Gospel Acclamation** with the **Easter** verse found in [Appendix B](../appendices/B-festival-alleluia.qmd).
 * The **Sequence** is sung by the cantor only (*i.e.*, no choir) immediately after the Second Reading. If the hymn "Christ, the Lord, is Risen Today" is used, the entire hymn is to be sung. Note that it is the version set to the tune <span style="font-variant:small-caps">victimae paschali</span>. Accompaniment should be soft and reverent, like Meditation hymns.
+* If the optional Gospel for Year A (Matthew 28:1-10) is used, the Taíze song, "Be Not Afraid", may be used as a meditation hymn instead.
 * If the **dismissal of the people** is chanted by the presider, the cantor must promptly – without pause or hesitation – lead the chanted response found in [Appendix F](../appendices/F-easter-dismissal.qmd).
