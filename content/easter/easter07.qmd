@@ -11,7 +11,7 @@ hymns:
   a:
     processional:
       list:
-        - name: "Alleluia! Sing to Jesus"
+        - name: "Alleluia, Christ Is Risen"
           book: G
           priority: preferred
     psalm:
@@ -35,12 +35,12 @@ hymns:
           priority: required
     meditation:
       list:
-        - name: "Be Joyful, Mary"
+        - name: "Surréxit Christus"
           book: G
           priority: required
     recessional:
       list:
-        - name: "O Spirit All-Embracing"
+        - name: "Come, Holy Ghost"
           book: G
           priority: optional
         - name: "Resucito"
@@ -49,7 +49,7 @@ hymns:
   b:
     processional:
       list:
-        - name: "Alleluia! Sing to Jesus"
+        - name: "Alleluia, Christ Is Risen"
           book: G
           priority: preferred
     psalm:
@@ -75,7 +75,7 @@ hymns:
           priority: required
     recessional:
       list:
-        - name: "O Spirit All-Embracing"
+        - name: "Come, Holy Ghost"
           book: G
           priority: optional
         - name: "Resucito"
@@ -84,7 +84,7 @@ hymns:
   c:
     processional:
       list:
-        - name: "Alleluia! Sing to Jesus"
+        - name: "Alleluia, Christ Is Risen"
           book: G
           priority: preferred
     psalm:
@@ -112,7 +112,7 @@ hymns:
           priority: optional
     recessional:
       list:
-        - name: "O Spirit All-Embracing"
+        - name: "Come, Holy Ghost"
           book: G
           priority: optional
         - name: "Resucito"
