@@ -42,7 +42,7 @@ hymns:
   b:
     processional:
       list:
-        - name: "All Creatures of Our God and King"
+        - name: "Christ, the Lord, is Risen Today"
           book: G
           priority: preferred
     psalm:
